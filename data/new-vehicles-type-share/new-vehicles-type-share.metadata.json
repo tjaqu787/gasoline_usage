@@ -1,0 +1,69 @@
+{
+  "chart": {
+    "title": "New passenger vehicles by type",
+    "citation": "International Council on Clean Transport (ICCT) and European Environment Agency",
+    "originalChartUrl": "https://ourworldindata.org/grapher/new-vehicles-type-share?v=1&csvType=full&useColumnShortNames=false",
+    "selection": [
+      "Norway"
+    ]
+  },
+  "columns": {
+    "plugin_hybrid_share": {
+      "titleShort": "Plug-in hybrid",
+      "titleLong": "Plug-in hybrid",
+      "unit": "",
+      "timespan": "",
+      "type": "Numeric",
+      "owidVariableId": 176392,
+      "citationShort": " – processed by Our World in Data",
+      "citationLong": " – processed by Our World in Data. “Plug-in hybrid” [dataset]. International Council on Clean Transport (ICCT) and European Environment Agency [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/176392.metadata.json"
+    },
+    "battery_electric_share": {
+      "titleShort": "Battery electric",
+      "titleLong": "Battery electric",
+      "unit": "",
+      "timespan": "",
+      "type": "Numeric",
+      "owidVariableId": 176394,
+      "citationShort": " – processed by Our World in Data",
+      "citationLong": " – processed by Our World in Data. “Battery electric” [dataset]. International Council on Clean Transport (ICCT) and European Environment Agency [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/176394.metadata.json"
+    },
+    "petrol_share": {
+      "titleShort": "Petrol",
+      "titleLong": "Petrol",
+      "unit": "",
+      "timespan": "",
+      "type": "Numeric",
+      "owidVariableId": 176395,
+      "citationShort": " – processed by Our World in Data",
+      "citationLong": " – processed by Our World in Data. “Petrol” [dataset]. International Council on Clean Transport (ICCT) and European Environment Agency [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/176395.metadata.json"
+    },
+    "diesel_gas_share": {
+      "titleShort": "Diesel",
+      "titleLong": "Diesel",
+      "unit": "",
+      "timespan": "",
+      "type": "Numeric",
+      "owidVariableId": 176408,
+      "citationShort": " – processed by Our World in Data",
+      "citationLong": " – processed by Our World in Data. “Diesel” [dataset]. International Council on Clean Transport (ICCT) and European Environment Agency [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/176408.metadata.json"
+    },
+    "full_mild_hybrid_share": {
+      "titleShort": "Full hybrid",
+      "titleLong": "Full hybrid",
+      "unit": "",
+      "timespan": "",
+      "type": "Numeric",
+      "owidVariableId": 176407,
+      "citationShort": " – processed by Our World in Data",
+      "citationLong": " – processed by Our World in Data. “Full hybrid” [dataset]. International Council on Clean Transport (ICCT) and European Environment Agency [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/176407.metadata.json"
+    }
+  },
+  "dateDownloaded": "2026-01-22",
+  "activeFilters": {}
+}

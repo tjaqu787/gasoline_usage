@@ -1,0 +1,44 @@
+{
+  "chart": {
+    "title": "Average carbon intensity of new passenger vehicles",
+    "subtitle": "Carbon intensity of newly registered passenger vehicles is measured in grams of carbon dioxide emitted per kilometer driven (grams CO₂ per km).",
+    "citation": "International Council on Clean Transport (ICCT) and European Environment Agency",
+    "originalChartUrl": "https://ourworldindata.org/grapher/carbon-new-passenger-vehicles?v=1&csvType=full&useColumnShortNames=false",
+    "selection": [
+      "Austria",
+      "Italy",
+      "Luxembourg",
+      "Netherlands",
+      "Norway",
+      "Portugal",
+      "Spain",
+      "Sweden",
+      "Switzerland",
+      "Turkey",
+      "United Kingdom",
+      "Ireland",
+      "Iceland",
+      "Greece",
+      "Germany",
+      "France",
+      "Finland",
+      "Denmark",
+      "Belgium"
+    ]
+  },
+  "columns": {
+    "co2_per_km": {
+      "titleShort": "Average carbon intensity of new passenger vehicles",
+      "titleLong": "Average carbon intensity of new passenger vehicles",
+      "unit": "",
+      "timespan": "",
+      "type": "Numeric",
+      "owidVariableId": 176396,
+      "citationShort": " – processed by Our World in Data",
+      "citationLong": " – processed by Our World in Data. “Average carbon intensity of new passenger vehicles” [dataset]. International Council on Clean Transport (ICCT) and European Environment Agency [original data].",
+      "fullMetadata": "https://api.ourworldindata.org/v1/indicators/176396.metadata.json"
+    }
+  },
+  "dateDownloaded": "2026-01-22",
+  "activeFilters": {}
+}

@@ -1,0 +1,36 @@
+Scraping completed at 2026-01-23 00:28:14.687763
+Duration: 30.9 minutes
+
+Successful: 26/27
+Failed: 1/27
+
+Successful countries:
+  ✓ australia (1 files)
+  ✓ austria (1 files)
+  ✓ belgium (1 files)
+  ✓ brazil (1 files)
+  ✓ canada (1 files)
+  ✓ denmark (1 files)
+  ✓ finland (1 files)
+  ✓ germany (1 files)
+  ✓ greece (1 files)
+  ✓ iceland (1 files)
+  ✓ ireland (1 files)
+  ✓ italy (1 files)
+  ✓ japan (1 files)
+  ✓ korea (1 files)
+  ✓ latvia (1 files)
+  ✓ luxembourg (1 files)
+  ✓ new-zealand (1 files)
+  ✓ norway (1 files)
+  ✓ portugal (1 files)
+  ✓ slovenia (1 files)
+  ✓ spain (1 files)
+  ✓ sweden (1 files)
+  ✓ switzerland (1 files)
+  ✓ turkiye (1 files)
+  ✓ united-kingdom (1 files)
+  ✓ united-states (1 files)
+
+Failed countries:
+  ✗ netherlands

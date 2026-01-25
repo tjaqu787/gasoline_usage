@@ -1,0 +1,169 @@
+"oil final consumption by product in Slovenia",Value,Year,Units
+"LPG/Ethane",3851,2000, TJ
+"LPG/Ethane",3684,2001, TJ
+"LPG/Ethane",3516,2002, TJ
+"LPG/Ethane",3684,2003, TJ
+"LPG/Ethane",3475,2004, TJ
+"LPG/Ethane",3726,2005, TJ
+"LPG/Ethane",3475,2006, TJ
+"LPG/Ethane",3516,2007, TJ
+"LPG/Ethane",3558,2008, TJ
+"LPG/Ethane",3349,2009, TJ
+"LPG/Ethane",3558,2010, TJ
+"LPG/Ethane",3349,2011, TJ
+"LPG/Ethane",3516,2012, TJ
+"LPG/Ethane",3223,2013, TJ
+"LPG/Ethane",3098,2014, TJ
+"LPG/Ethane",3433,2015, TJ
+"LPG/Ethane",3349,2016, TJ
+"LPG/Ethane",3503,2017, TJ
+"LPG/Ethane",3760,2018, TJ
+"LPG/Ethane",3798,2019, TJ
+"LPG/Ethane",3327,2020, TJ
+"LPG/Ethane",3348,2021, TJ
+"LPG/Ethane",3249,2022, TJ
+"LPG/Ethane",3037,2023, TJ
+"Naphtha",418,2000, TJ
+"Naphtha",,2001, TJ
+"Naphtha",,2002, TJ
+"Naphtha",,2003, TJ
+"Naphtha",,2004, TJ
+"Naphtha",,2005, TJ
+"Naphtha",,2006, TJ
+"Naphtha",,2007, TJ
+"Naphtha",,2008, TJ
+"Naphtha",,2009, TJ
+"Naphtha",,2010, TJ
+"Naphtha",,2011, TJ
+"Naphtha",,2012, TJ
+"Naphtha",,2013, TJ
+"Naphtha",,2014, TJ
+"Naphtha",,2015, TJ
+"Naphtha",,2016, TJ
+"Naphtha",,2017, TJ
+"Naphtha",,2018, TJ
+"Naphtha",,2019, TJ
+"Naphtha",,2020, TJ
+"Naphtha",,2021, TJ
+"Naphtha",,2022, TJ
+"Naphtha",,2023, TJ
+"Motor gasoline",33829,2000, TJ
+"Motor gasoline",33536,2001, TJ
+"Motor gasoline",32154,2002, TJ
+"Motor gasoline",31401,2003, TJ
+"Motor gasoline",27925,2004, TJ
+"Motor gasoline",27465,2005, TJ
+"Motor gasoline",26837,2006, TJ
+"Motor gasoline",25958,2007, TJ
+"Motor gasoline",27130,2008, TJ
+"Motor gasoline",24785,2009, TJ
+"Motor gasoline",24199,2010, TJ
+"Motor gasoline",23487,2011, TJ
+"Motor gasoline",21227,2012, TJ
+"Motor gasoline",19343,2013, TJ
+"Motor gasoline",18128,2014, TJ
+"Motor gasoline",17710,2015, TJ
+"Motor gasoline",17542,2016, TJ
+"Motor gasoline",17120,2017, TJ
+"Motor gasoline",17242,2018, TJ
+"Motor gasoline",16522,2019, TJ
+"Motor gasoline",13079,2020, TJ
+"Motor gasoline",14833,2021, TJ
+"Motor gasoline",17262,2022, TJ
+"Motor gasoline",18348,2023, TJ
+"Gas/Diesel",47980,2000, TJ
+"Gas/Diesel",52083,2001, TJ
+"Gas/Diesel",52795,2002, TJ
+"Gas/Diesel",54805,2003, TJ
+"Gas/Diesel",59661,2004, TJ
+"Gas/Diesel",61545,2005, TJ
+"Gas/Diesel",64602,2006, TJ
+"Gas/Diesel",65523,2007, TJ
+"Gas/Diesel",80679,2008, TJ
+"Gas/Diesel",67658,2009, TJ
+"Gas/Diesel",70380,2010, TJ
+"Gas/Diesel",71133,2011, TJ
+"Gas/Diesel",70421,2012, TJ
+"Gas/Diesel",66193,2013, TJ
+"Gas/Diesel",65104,2014, TJ
+"Gas/Diesel",65104,2015, TJ
+"Gas/Diesel",70296,2016, TJ
+"Gas/Diesel",70981,2017, TJ
+"Gas/Diesel",70499,2018, TJ
+"Gas/Diesel",67940,2019, TJ
+"Gas/Diesel",58277,2020, TJ
+"Gas/Diesel",62979,2021, TJ
+"Gas/Diesel",69019,2022, TJ
+"Gas/Diesel",62873,2023, TJ
+"Other kerosene",,2000, TJ
+"Other kerosene",125,2001, TJ
+"Other kerosene",83,2002, TJ
+"Other kerosene",83,2003, TJ
+"Other kerosene",41,2004, TJ
+"Other kerosene",41,2005, TJ
+"Other kerosene",41,2006, TJ
+"Other kerosene",41,2007, TJ
+"Other kerosene",41,2008, TJ
+"Other kerosene",,2009, TJ
+"Other kerosene",,2010, TJ
+"Other kerosene",,2011, TJ
+"Other kerosene",,2012, TJ
+"Other kerosene",,2013, TJ
+"Other kerosene",,2014, TJ
+"Other kerosene",,2015, TJ
+"Other kerosene",,2016, TJ
+"Other kerosene",4,2017, TJ
+"Other kerosene",3,2018, TJ
+"Other kerosene",3,2019, TJ
+"Other kerosene",2,2020, TJ
+"Other kerosene",2,2021, TJ
+"Other kerosene",4,2022, TJ
+"Other kerosene",1,2023, TJ
+"Fuel oil",4270,2000, TJ
+"Fuel oil",4228,2001, TJ
+"Fuel oil",3014,2002, TJ
+"Fuel oil",2177,2003, TJ
+"Fuel oil",1967,2004, TJ
+"Fuel oil",1842,2005, TJ
+"Fuel oil",1800,2006, TJ
+"Fuel oil",711,2007, TJ
+"Fuel oil",628,2008, TJ
+"Fuel oil",669,2009, TJ
+"Fuel oil",334,2010, TJ
+"Fuel oil",293,2011, TJ
+"Fuel oil",334,2012, TJ
+"Fuel oil",293,2013, TJ
+"Fuel oil",251,2014, TJ
+"Fuel oil",125,2015, TJ
+"Fuel oil",41,2016, TJ
+"Fuel oil",8,2017, TJ
+"Fuel oil",8,2018, TJ
+"Fuel oil",,2019, TJ
+"Fuel oil",,2020, TJ
+"Fuel oil",,2021, TJ
+"Fuel oil",,2022, TJ
+"Fuel oil",,2023, TJ
+"Other oil products",4898,2000, TJ
+"Other oil products",5191,2001, TJ
+"Other oil products",5024,2002, TJ
+"Other oil products",6280,2003, TJ
+"Other oil products",9755,2004, TJ
+"Other oil products",9420,2005, TJ
+"Other oil products",11136,2006, TJ
+"Other oil products",9713,2007, TJ
+"Other oil products",10592,2008, TJ
+"Other oil products",7829,2009, TJ
+"Other oil products",6908,2010, TJ
+"Other oil products",6363,2011, TJ
+"Other oil products",6196,2012, TJ
+"Other oil products",6657,2013, TJ
+"Other oil products",8122,2014, TJ
+"Other oil products",6573,2015, TJ
+"Other oil products",6698,2016, TJ
+"Other oil products",7255,2017, TJ
+"Other oil products",7987,2018, TJ
+"Other oil products",8340,2019, TJ
+"Other oil products",7961,2020, TJ
+"Other oil products",8297,2021, TJ
+"Other oil products",6757,2022, TJ
+"Other oil products",5558,2023, TJ
