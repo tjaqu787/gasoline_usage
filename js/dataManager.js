@@ -169,39 +169,34 @@ export class DataManager {
                     label: 'Population',
                     data: years.map(year => (countryData[year].pop / baseData.pop) * 100),
                     borderColor: '#4FC3F7',
-                    backgroundColor: 'rgba(79, 195, 247, 0.1)',
                     yAxisID: 'y',
-                    fill: true
+                    fill: false
                 },
                 {
                     label: 'Cars/Population',
                     data: years.map(year => (countryData[year].cars_per_pop / baseData.cars_per_pop) * 100),
                     borderColor: '#81C784',
-                    backgroundColor: 'rgba(129, 199, 132, 0.1)',
                     yAxisID: 'y',
-                    fill: true
+                    fill: false
                 },
                 {
                     label: 'Km/Vehicle',
                     data: years.map(year => (countryData[year].km_per_veh / baseData.km_per_veh) * 100),
                     borderColor: '#FFD54F',
-                    backgroundColor: 'rgba(255, 213, 79, 0.1)',
                     yAxisID: 'y',
-                    fill: true
+                    fill: false
                 },
                 {
                     label: 'Gasoline/Km',
                     data: years.map(year => (countryData[year].gasoline_per_km / baseData.gasoline_per_km) * 100),
                     borderColor: '#FF6B6B',
-                    backgroundColor: 'rgba(255, 107, 107, 0.1)',
                     yAxisID: 'y',
-                    fill: true
+                    fill: false
                 },
                 {
                     label: 'Total Gasoline',
                     data: years.map(year => (countryData[year].gasoline_total / baseData.gasoline_total) * 100),
                     borderColor: '#AB47BC',
-                    backgroundColor: 'rgba(171, 71, 188, 0.2)',
                     yAxisID: 'y',
                     borderWidth: 3,
                     fill: false
@@ -214,39 +209,34 @@ export class DataManager {
                     label: 'Population (millions)',
                     data: years.map(year => countryData[year].pop / 1_000_000),
                     borderColor: '#4FC3F7',
-                    backgroundColor: 'rgba(79, 195, 247, 0.1)',
                     yAxisID: 'y',
-                    fill: true
+                    fill: false
                 },
                 {
                     label: 'Cars/Population (cars per person)',
                     data: years.map(year => countryData[year].cars_per_pop),
                     borderColor: '#81C784',
-                    backgroundColor: 'rgba(129, 199, 132, 0.1)',
                     yAxisID: 'y1',
-                    fill: true
+                    fill: false
                 },
                 {
                     label: 'Km/Vehicle (thousand km/year)',
                     data: years.map(year => countryData[year].km_per_veh / 1000),
                     borderColor: '#FFD54F',
-                    backgroundColor: 'rgba(255, 213, 79, 0.1)',
                     yAxisID: 'y2',
-                    fill: true
+                    fill: false
                 },
                 {
                     label: 'Gasoline/Km (TJ per million km)',
                     data: years.map(year => countryData[year].gasoline_per_km * 1_000_000),
                     borderColor: '#FF6B6B',
-                    backgroundColor: 'rgba(255, 107, 107, 0.1)',
                     yAxisID: 'y3',
-                    fill: true
+                    fill: false
                 },
                 {
                     label: 'Total Gasoline (thousand TJ)',
                     data: years.map(year => countryData[year].gasoline_total / 1000),
                     borderColor: '#AB47BC',
-                    backgroundColor: 'rgba(171, 71, 188, 0.2)',
                     yAxisID: 'y4',
                     borderWidth: 3,
                     fill: false
