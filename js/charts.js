@@ -3,6 +3,7 @@ export class ChartsManager {
     constructor() {
         this.oilProductsChart = null;
         this.kayaChart = null;
+        this.evChart = null;
     }
 
     updateOilProductsChart(data, indexed = false) {
@@ -212,6 +213,90 @@ export class ChartsManager {
                         text: chartTitle,
                         color: '#e0e0e0',
                         font: { size: 12, style: 'italic' }
+                    }
+                },
+                elements: {
+                    line: { tension: 0.3, borderWidth: 2 },
+                    point: { radius: 2, hoverRadius: 4 }
+                }
+            }
+        });
+    }
+
+    updateEVChart(data) {
+        const canvas = document.getElementById('ev-chart');
+        const ctx = canvas.getContext('2d');
+
+        if (this.evChart) {
+            this.evChart.destroy();
+        }
+
+        if (!data) {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = '#888';
+            ctx.font = '14px sans-serif';
+            ctx.textAlign = 'center';
+            ctx.fillText('No EV stock data available for this country', canvas.width / 2, canvas.height / 2);
+            return;
+        }
+
+        const isShare = data.mode === 'share';
+        const chartType = isShare ? 'bar' : 'line';
+
+        this.evChart = new Chart(ctx, {
+            type: chartType,
+            data: data,
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                scales: {
+                    x: {
+                        stacked: isShare,
+                        grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                        ticks: { color: '#e0e0e0' }
+                    },
+                    y: {
+                        stacked: isShare,
+                        grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                        ticks: { color: '#e0e0e0' },
+                        title: {
+                            display: true,
+                            text: isShare ? 'Share (%)' : 'Vehicles',
+                            color: '#e0e0e0'
+                        },
+                        max: isShare ? 100 : undefined
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'bottom',
+                        labels: { color: '#e0e0e0', boxWidth: 15, font: { size: 11 } }
+                    },
+                    tooltip: {
+                        mode: 'index',
+                        intersect: false,
+                        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                        titleColor: '#4fc3f7',
+                        bodyColor: '#e0e0e0',
+                        borderColor: '#4fc3f7',
+                        borderWidth: 1,
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.dataset.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed.y !== null) {
+                                    if (isShare) {
+                                        label += context.parsed.y.toFixed(1) + '%';
+                                    } else {
+                                        label += context.parsed.y.toLocaleString();
+                                    }
+                                }
+                                return label;
+                            }
+                        }
                     }
                 },
                 elements: {

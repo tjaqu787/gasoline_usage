@@ -54,10 +54,10 @@ def calculate_kaya_components(conn):
             pop_result = cursor.fetchone()
             population = pop_result[0] if pop_result else None
 
-            # Get vehicles
+            # Get vehicles (total fleet)
             cursor.execute("""
                 SELECT vehicles FROM cars_data
-                WHERE country_code = ? AND year = ?
+                WHERE country_code = ? AND year = ? AND measure = 'VEH_STOCK_TOTAL'
             """, (oecd_code, year))
             veh_result = cursor.fetchone()
             vehicles = veh_result[0] if veh_result else None
@@ -156,6 +156,42 @@ def export_to_json():
     kaya_countries = len(kaya_data)
     print(f"  ✓ Exported Kaya data for {kaya_countries} countries, {kaya_count} country-years")
 
+    # Export EV stock data
+    print("Exporting EV stock data...")
+    cursor.execute("""
+        SELECT country_code, year, measure, vehicles
+        FROM cars_data
+        WHERE vehicles IS NOT NULL
+        AND measure IN ('VEH_STOCK_TOTAL', 'VEH_STOCK_ELECTRIC', 'VEH_STOCK_HYBRID')
+        ORDER BY country_code, year, measure
+    """)
+
+    ev_stock = defaultdict(lambda: defaultdict(dict))
+    for row in cursor.fetchall():
+        country_code, year, measure, value = row
+        # Use shorter measure names
+        measure_name = measure.replace('VEH_STOCK_', '').lower()
+        ev_stock[country_code][year][measure_name] = value
+
+    ev_stock_dict = {
+        country: {
+            year: dict(measures)
+            for year, measures in years.items()
+        }
+        for country, years in ev_stock.items()
+    }
+
+    with open(output_dir / 'ev_stock.json', 'w') as f:
+        json.dump(ev_stock_dict, f, indent=2)
+
+    ev_count = sum(
+        len(years) * len(measures)
+        for years in ev_stock_dict.values()
+        for measures in years.values()
+    )
+    ev_countries = len(ev_stock_dict)
+    print(f"  ✓ Exported EV stock data for {ev_countries} countries, {ev_count} records")
+
     # Create summary
     print("Creating summary...")
     cursor.execute("SELECT DISTINCT year FROM oil_final_consumption_data ORDER BY year")
@@ -170,7 +206,9 @@ def export_to_json():
         'total_countries': len(countries),
         'total_records': total_records,
         'kaya_countries': kaya_countries,
-        'kaya_records': kaya_count
+        'kaya_records': kaya_count,
+        'ev_countries': ev_countries,
+        'ev_records': ev_count
     }
 
     with open(output_dir / 'summary.json', 'w') as f:
@@ -186,6 +224,7 @@ def export_to_json():
     print(f"  - countries.json ({len(countries)} countries)")
     print(f"  - oil_consumption.json ({total_records:,} records)")
     print(f"  - kaya_data.json ({kaya_countries} countries, {kaya_count} country-years)")
+    print(f"  - ev_stock.json ({ev_countries} countries, {ev_count} records)")
     print(f"  - summary.json")
     print("="*70)
 

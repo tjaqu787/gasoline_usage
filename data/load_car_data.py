@@ -68,8 +68,9 @@ def load_cars_data(conn):
             country_code TEXT NOT NULL,
             country_name TEXT NOT NULL,
             year INTEGER NOT NULL,
+            measure TEXT NOT NULL,
             vehicles REAL,
-            UNIQUE(country_code, year)
+            UNIQUE(country_code, year, measure)
         )
     """)
 
@@ -78,14 +79,15 @@ def load_cars_data(conn):
         country_code = row['REF_AREA']
         country_name = row['Reference area']
         year = row['TIME_PERIOD']
+        measure = row['MEASURE']
         vehicles = row['OBS_VALUE']
 
         if pd.notna(vehicles) and pd.notna(year):
             # Vehicles are in thousands, multiply by 1000
             cursor.execute("""
-                INSERT OR REPLACE INTO cars_data (country_code, country_name, year, vehicles)
-                VALUES (?, ?, ?, ?)
-            """, (country_code, country_name, int(year), float(vehicles) * 1000))
+                INSERT OR REPLACE INTO cars_data (country_code, country_name, year, measure, vehicles)
+                VALUES (?, ?, ?, ?, ?)
+            """, (country_code, country_name, int(year), measure, float(vehicles) * 1000))
             count += 1
 
     conn.commit()
@@ -94,7 +96,7 @@ def load_cars_data(conn):
 
 
 def load_km_driven_data(conn):
-    """Load OECD road km driven data (passenger-km)."""
+    """Load OECD road km driven data (passenger-km for cars)."""
     print("Loading km driven data...")
 
     df = pd.read_csv('road_miles_driven.csv')
@@ -130,6 +132,50 @@ def load_km_driven_data(conn):
 
     conn.commit()
     print(f"  ✓ Loaded {count:,} km driven records")
+    return count
+
+
+def load_ev_stock_data(conn):
+    """Load electric and hybrid vehicle stock data."""
+    print("Loading EV stock data...")
+
+    df = pd.read_csv('cars_on_the_road.csv')
+
+    # Filter for EV measures
+    df = df[df['MEASURE'].isin(['VEH_STOCK_TOTAL', 'VEH_STOCK_ELECTRIC', 'VEH_STOCK_HYBRID'])]
+
+    cursor = conn.cursor()
+
+    # Create EV stock table
+    cursor.execute("""
+        CREATE TABLE IF NOT EXISTS ev_stock_data (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            country_code TEXT NOT NULL,
+            country_name TEXT NOT NULL,
+            year INTEGER NOT NULL,
+            measure TEXT NOT NULL,
+            value REAL,
+            UNIQUE(country_code, year, measure)
+        )
+    """)
+
+    count = 0
+    for _, row in df.iterrows():
+        country_code = row['REF_AREA']
+        country_name = row['Reference area']
+        year = row['TIME_PERIOD']
+        measure = row['MEASURE']
+        value = row['OBS_VALUE']
+
+        if pd.notna(value) and pd.notna(year):
+            cursor.execute("""
+                INSERT OR REPLACE INTO ev_stock_data (country_code, country_name, year, measure, value)
+                VALUES (?, ?, ?, ?, ?)
+            """, (country_code, country_name, int(year), measure, float(value)))
+            count += 1
+
+    conn.commit()
+    print(f"  ✓ Loaded {count:,} EV stock records")
     return count
 
 
@@ -205,12 +251,14 @@ def main():
         pop_count = load_population_data(conn)
         cars_count = load_cars_data(conn)
         km_count = load_km_driven_data(conn)
+        ev_count = load_ev_stock_data(conn)
 
         # Create index for faster queries
         cursor = conn.cursor()
         cursor.execute("CREATE INDEX IF NOT EXISTS idx_pop_country_year ON population_data(country_code, year)")
         cursor.execute("CREATE INDEX IF NOT EXISTS idx_cars_country_year ON cars_data(country_code, year)")
         cursor.execute("CREATE INDEX IF NOT EXISTS idx_km_country_year ON km_driven_data(country_code, year)")
+        cursor.execute("CREATE INDEX IF NOT EXISTS idx_ev_country_year ON ev_stock_data(country_code, year, measure)")
         conn.commit()
 
         print(f"\n{'='*70}")
@@ -220,6 +268,7 @@ def main():
         print(f"  Population: {pop_count:,}")
         print(f"  Vehicles: {cars_count:,}")
         print(f"  Km driven: {km_count:,}")
+        print(f"  EV stock: {ev_count:,}")
         print(f"{'='*70}")
 
     finally:

@@ -5,20 +5,23 @@ export class DataManager {
         this.oilConsumption = {};
         this.summary = {};
         this.kayaData = {};
+        this.evStock = {};
     }
 
     async loadAll() {
-        const [countries, oilConsumption, summary, kayaData] = await Promise.all([
+        const [countries, oilConsumption, summary, kayaData, evStock] = await Promise.all([
             fetch('data/countries.json').then(r => r.json()),
             fetch('data/oil_consumption.json').then(r => r.json()),
             fetch('data/summary.json').then(r => r.json()),
-            fetch('data/kaya_data.json').then(r => r.json())
+            fetch('data/kaya_data.json').then(r => r.json()),
+            fetch('data/ev_stock.json').then(r => r.json())
         ]);
 
         this.countries = countries;
         this.oilConsumption = oilConsumption;
         this.summary = summary;
         this.kayaData = kayaData;
+        this.evStock = evStock;
     }
 
     getYears() {
@@ -245,5 +248,93 @@ export class DataManager {
         }
 
         return { labels: years, datasets, indexed, baseYear };
+    }
+
+    getEVData(countryCode, mode = 'absolute') {
+        // Get EV stock data
+        const countryData = this.evStock[countryCode];
+        if (!countryData) return null;
+
+        const years = Object.keys(countryData).map(Number).sort((a, b) => a - b);
+        if (years.length === 0) return null;
+
+        if (mode === 'share') {
+            // Calculate share for each year - bar chart
+            const electricShare = [];
+            const hybridShare = [];
+            const conventionalShare = [];
+
+            years.forEach(year => {
+                const total = countryData[year].total || 0;
+                const electric = countryData[year].electric || 0;
+                const hybrid = countryData[year].hybrid || 0;
+                const conventional = total - electric - hybrid;
+
+                if (total > 0) {
+                    electricShare.push((electric / total) * 100);
+                    hybridShare.push((hybrid / total) * 100);
+                    conventionalShare.push((conventional / total) * 100);
+                } else {
+                    electricShare.push(0);
+                    hybridShare.push(0);
+                    conventionalShare.push(0);
+                }
+            });
+
+            return {
+                labels: years,
+                datasets: [
+                    {
+                        label: 'Electric',
+                        data: electricShare,
+                        backgroundColor: '#4FC3F7',
+                        borderWidth: 0
+                    },
+                    {
+                        label: 'Hybrid',
+                        data: hybridShare,
+                        backgroundColor: '#81C784',
+                        borderWidth: 0
+                    },
+                    {
+                        label: 'Conventional',
+                        data: conventionalShare,
+                        backgroundColor: '#BDBDBD',
+                        borderWidth: 0
+                    }
+                ],
+                mode: 'share'
+            };
+        } else {
+            // Absolute values - line chart
+            return {
+                labels: years,
+                datasets: [
+                    {
+                        label: 'Total Fleet',
+                        data: years.map(year => countryData[year].total || 0),
+                        borderColor: '#AB47BC',
+                        backgroundColor: 'transparent',
+                        borderWidth: 3,
+                        fill: false
+                    },
+                    {
+                        label: 'Electric',
+                        data: years.map(year => countryData[year].electric || 0),
+                        borderColor: '#4FC3F7',
+                        backgroundColor: 'transparent',
+                        fill: false
+                    },
+                    {
+                        label: 'Hybrid',
+                        data: years.map(year => countryData[year].hybrid || 0),
+                        borderColor: '#81C784',
+                        backgroundColor: 'transparent',
+                        fill: false
+                    }
+                ],
+                mode: 'absolute'
+            };
+        }
     }
 }

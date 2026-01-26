@@ -15,6 +15,7 @@ class App {
         this.currentSort = 'value-desc';
         this.kayaMode = 'indexed';
         this.oilMode = 'absolute';
+        this.evMode = 'absolute';
 
         this.init();
     }
@@ -136,6 +137,13 @@ class App {
 
         document.getElementById('oil-mode-select').addEventListener('change', (e) => {
             this.oilMode = e.target.value;
+            if (this.selectedCountry) {
+                this.updateCharts();
+            }
+        });
+
+        document.getElementById('ev-mode-select').addEventListener('change', (e) => {
+            this.evMode = e.target.value;
             if (this.selectedCountry) {
                 this.updateCharts();
             }
@@ -267,7 +275,7 @@ class App {
     updateCharts() {
         if (!this.selectedCountry) return;
 
-        console.log('Updating charts - kayaMode:', this.kayaMode, 'oilMode:', this.oilMode);
+        console.log('Updating charts - kayaMode:', this.kayaMode, 'oilMode:', this.oilMode, 'evMode:', this.evMode);
 
         // Get data for oil products chart
         const oilData = this.dataManager.getOilConsumptionTimeSeries(
@@ -283,12 +291,20 @@ class App {
             this.baseYear
         );
 
+        // Get data for EV chart
+        const evData = this.dataManager.getEVData(
+            this.selectedCountry,
+            this.evMode
+        );
+
         console.log('Oil data sample:', oilData?.datasets[0]?.data?.slice(0, 3));
         console.log('Kaya data sample:', kayaData?.datasets[0]?.data?.slice(0, 3));
+        console.log('EV data sample:', evData?.datasets[0]?.data?.slice(0, 3));
 
         // Update charts
         this.chartsManager.updateOilProductsChart(oilData, this.oilMode === 'indexed');
         this.chartsManager.updateKayaChart(kayaData, this.kayaMode === 'indexed');
+        this.chartsManager.updateEVChart(evData);
     }
 
     closeDetail() {
