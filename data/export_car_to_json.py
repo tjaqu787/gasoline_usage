@@ -94,8 +94,8 @@ def calculate_kaya_components(conn):
 
 def export_to_json():
     """Export all data to JSON files."""
-    db_path = Path('data/iea_oil.db')
-    output_dir = Path('data')
+    db_path = Path('iea_oil.db')
+    output_dir = Path('.')
 
     print("Connecting to database...")
     conn = sqlite3.connect(db_path)
@@ -158,6 +158,11 @@ def export_to_json():
 
     # Export EV stock data
     print("Exporting EV stock data...")
+
+    # Get reverse mapping from OECD codes to IEA codes
+    cursor.execute("SELECT oecd_code, iea_code FROM country_code_mapping")
+    oecd_to_iea = {row[0]: row[1] for row in cursor.fetchall()}
+
     cursor.execute("""
         SELECT country_code, year, measure, vehicles
         FROM cars_data
@@ -168,10 +173,12 @@ def export_to_json():
 
     ev_stock = defaultdict(lambda: defaultdict(dict))
     for row in cursor.fetchall():
-        country_code, year, measure, value = row
+        oecd_code, year, measure, value = row
+        # Convert OECD code to IEA code
+        iea_code = oecd_to_iea.get(oecd_code, oecd_code)
         # Use shorter measure names
         measure_name = measure.replace('VEH_STOCK_', '').lower()
-        ev_stock[country_code][year][measure_name] = value
+        ev_stock[iea_code][year][measure_name] = value
 
     ev_stock_dict = {
         country: {

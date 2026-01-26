@@ -83,11 +83,11 @@ def load_cars_data(conn):
         vehicles = row['OBS_VALUE']
 
         if pd.notna(vehicles) and pd.notna(year):
-            # Vehicles are in thousands, multiply by 1000
+            # Vehicles are already in units (UNIT_MULT = 0)
             cursor.execute("""
                 INSERT OR REPLACE INTO cars_data (country_code, country_name, year, measure, vehicles)
                 VALUES (?, ?, ?, ?, ?)
-            """, (country_code, country_name, int(year), measure, float(vehicles) * 1000))
+            """, (country_code, country_name, int(year), measure, float(vehicles)))
             count += 1
 
     conn.commit()
