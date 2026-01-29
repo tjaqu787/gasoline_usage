@@ -1986,6 +1986,105 @@
       "km_per_veh": 13575.451058226214,
       "gasoline_per_km": 4.097320491055219e-06,
       "kaya_product": 3340234.0
+    },
+    "2014": {
+      "gasoline_total": 3208261.0,
+      "population": 127276000.0,
+      "vehicles": 60051338.0,
+      "km_total": 803743000000.0,
+      "pop": 127276000.0,
+      "cars_per_pop": 0.4718198089191992,
+      "km_per_veh": 13384.264643695366,
+      "gasoline_per_km": 3.991650316083623e-06,
+      "kaya_product": 3208260.9999999995
+    },
+    "2015": {
+      "gasoline_total": 3196970.0,
+      "population": 127141000.0,
+      "vehicles": 60517249.0,
+      "km_total": 808492000000.0,
+      "pop": 127141000.0,
+      "cars_per_pop": 0.4759853155158446,
+      "km_per_veh": 13359.69518376488,
+      "gasoline_per_km": 3.954238260860961e-06,
+      "kaya_product": 3196970.0000000005
+    },
+    "2016": {
+      "gasoline_total": 3156145.0,
+      "population": 127076000.0,
+      "vehicles": 60831892.0,
+      "km_total": 821360000000.0,
+      "pop": 127076000.0,
+      "cars_per_pop": 0.47870480657244485,
+      "km_per_veh": 13502.128127134365,
+      "gasoline_per_km": 3.842584250511347e-06,
+      "kaya_product": 3156144.9999999995
+    },
+    "2017": {
+      "gasoline_total": 3138231.0,
+      "population": 126972000.0,
+      "vehicles": 61253300.0,
+      "km_total": 835152000000.0,
+      "pop": 126972000.0,
+      "cars_per_pop": 0.48241580820968405,
+      "km_per_veh": 13634.400105790219,
+      "gasoline_per_km": 3.7576764469222367e-06,
+      "kaya_product": 3138231.0
+    },
+    "2018": {
+      "gasoline_total": 3088843.0,
+      "population": 126811000.0,
+      "vehicles": 61584906.0,
+      "km_total": 847820000000.0,
+      "pop": 126811000.0,
+      "cars_per_pop": 0.4856432486140792,
+      "km_per_veh": 13766.68497310039,
+      "gasoline_per_km": 3.643276874808332e-06,
+      "kaya_product": 3088843.0
+    },
+    "2019": {
+      "gasoline_total": 3011809.0,
+      "population": 126633000.0,
+      "vehicles": 61770573.0,
+      "km_total": 844042000000.0,
+      "pop": 126633000.0,
+      "cars_per_pop": 0.48779206841818484,
+      "km_per_veh": 13664.143928209958,
+      "gasoline_per_km": 3.5683165055767365e-06,
+      "kaya_product": 3011809.0
+    },
+    "2020": {
+      "gasoline_total": 2841721.0,
+      "population": 126261000.0,
+      "vehicles": 61808586.0,
+      "km_total": 743847000000.0,
+      "pop": 126261000.0,
+      "cars_per_pop": 0.4895303062703448,
+      "km_per_veh": 12034.687219668802,
+      "gasoline_per_km": 3.82030309996545e-06,
+      "kaya_product": 2841721.0
+    },
+    "2021": {
+      "gasoline_total": 2789318.0,
+      "population": 125681593.0,
+      "vehicles": 61917112.0,
+      "km_total": 720282000000.0,
+      "pop": 125681593.0,
+      "cars_per_pop": 0.4926505984054483,
+      "km_per_veh": 11633.003813226947,
+      "gasoline_per_km": 3.8725360344975995e-06,
+      "kaya_product": 2789318.0
+    },
+    "2022": {
+      "gasoline_total": 2815595.0,
+      "population": 125124989.0,
+      "vehicles": 61867152.0,
+      "km_total": 776299000000.0,
+      "pop": 125124989.0,
+      "cars_per_pop": 0.4944428166942736,
+      "km_per_veh": 12547.837986788207,
+      "gasoline_per_km": 3.6269465759971353e-06,
+      "kaya_product": 2815595.0
     }
   },
   "korea": {
@@ -3952,38 +4051,115 @@
       "gasoline_per_km": 3.803609588636281e-06,
       "kaya_product": 21366077.0
     },
+    "2013": {
+      "gasoline_total": 21572863.0,
+      "population": 316726282.0,
+      "vehicles": 112128355.0,
+      "km_total": 5645133000000.0,
+      "pop": 316726282.0,
+      "cars_per_pop": 0.3540228941278703,
+      "km_per_veh": 50345.27617925011,
+      "gasoline_per_km": 3.821497739734387e-06,
+      "kaya_product": 21572863.0
+    },
+    "2014": {
+      "gasoline_total": 21952815.0,
+      "population": 319257560.0,
+      "vehicles": 112261143.0,
+      "km_total": 5635924000000.0,
+      "pop": 319257560.0,
+      "cars_per_pop": 0.3516319018412595,
+      "km_per_veh": 50203.69336521008,
+      "gasoline_per_km": 3.8951580965250774e-06,
+      "kaya_product": 21952815.000000004
+    },
+    "2015": {
+      "gasoline_total": 22191043.0,
+      "population": 321815121.0,
+      "vehicles": 111411663.0,
+      "km_total": 5839310000000.0,
+      "pop": 321815121.0,
+      "cars_per_pop": 0.3461977257432848,
+      "km_per_veh": 52412.01722300833,
+      "gasoline_per_km": 3.8002851364287902e-06,
+      "kaya_product": 22191043.0
+    },
+    "2016": {
+      "gasoline_total": 22277919.0,
+      "population": 324353340.0,
+      "vehicles": 111490611.0,
+      "km_total": 5954242000000.0,
+      "pop": 324353340.0,
+      "cars_per_pop": 0.34373196526972716,
+      "km_per_veh": 53405.77064377197,
+      "gasoline_per_km": 3.7415205831405574e-06,
+      "kaya_product": 22277919.0
+    },
+    "2017": {
+      "gasoline_total": 22284844.0,
+      "population": 326608609.0,
+      "vehicles": 109749701.0,
+      "km_total": 5970536000000.0,
+      "pop": 326608609.0,
+      "cars_per_pop": 0.33602819391695826,
+      "km_per_veh": 54401.38738965676,
+      "gasoline_per_km": 3.7324695806205673e-06,
+      "kaya_product": 22284844.0
+    },
+    "2018": {
+      "gasoline_total": 22589407.0,
+      "population": 328529577.0,
+      "vehicles": 109813571.0,
+      "km_total": 6002226000000.0,
+      "pop": 328529577.0,
+      "cars_per_pop": 0.3342577919552126,
+      "km_per_veh": 54658.32633746151,
+      "gasoline_per_km": 3.763504906346412e-06,
+      "kaya_product": 22589407.0
+    },
+    "2019": {
+      "gasoline_total": 22353613.0,
+      "population": 330226227.0,
+      "vehicles": 107180635.0,
+      "km_total": 6060622000000.0,
+      "pop": 330226227.0,
+      "cars_per_pop": 0.3245673003434703,
+      "km_per_veh": 56545.86763737685,
+      "gasoline_per_km": 3.6883364446751505e-06,
+      "kaya_product": 22353613.0
+    },
     "2020": {
       "gasoline_total": 19798613.0,
       "population": 331577720.0,
-      "vehicles": 266600610.0,
+      "vehicles": 103796315.0,
       "km_total": 5190318000000.0,
       "pop": 331577720.0,
-      "cars_per_pop": 0.8040365619258133,
-      "km_per_veh": 19468.515094545357,
+      "cars_per_pop": 0.31303766429179863,
+      "km_per_veh": 50004.83880376678,
       "gasoline_per_km": 3.8145279345119124e-06,
-      "kaya_product": 19798612.999999996
+      "kaya_product": 19798613.0
     },
     "2021": {
       "gasoline_total": 21476204.0,
       "population": 332099760.0,
-      "vehicles": 272473578.577,
+      "vehicles": 101346901.0,
       "km_total": 5586349000000.0,
       "pop": 332099760.0,
-      "cars_per_pop": 0.8204570174245234,
-      "km_per_veh": 20502.351197407268,
+      "cars_per_pop": 0.3051700519145211,
+      "km_per_veh": 55121.06383992935,
       "gasoline_per_km": 3.844407859229704e-06,
       "kaya_product": 21476204.0
     },
     "2022": {
       "gasoline_total": 21675217.0,
       "population": 334017321.0,
-      "vehicles": 273833322.4933912,
+      "vehicles": 98293442.0,
       "km_total": 5286162000000.0,
       "pop": 334017321.0,
-      "cars_per_pop": 0.8198177318277192,
-      "km_per_veh": 19304.305085541873,
+      "cars_per_pop": 0.2942764815480931,
+      "km_per_veh": 53779.39659494272,
       "gasoline_per_km": 4.100369417358e-06,
-      "kaya_product": 21675217.0
+      "kaya_product": 21675216.999999996
     }
   }
 }

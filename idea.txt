@@ -13,7 +13,8 @@ ghg intesnsity factors = https://www.epa.gov/climateleadership/ghg-emission-fact
 miles driven = https://data-explorer.oecd.org/vis?fs[0]=Topic%2C1%7CTransport%23TRA%23%7CAnnual%20transport%20trends%23TRA_ATT%23&pg=0&fc=Topic&bp=true&snb=6&df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_TRENDS%40DF_TRENDSPASS&df[ag]=OECD.ITF&df[vs]=1.0&dq=AUS%2BAUT%2BBEL%2BCAN%2BCHL%2BCZE%2BDNK%2BFIN%2BFRA%2BDEU%2BGRC%2BHUN%2BISL%2BITA%2BJPN%2BKOR%2BLTU%2BNLD%2BNZL%2BNOR%2BPOL%2BPRT%2BSVK%2BSVN%2BESP%2BSWE%2BCHE%2BGBR%2BUSA%2BALB%2BARG%2BAZE%2BBGR%2BHRV%2BKAZ%2BMLT%2BMKD%2BSRB.A...ROAD.CARS.&to[TIME_PERIOD]=false&vw=tb&pd=2000%2C2024
 frieght transport = https://data-explorer.oecd.org/vis?lc=en&df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_TRENDS%40DF_TRENDSFREIGHT&df[ag]=OECD.ITF&df[vs]=1.0&dq=AUS%2BAUT%2BBEL%2BCAN%2BCHL%2BCZE%2BDNK%2BEST%2BFIN%2BFRA%2BDEU%2BGRC%2BHUN%2BISL%2BIRL%2BISR%2BITA%2BJPN%2BKOR%2BLVA%2BLTU%2BLUX%2BMEX%2BNLD%2BNZL%2BNOR%2BPOL%2BPRT%2BSVK%2BSVN%2BESP%2BSWE%2BCHE%2BTUR%2BGBR%2BUSA%2BALB%2BARM%2BAZE%2BBIH%2BBGR%2BCHN%2BHRV%2BGEO%2BKAZ%2BLIE%2BMLT%2BMDA%2BMNE%2BMKD%2BSRB%2BUKR%2BUZB.A...RAIL%2BROAD%2BHIRING%2BOWN%2BIWW%2BPIPE%2BCOASTAL..&pd=2000%2C2024&to[TIME_PERIOD]=false&vw=tb
 car registrations = https://data-explorer.oecd.org/vis?fs[0]=Topic%2C1%7CRegional%252C%20rural%20and%20urban%20development%23GEO%23%7CRegions%23GEO_REG%23&fs[1]=Topic%2C2%7CRegional%252C%20rural%20and%20urban%20development%23GEO%23%7CRegions%23GEO_REG%23%7CRegional%20society%23GEO_REG_SOC%23&pg=0&fc=Topic&snb=19&df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_REG_SOC%40DF_VEH&df[ag]=OECD.CFE.EDS&df[vs]=2.2&dq=A.CTRY.JPN%2BNZL%2BOECD%2BAUT%2BBEL%2BCHL%2BCOL%2BCRI%2BCZE%2BDNK%2BEST%2BFIN%2BFRA%2BDEU%2BGRC%2BHUN%2BISL%2BIRL%2BISR%2BITA%2BKOR%2BLVA%2BLTU%2BLUX%2BMEX%2BNLD%2BNOR%2BPOL%2BPRT%2BSVK%2BSVN%2BESP%2BSWE%2BCHE%2BTUR%2BGBR%2BCAN%2BUSA%2BAUS..VEH_STOCK_ELECTRIC%2BVEH_STOCK_HYBRID%2BVEH_STOCK_TOTAL...UT&pd=2000%2C2024&to[TIME_PERIOD]=false&vw=tb
-
+japan total car registrations = https://www.airia.or.jp/publish/statistics/number.html
+us total vehicle registrations = https://www.fhwa.dot.gov/policyinformation/statistics/2010/mv1.cfm
 Instructions:
 alright we want to be able to scrape some data off the iea website I've included some scripts that pull electricity data for refrence , there is a url bellow and the html associated with the button.
 we're looking to pull the oil usage data for only oecd countries you can look at "cars_on_the_road.csv" if you need a list
@@ -33,4 +34,13 @@ visualization I'll bring over some code from a different project we'll update it
     c. the indicators on the left hand side we can select and change the heatmap
     d. the side panel graph will be changed to something like a kaya index with the identity gasoline = pop * cars/pop * km/veh * gasoline/km
     e. I'd like this to be able to be changed to an indexed value where the user can change the base year. both of these will be dropdowns near the top by country
+
+What we want to build. we want to decompose gasoline demand 
+    - we want increases in efficiency
+    - we want to see what ne vehicle efficiency looks like
+    - we want to play with a simulation 
+
+all countries will have an efficiency curve that 
+
+
 
