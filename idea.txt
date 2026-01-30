@@ -15,6 +15,23 @@ frieght transport = https://data-explorer.oecd.org/vis?lc=en&df[ds]=dsDisseminat
 car registrations = https://data-explorer.oecd.org/vis?fs[0]=Topic%2C1%7CRegional%252C%20rural%20and%20urban%20development%23GEO%23%7CRegions%23GEO_REG%23&fs[1]=Topic%2C2%7CRegional%252C%20rural%20and%20urban%20development%23GEO%23%7CRegions%23GEO_REG%23%7CRegional%20society%23GEO_REG_SOC%23&pg=0&fc=Topic&snb=19&df[ds]=dsDisseminateFinalDMZ&df[id]=DSD_REG_SOC%40DF_VEH&df[ag]=OECD.CFE.EDS&df[vs]=2.2&dq=A.CTRY.JPN%2BNZL%2BOECD%2BAUT%2BBEL%2BCHL%2BCOL%2BCRI%2BCZE%2BDNK%2BEST%2BFIN%2BFRA%2BDEU%2BGRC%2BHUN%2BISL%2BIRL%2BISR%2BITA%2BKOR%2BLVA%2BLTU%2BLUX%2BMEX%2BNLD%2BNOR%2BPOL%2BPRT%2BSVK%2BSVN%2BESP%2BSWE%2BCHE%2BTUR%2BGBR%2BCAN%2BUSA%2BAUS..VEH_STOCK_ELECTRIC%2BVEH_STOCK_HYBRID%2BVEH_STOCK_TOTAL...UT&pd=2000%2C2024&to[TIME_PERIOD]=false&vw=tb
 japan total car registrations = https://www.airia.or.jp/publish/statistics/number.html
 us total vehicle registrations = https://www.fhwa.dot.gov/policyinformation/statistics/2010/mv1.cfm
+ACEA Vehicles in Use Report 2023: https://www.acea.auto/files/ACEA-report-vehicles-in-use-europe-2023.pdf
+KBA Germany (Bestand): https://www.kba.de/DE/Statistik/Fahrzeuge/Bestand/bestand_node.html
+Germany Historical by Brand: https://www.best-selling-cars.com/germany/2024-germany-total-number-of-registered-cars-by-brand-kfz-bestand/
+ABS Motor Vehicle Census: https://www.abs.gov.au/statistics/industry/tourism-and-transport/motor-vehicle-census-australia
+OICA Vehicles in Use: https://oica.net/category/vehicles-in-use/
+Statbase (OICA data): https://statbase.org/datasets/road-transportation/vehicles-stock/
+Eurostat Passenger Cars: https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Passenger_cars_in_the_EU
+ACEA Vehicles in Use Europe 2023: https://www.acea.auto/files/ACEA-report-vehicles-in-use-europe-2023.pdf
+Eurostat Passenger Cars: https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Passenger_cars_in_the_EU
+JAMA Motor Industry of Japan: https://www.jama.org/wp-content/uploads/2019/08/motor-industry-of-japan-2019.pdf
+Statistics Korea vehicles: https://www.statista.com/statistics/1095105/south-korea-number-of-vehicles-registered/
+Statistics Norway registered vehicles: https://www.ssb.no/en/transport-og-reiseliv/landtransport/statistikk/bilparken
+NZ Transport Agency fleet data: https://nzta.govt.nz/resources/new-zealand-motor-vehicle-register-statistics/new-zealand-vehicle-fleet-open-data-sets
+Ireland Dept Transport Bulletin: https://www.gov.ie/en/department-of-transport/publications/bulletin-of-vehicle-and-driver-statistics/
+Italy ANFIA: https://www.anfia.it/it/attivita/studi-e-statistiche/automobile-in-cifre/statistiche-italia/parco-circolante/autoveicoli-motor-vehicles
+korea https://kosis.kr/statHtml/statHtml.do?sso=ok&returnurl=https%3A%2F%2Fkosis.kr%3A443%2FstatHtml%2FstatHtml.do%3Flist_id%3DM2_18%26obj_var_id%3D%26seqNo%3D%26tblId%3DDT_MLTM_1244%26vw_cd%3DMT_ETITLE%26language%3Den%26orgId%3D116%26path%3D%252Feng%252FstatisticsList%252FstatisticsListIndex.do%26conn_path%3DMT_ETITLE%26itm_id%3D%26lang_mode%3Den%26scrId%3D%26
+
 Instructions:
 alright we want to be able to scrape some data off the iea website I've included some scripts that pull electricity data for refrence , there is a url bellow and the html associated with the button.
 we're looking to pull the oil usage data for only oecd countries you can look at "cars_on_the_road.csv" if you need a list
@@ -35,12 +52,39 @@ visualization I'll bring over some code from a different project we'll update it
     d. the side panel graph will be changed to something like a kaya index with the identity gasoline = pop * cars/pop * km/veh * gasoline/km
     e. I'd like this to be able to be changed to an indexed value where the user can change the base year. both of these will be dropdowns near the top by country
 
-What we want to build. we want to decompose gasoline demand 
-    - we want increases in efficiency
-    - we want to see what ne vehicle efficiency looks like
-    - we want to play with a simulation 
+2. Lets split what we just did up from what we're about to do with a button near             <!-- Detail Panel -->...<h2 id="country-name"></h2> that toggles betwen raw data, efficiency, and forecast.
+    1. under historical data lets leave consumption by product the same, electrification leave the same. 
+        we'll want to include category mix (suv's,trucks,cars,motorcycles,freight) you can use the methods for electrification for this,
+        change up the variables component: have raw data on number of cars, population,  total gasoline, fuel(gasoline+Diesel), total Diesel total kilometers driven
+        add new graph using derived features: fuel efficiency, km's driven, km/car, cars/capita
+    2. We want to visualize the efficiency gain here. we're going to want 
+        a. stacked bar chart of 'total fuel not used' that incorparates:
+            fuel efficiency( over time fleets become more efficient),
+            electrification(mpg ice vs 0 for electric),
+            rates of car ownership(increasing in korea but decreasing across most of oecd)
+            population increases(extensive margin)
+        b.Let's make an efficiency line graph based 
+            a. electrification as 80% of the passenger fleet 20% of freight
+            b. average suv (we're going to need benchmarks in different regions: america's(include: AUS,NZL,CAN,USA),Europe,Asia,Brazil on it's own)
+            c. average sedan (we're going to need benchmarks in different regions: america's(include: AUS,NZL,CAN,USA),Europe,Asia,Brazil on it's own)
+            d. observed fuel efficiency of whole fleet
 
-all countries will have an efficiency curve that 
-
-
+    3. Forecast/ simulate - this is for v1 please make design choices that will allow us to play with the graph elements in v2
+        a. predict total gasoline demand based on projections (create a table in the db for this)
+            i. assume continued trends
+                - population growth (I'll grab these from world bank)
+                - sigmoid growth in EV'sales
+                - fuel efficiency of new vehicles will improve at the same rate as the past 10 yeaar average
+                - car ownership will change at the same rate as the past 10 years
+            ii. plot these as a stacked bar chart similar to what we did above
+        b. per capita metrics of each
+        c.Let's make an efficiency line graph similar to above
+            a. electrification as 80% of the passenger fleet 20% of freight
+            b. average suv 
+                -we're going to need benchmarks in different regions: america's(include: AUS,NZL,CAN,USA),Europe,Asia,Brazil on it's own
+                - used forecasted value from chart 3.a
+            c. average sedan 
+                -we're going to need benchmarks in different regions: america's(include: AUS,NZL,CAN,USA),Europe,Asia,Brazil on it's own
+                - used forecasted value from chart 3.a
+            d. forecasted fuel efficiency of fleet combining the forecasted ev's, vehicle sales and retirements
 
