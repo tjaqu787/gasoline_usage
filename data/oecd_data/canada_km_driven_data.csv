@@ -1,0 +1,25 @@
+Category,Variable,Unit,2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,2022
+Light-Duty Vehicles,Sales - Cars,thousands,848,865,919,866,826,846,866,881,914,760,704,699,748,765,757,721,659,664,622,552,379,412,338
+Light-Duty Vehicles,Sales - Light Trucks,thousands,473,473,516,497,483,493,499,542,524,484,587,602,608,653,722,794,859,927,925,937,794,894,841
+Light-Duty Vehicles,Sales - Motorcycles,thousands,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.
+Light-Duty Vehicles,Stock - Cars,thousands,10684,10966,11010,11046,11190,11124,11263,11607,12000,12098,12061,11914,11921,12081,12239,12464,12524,12526,12499,12230,11669,11133,10260
+Light-Duty Vehicles,Stock - Light Trucks,thousands,4514,4733,4872,5053,5291,5458,5525,5872,6243,6501,6758,7003,7168,7571,8034,8554,9167,9715,10286,10587,10849,10778,11144
+Light-Duty Vehicles,Stock - Motorcycles,thousands,311,318,350,373,409,444,485,522,567,595,616,631,661,672,688,709,716,730,739,748,749,816,830
+Light-Duty Vehicles,Avg Distance Travelled - Cars,km/year,18426,17941,18469,18433,18204,18241,17782,17845,16905,16848,16858,16671,16448,16270,15332,15202,15098,14777,14505,14717,12258,12800,12974
+Light-Duty Vehicles,Avg Distance Travelled - Light Trucks,km/year,18633,18060,18551,18414,18177,18235,17787,17765,16795,16730,16910,16746,16705,16697,15893,15820,15983,15809,15721,15968,13385,14064,14599
+Light-Duty Vehicles,Avg Distance Travelled - Motorcycles,km/year,4815,4773,4953,4964,4924,4927,4782,4821,4545,4547,4576,4549,4505,4489,4276,4247,4273,4240,4202,4274,3583,3855,3963
+Light-Duty Vehicles,On-Road Fuel Consumption - Cars (Gasoline),L/100km,9.1,9.0,8.9,8.8,8.8,8.8,8.7,8.7,8.6,8.6,8.5,8.5,8.5,8.4,8.3,8.1,8.0,8.0,7.9,7.9,7.8,7.8,7.7
+Light-Duty Vehicles,On-Road Fuel Consumption - Cars (Diesel),L/100km,6.7,6.6,6.5,6.4,6.4,6.4,6.4,6.4,6.4,6.5,6.6,6.6,6.7,6.8,6.8,6.8,6.9,6.9,6.9,6.9,6.8,6.9,7.0
+Light-Duty Vehicles,On-Road Fuel Consumption - Light Trucks (Gasoline),L/100km,12.3,12.1,12.1,12.0,11.9,11.9,11.8,11.8,11.7,11.6,11.5,11.5,11.5,11.3,11.3,10.9,10.8,10.7,10.6,10.5,10.4,10.3,10.1
+Light-Duty Vehicles,On-Road Fuel Consumption - Light Trucks (Diesel),L/100km,12.1,12.2,12.4,12.3,12.2,12.1,12.2,12.1,11.5,10.9,10.4,9.9,9.4,9.0,8.8,8.8,8.8,8.8,8.7,8.7,8.7,8.7,8.7
+Light-Duty Vehicles,On-Road Fuel Consumption - Motorcycles (Gasoline),L/100km,4.7,4.7,4.7,4.7,4.7,4.3,4.3,4.2,4.2,5.4,5.4,5.4,5.4,5.4,5.4,5.4,5.4,5.3,5.3,5.3,5.3,5.3,5.3
+Light-Duty Vehicles,Lab-Tested New Vehicle - CAFC Standard Cars,L/100km,8.6,8.6,8.6,8.6,8.6,8.6,8.6,8.6,8.6,8.6,8.6,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.
+Light-Duty Vehicles,Lab-Tested New Vehicle - CAFC Average Car Fleet,L/100km,7.8,7.8,7.7,7.6,7.5,7.4,7.5,7.2,7.1,6.8,6.8,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.
+Light-Duty Vehicles,Lab-Tested New Vehicle - CAFC Standard Light Trucks,L/100km,11.4,11.4,11.4,11.4,11.4,11.2,10.9,10.6,10.5,10.2,10.0,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.
+Light-Duty Vehicles,Lab-Tested New Vehicle - CAFC Average Light Truck Fleet,L/100km,11.1,11.0,11.0,10.8,10.9,10.6,10.4,10.1,9.5,9.1,8.5,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.,n.a.
+Buses,Stock - School Buses,thousands,47.0,43.0,46.3,47.5,46.9,46.9,49.2,48.0,48.4,49.5,50.0,49.8,49.7,50.1,53.2,50.5,50.8,55.0,53.5,53.2,40.1,40.3,38.6
+Buses,Stock - Urban Transit,thousands,23.4,23.2,24.8,24.1,23.5,24.0,23.0,25.9,27.1,28.1,28.2,28.8,29.5,29.0,28.2,31.0,29.1,29.5,31.9,32.1,22.7,20.6,24.1
+Buses,Stock - Inter-City Buses,thousands,6.9,7.8,8.3,8.3,7.4,8.0,8.2,8.7,8.6,8.0,8.1,8.0,8.2,9.8,9.2,9.1,10.8,6.4,6.5,6.5,3.9,3.3,4.2
+Buses,Avg Distance Travelled - School Buses,km/year,26058,25201,26457,29611,25023,27799,31161,26320,27207,30950,33049,33155,31120,28670,24603,24941,26359,27492,25619,25429,20489,20880,23112
+Buses,Avg Distance Travelled - Urban Transit,km/year,55666,60724,65998,69625,69470,74294,78281,60921,61466,63737,68072,74815,68500,68630,67376,60584,51520,61444,54316,55082,41549,41141,42294
+Buses,Avg Distance Travelled - Inter-City Buses,km/year,76564,66474,76330,70616,67179,70894,56006,62552,59551,57492,52312,56691,47730,48811,42632,40493,31708,50857,48729,46730,32793,32440,35199
