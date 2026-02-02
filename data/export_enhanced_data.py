@@ -252,7 +252,7 @@ def export_to_json():
         SELECT country_code, year, measure, vehicles
         FROM cars_data
         WHERE vehicles IS NOT NULL
-        AND measure IN ('VEH_STOCK_TOTAL', 'VEH_STOCK_ELECTRIC', 'VEH_STOCK_HYBRID')
+        AND measure IN ('VEH_STOCK_TOTAL', 'VEH_STOCK_EV', 'VEH_STOCK_HYBRID')
         ORDER BY country_code, year, measure
     """)
 
@@ -261,8 +261,11 @@ def export_to_json():
         oecd_code, year, measure, value = row
         # Convert OECD code to IEA code
         iea_code = oecd_to_iea.get(oecd_code, oecd_code)
-        # Use shorter measure names
+        # Use shorter measure names and normalize EV to electric
         measure_name = measure.replace('VEH_STOCK_', '').lower()
+        # Map 'ev' to 'electric' for consistency
+        if measure_name == 'ev':
+            measure_name = 'electric'
         ev_stock[iea_code][year][measure_name] = value
 
     ev_stock_dict = {
