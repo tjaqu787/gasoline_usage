@@ -1,0 +1,42 @@
+
+-- 1. IEA/GFEI "Fuel Economy in Major Car Markets: Technology and Policy Drivers"
+--    - URL: https://www.iea.org/reports/fuel-economy-in-major-car-markets
+--    - Coverage: Global, 2005-2022 data
+--    - Key finding: Global LDV avg 7.2 Lge/100km (2017), range 5.2-8.9 by country
+--    - SUV differential: ~30% higher consumption than medium cars
+--
+-- 2. ODYSSEE-MURE Database (EU funded)
+--    - URL: https://www.odyssee-mure.eu/publications/efficiency-by-sector/transport/
+--    - Coverage: EU27 countries, 2022-2023 data
+--    - Key finding: EU new thermal cars avg 5.6 L/100km (2023)
+--    - Country range: 5.0-6.1 L/100km for new cars
+--
+-- 3. US EPA Automotive Trends Report
+--    - URL: https://www.epa.gov/automotive-trends
+--    - Coverage: US light-duty vehicles
+--    - Key finding: 2023 avg 25.4 mpg = 9.3 L/100km (combined fleet)
+--
+-- 4. ICCT European Vehicle Market Statistics 2024/25
+--    - URL: https://theicct.org/publication/european-vehicle-market-statistics-2024-25/
+--    - Coverage: EU27, detailed by country
+--    - Key finding: 2023 avg CO2 108 g/km (≈4.5-5.5 L/100km petrol equivalent)
+--
+-- 5. Japanese Ministry of Land, Infrastructure, Transport and Tourism (MLIT)
+--    - Coverage: Japan new vehicles
+--    - Key finding: 2022 avg 24.3 km/L = 4.1 L/100km (JC08 cycle)
+--
+-- 6. Australian Bureau of Statistics - Survey of Motor Vehicle Use
+--    - URL: https://www.abs.gov.au/statistics/industry/tourism-and-transport/survey-motor-vehicle-use-australia/
+--    - Coverage: Australian fleet
+--    - Key finding: Fleet avg 11.1 L/100km, new cars ~7-9 L/100km
+--
+-- 7. Transport Canada
+--    - URL: https://www.nrcan.gc.ca/energy-efficiency/transportation
+--    - Coverage: Canadian LDV market
+--    - Key finding: 2019 avg 8.6 Lge/100km, 67% SUV/pickup share
+--
+-- 8. Brazilian INMETRO PBEV (Vehicle Labeling Program)
+--    - URL: https://www.gov.br/inmetro/pt-br/assuntos/avaliacao-da-conformidade/programa-brasileiro-de-etiquetagem-veicular
+--    - Coverage: Brazil new vehicles
+--    - Key finding: Best sedan ~17 km/L (5.9 L/100km), avg fleet ~8-9 L/100km
+--

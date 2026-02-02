@@ -6,15 +6,21 @@ export class DataManager {
         this.summary = {};
         this.kayaData = {};
         this.evStock = {};
+        this.vehicleCategories = {};
+        this.fuelBenchmarks = {};
+        this.fuelBenchmarksHistorical = {};
     }
 
     async loadAll() {
-        const [countries, oilConsumption, summary, kayaData, evStock] = await Promise.all([
+        const [countries, oilConsumption, summary, kayaData, evStock, vehicleCategories, fuelBenchmarks, fuelBenchmarksHistorical] = await Promise.all([
             fetch('data/countries.json').then(r => r.json()),
             fetch('data/oil_consumption.json').then(r => r.json()),
             fetch('data/summary.json').then(r => r.json()),
             fetch('data/kaya_data.json').then(r => r.json()),
-            fetch('data/ev_stock.json').then(r => r.json())
+            fetch('data/ev_stock.json').then(r => r.json()),
+            fetch('data/vehicle_categories.json').then(r => r.json()),
+            fetch('data/fuel_benchmarks.json').then(r => r.json()),
+            fetch('data/fuel_benchmarks_historical.json').then(r => r.json())
         ]);
 
         this.countries = countries;
@@ -22,6 +28,9 @@ export class DataManager {
         this.summary = summary;
         this.kayaData = kayaData;
         this.evStock = evStock;
+        this.vehicleCategories = vehicleCategories;
+        this.fuelBenchmarks = fuelBenchmarks;
+        this.fuelBenchmarksHistorical = fuelBenchmarksHistorical;
     }
 
     getYears() {
@@ -248,6 +257,380 @@ export class DataManager {
         }
 
         return { labels: years, datasets, indexed, baseYear };
+    }
+
+    getVehicleCategoryData(countryCode) {
+        // Get vehicle category mix (passenger vs freight)
+        const countryData = this.vehicleCategories[countryCode];
+        if (!countryData) return null;
+
+        const years = Object.keys(countryData).map(Number).sort((a, b) => a - b);
+        if (years.length === 0) return null;
+
+        const passengerKm = [];
+        const freightKm = [];
+
+        years.forEach(year => {
+            const passenger = countryData[year].passenger?.km_millions || 0;
+            const freight = countryData[year].freight?.km_millions || 0;
+            passengerKm.push(passenger);
+            freightKm.push(freight);
+        });
+
+        return {
+            labels: years,
+            datasets: [
+                {
+                    label: 'Passenger (million km)',
+                    data: passengerKm,
+                    backgroundColor: '#4FC3F7',
+                    borderWidth: 0
+                },
+                {
+                    label: 'Freight (million tonne-km)',
+                    data: freightKm,
+                    backgroundColor: '#FFD54F',
+                    borderWidth: 0
+                }
+            ]
+        };
+    }
+
+    getRawDataMetrics(countryCode) {
+        // Get raw data metrics: cars, pop, fuel totals, km
+        const countryData = this.kayaData[countryCode];
+        if (!countryData) return null;
+
+        const years = Object.keys(countryData).map(Number).sort((a, b) => a - b);
+        if (years.length === 0) return null;
+
+        return {
+            labels: years,
+            datasets: [
+                {
+                    label: 'Population (millions)',
+                    data: years.map(year => {
+                        const val = countryData[year].population;
+                        return val != null ? val / 1_000_000 : null;
+                    }),
+                    borderColor: '#4FC3F7',
+                    yAxisID: 'y',
+                    fill: false,
+                    spanGaps: false
+                },
+                {
+                    label: 'Total Vehicles (millions)',
+                    data: years.map(year => {
+                        const val = countryData[year].vehicles;
+                        return val != null ? val / 1_000_000 : null;
+                    }),
+                    borderColor: '#81C784',
+                    yAxisID: 'y1',
+                    fill: false,
+                    spanGaps: false
+                },
+                {
+                    label: 'Total Fuel (thousand TJ)',
+                    data: years.map(year => {
+                        const val = countryData[year].fuel_total_tj;
+                        return val != null ? val / 1000 : null;
+                    }),
+                    borderColor: '#AB47BC',
+                    yAxisID: 'y2',
+                    borderWidth: 3,
+                    fill: false,
+                    spanGaps: false
+                },
+                {
+                    label: 'Gasoline (thousand TJ)',
+                    data: years.map(year => {
+                        const val = countryData[year].gasoline_tj;
+                        return val != null ? val / 1000 : null;
+                    }),
+                    borderColor: '#FF6B6B',
+                    yAxisID: 'y2',
+                    fill: false,
+                    spanGaps: false
+                },
+                {
+                    label: 'Diesel (thousand TJ)',
+                    data: years.map(year => {
+                        const val = countryData[year].diesel_tj;
+                        return val != null ? val / 1000 : null;
+                    }),
+                    borderColor: '#FFA07A',
+                    yAxisID: 'y2',
+                    fill: false,
+                    spanGaps: false
+                },
+                {
+                    label: 'Passenger Km (billion km)',
+                    data: years.map(year => {
+                        const val = countryData[year].passenger_km;
+                        return val != null ? val / 1_000_000_000 : null;
+                    }),
+                    borderColor: '#FFD54F',
+                    yAxisID: 'y3',
+                    fill: false,
+                    spanGaps: false
+                }
+            ]
+        };
+    }
+
+    getDerivedFeatures(countryCode) {
+        // Get derived features: fuel efficiency, km/car, cars/capita
+        const countryData = this.kayaData[countryCode];
+        if (!countryData) return null;
+
+        const years = Object.keys(countryData).map(Number).sort((a, b) => a - b);
+        if (years.length === 0) return null;
+
+        return {
+            labels: years,
+            datasets: [
+                {
+                    label: 'Cars per Capita',
+                    data: years.map(year => countryData[year].cars_per_capita != null ? countryData[year].cars_per_capita : null),
+                    borderColor: '#81C784',
+                    yAxisID: 'y',
+                    fill: false,
+                    spanGaps: false
+                },
+                {
+                    label: 'Km per Vehicle (thousands)',
+                    data: years.map(year => {
+                        const val = countryData[year].km_per_vehicle;
+                        return val != null ? val / 1000 : null;
+                    }),
+                    borderColor: '#FFD54F',
+                    yAxisID: 'y1',
+                    fill: false,
+                    spanGaps: false
+                },
+                {
+                    label: 'Fuel Efficiency (L/100km)',
+                    data: years.map(year => countryData[year].fuel_efficiency_L_per_100km != null ? countryData[year].fuel_efficiency_L_per_100km : null),
+                    borderColor: '#FF6B6B',
+                    yAxisID: 'y2',
+                    fill: false,
+                    spanGaps: false
+                }
+            ]
+        };
+    }
+
+    getFuelSavedData(countryCode, baseYear = null) {
+        // Calculate "fuel not used" due to efficiency gains
+        // Compares actual fuel consumption to counterfactual scenarios
+        const countryData = this.kayaData[countryCode];
+        if (!countryData) return null;
+
+        const years = Object.keys(countryData).map(Number).sort((a, b) => a - b);
+        if (years.length === 0) return null;
+
+        // Use first year as base if not specified
+        if (!baseYear || !countryData[baseYear]) {
+            baseYear = years[0];
+        }
+
+        const baseData = countryData[baseYear];
+        if (!baseData.fuel_total_tj || !baseData.population || !baseData.vehicles || !baseData.passenger_km) {
+            return null;
+        }
+
+        // Calculate baseline ratios
+        const baseFuelPerKm = baseData.fuel_total_tj / baseData.passenger_km;
+        const baseCarsPerCapita = baseData.vehicles / baseData.population;
+        const baseKmPerVeh = baseData.passenger_km / baseData.vehicles;
+
+        const actualFuel = [];
+        const fuelSavedEfficiency = [];
+        const fuelSavedElectrification = [];
+        const fuelSavedOwnership = [];
+        const populationEffect = [];
+
+        years.forEach(year => {
+            const data = countryData[year];
+            if (!data.fuel_total_tj || !data.population || !data.vehicles || !data.passenger_km ||
+                data.fuel_total_tj === 0 || data.population === 0 || data.vehicles === 0 || data.passenger_km === 0) {
+                actualFuel.push(null);
+                fuelSavedEfficiency.push(null);
+                fuelSavedElectrification.push(null);
+                fuelSavedOwnership.push(null);
+                populationEffect.push(null);
+                return;
+            }
+
+            const actual = data.fuel_total_tj;
+            actualFuel.push(actual);
+
+            // Counterfactual 1: What if efficiency stayed at base year level?
+            const counterfactualFuel_noEfficiency = data.passenger_km * baseFuelPerKm;
+            const savedFromEfficiency = Math.max(0, counterfactualFuel_noEfficiency - actual);
+            fuelSavedEfficiency.push(savedFromEfficiency);
+
+            // Counterfactual 2: Electrification effect (simplified)
+            // Assume EVs would have consumed fuel at the base efficiency rate
+            const evStock = this.evStock[countryCode];
+            let evShare = 0;
+            if (evStock && evStock[year]) {
+                const total = evStock[year].total || 0;
+                const electric = evStock[year].electric || 0;
+                evShare = total > 0 ? electric / total : 0;
+            }
+            const savedFromEV = evShare * data.passenger_km * baseFuelPerKm;
+            fuelSavedElectrification.push(savedFromEV);
+
+            // Counterfactual 3: Car ownership changes
+            const actualCarsPerCapita = data.vehicles / data.population;
+            const ownershipChange = baseCarsPerCapita - actualCarsPerCapita;
+            if (ownershipChange > 0) {
+                // Fewer cars per capita = fuel saved
+                const savedFromOwnership = ownershipChange * data.population * baseKmPerVeh * baseFuelPerKm;
+                fuelSavedOwnership.push(Math.max(0, savedFromOwnership));
+            } else {
+                fuelSavedOwnership.push(0);
+            }
+
+            // Population effect (extensive margin - not "saved", just growth)
+            const popGrowth = (data.population / baseData.population) - 1;
+            const popEffect = popGrowth * baseData.fuel_total_tj;
+            populationEffect.push(popEffect);
+        });
+
+        return {
+            labels: years,
+            datasets: [
+                {
+                    label: 'Fuel Saved: Efficiency Improvements',
+                    data: fuelSavedEfficiency,
+                    backgroundColor: '#81C784',
+                    borderWidth: 0
+                },
+                {
+                    label: 'Fuel Saved: Electrification',
+                    data: fuelSavedElectrification,
+                    backgroundColor: '#4FC3F7',
+                    borderWidth: 0
+                },
+                {
+                    label: 'Fuel Saved: Lower Car Ownership',
+                    data: fuelSavedOwnership,
+                    backgroundColor: '#FFD54F',
+                    borderWidth: 0
+                },
+                {
+                    label: 'Population Growth Effect',
+                    data: populationEffect,
+                    backgroundColor: '#FF6B6B',
+                    borderWidth: 0
+                }
+            ],
+            baseYear: baseYear
+        };
+    }
+
+    getEfficiencyTrendsData(countryCode) {
+        // Get efficiency trends with regional benchmarks
+        const countryData = this.kayaData[countryCode];
+        if (!countryData) return null;
+
+        const years = Object.keys(countryData).map(Number).sort((a, b) => a - b);
+        if (years.length === 0) return null;
+
+        // Get the country's historical benchmark data
+        const historicalBenchmarks = this.fuelBenchmarksHistorical[countryCode];
+        const region = historicalBenchmarks?.[years[0]]?.region || this.fuelBenchmarks[countryCode]?.region || 'Unknown';
+
+        // Calculate observed fleet efficiency
+        const observedEfficiency = years.map(year => {
+            const data = countryData[year];
+            return data.fuel_efficiency_L_per_100km || null;
+        });
+
+        // Get time series benchmark values from historical data
+        const suvBenchmarkTimeSeries = years.map(year => {
+            return historicalBenchmarks?.[year]?.suv_L100 || null;
+        });
+
+        const carBenchmarkTimeSeries = years.map(year => {
+            return historicalBenchmarks?.[year]?.car_L100 || null;
+        });
+
+        const fleetAvgBenchmark = years.map(year => {
+            return historicalBenchmarks?.[year]?.fleet_avg_L100 || null;
+        });
+
+        // Calculate EV penetration (assume 80% passenger, 20% freight as per requirements)
+        const evPenetration = years.map(year => {
+            const evStock = this.evStock[countryCode];
+            if (!evStock || !evStock[year]) return 0;
+
+            const total = evStock[year].total || 0;
+            const electric = evStock[year].electric || 0;
+            return total > 0 ? (electric / total) * 100 : 0;
+        });
+
+        return {
+            labels: years,
+            datasets: [
+                {
+                    label: 'Observed Fleet Efficiency (L/100km)',
+                    data: observedEfficiency,
+                    borderColor: '#AB47BC',
+                    backgroundColor: 'transparent',
+                    borderWidth: 3,
+                    yAxisID: 'y',
+                    fill: false,
+                    spanGaps: false
+                },
+                {
+                    label: `New SUV Benchmark (${region})`,
+                    data: suvBenchmarkTimeSeries,
+                    borderColor: '#FF6B6B',
+                    backgroundColor: 'transparent',
+                    borderWidth: 2,
+                    borderDash: [5, 5],
+                    yAxisID: 'y',
+                    fill: false,
+                    spanGaps: false
+                },
+                {
+                    label: `New Sedan Benchmark (${region})`,
+                    data: carBenchmarkTimeSeries,
+                    borderColor: '#4FC3F7',
+                    backgroundColor: 'transparent',
+                    borderWidth: 2,
+                    borderDash: [5, 5],
+                    yAxisID: 'y',
+                    fill: false,
+                    spanGaps: false
+                },
+                {
+                    label: `Fleet Average Benchmark (${region})`,
+                    data: fleetAvgBenchmark,
+                    borderColor: '#FFD54F',
+                    backgroundColor: 'transparent',
+                    borderWidth: 2,
+                    borderDash: [3, 3],
+                    yAxisID: 'y',
+                    fill: false,
+                    spanGaps: false
+                },
+                {
+                    label: 'EV Penetration (%)',
+                    data: evPenetration,
+                    borderColor: '#81C784',
+                    backgroundColor: 'transparent',
+                    borderWidth: 2,
+                    yAxisID: 'y1',
+                    fill: false,
+                    spanGaps: false
+                }
+            ],
+            region: region
+        };
     }
 
     getEVData(countryCode, mode = 'absolute') {

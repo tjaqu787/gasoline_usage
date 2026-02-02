@@ -16,6 +16,8 @@ class App {
         this.kayaMode = 'indexed';
         this.oilMode = 'absolute';
         this.evMode = 'absolute';
+        this.rawDataMode = 'absolute';
+        this.currentView = 'raw'; // 'raw', 'efficiency', or 'forecast'
 
         this.init();
     }
@@ -58,96 +60,156 @@ class App {
         const yearValue = document.getElementById('year-value');
         const years = this.dataManager.getYears();
 
-        // Set slider range
-        const minYear = Math.min(...years);
-        const maxYear = Math.max(...years);
-        yearSlider.min = minYear;
-        yearSlider.max = maxYear;
-        yearSlider.value = this.currentYear;
-        yearValue.textContent = this.currentYear;
+        if (yearSlider && yearValue) {
+            // Set slider range
+            const minYear = Math.min(...years);
+            const maxYear = Math.max(...years);
+            yearSlider.min = minYear;
+            yearSlider.max = maxYear;
+            yearSlider.value = this.currentYear;
+            yearValue.textContent = this.currentYear;
+
+            // Year slider change
+            yearSlider.addEventListener('input', (e) => {
+                this.currentYear = parseInt(e.target.value);
+                yearValue.textContent = this.currentYear;
+                this.updateCountryList();
+                if (this.selectedCountry) {
+                    this.updateCharts();
+                }
+            });
+        }
 
         // Setup base year slider
         const baseYearSlider = document.getElementById('base-year-slider');
         const baseYearValue = document.getElementById('base-year-value');
-        baseYearSlider.min = minYear;
-        baseYearSlider.max = maxYear;
-        baseYearSlider.value = this.baseYear;
-        baseYearValue.textContent = this.baseYear;
+        if (baseYearSlider && baseYearValue) {
+            const minYear = Math.min(...years);
+            const maxYear = Math.max(...years);
+            baseYearSlider.min = minYear;
+            baseYearSlider.max = maxYear;
+            baseYearSlider.value = this.baseYear;
+            baseYearValue.textContent = this.baseYear;
+
+            // Base year slider change
+            baseYearSlider.addEventListener('input', (e) => {
+                this.baseYear = parseInt(e.target.value);
+                baseYearValue.textContent = this.baseYear;
+                this.updateCountryList();
+                if (this.selectedCountry) {
+                    this.updateCharts();
+                }
+            });
+        }
 
         // Indicator (product) change
-        document.getElementById('indicator-select').addEventListener('change', (e) => {
-            this.currentIndicator = e.target.value;
-            this.updateCountryList();
-        });
+        const indicatorSelect = document.getElementById('indicator-select');
+        if (indicatorSelect) {
+            indicatorSelect.addEventListener('change', (e) => {
+                this.currentIndicator = e.target.value;
+                this.updateCountryList();
+            });
+        }
 
         // Sort change
-        document.getElementById('sort-select').addEventListener('change', (e) => {
-            this.currentSort = e.target.value;
-            this.updateCountryList();
-        });
+        const sortSelect = document.getElementById('sort-select');
+        if (sortSelect) {
+            sortSelect.addEventListener('change', (e) => {
+                this.currentSort = e.target.value;
+                this.updateCountryList();
+            });
+        }
 
         // Value type change
-        document.getElementById('value-type-select').addEventListener('change', (e) => {
-            this.valueType = e.target.value;
+        const valueTypeSelect = document.getElementById('value-type-select');
+        if (valueTypeSelect) {
+            valueTypeSelect.addEventListener('change', (e) => {
+                this.valueType = e.target.value;
 
-            // Show/hide base year selector based on value type
-            const baseYearControl = document.getElementById('base-year-control');
+                // Show/hide base year selector based on value type
+                const baseYearControl = document.getElementById('base-year-control');
+                if (baseYearControl) {
+                    if (this.valueType === 'indexed') {
+                        baseYearControl.style.display = 'block';
+                    } else {
+                        baseYearControl.style.display = 'none';
+                    }
+                }
 
-            if (this.valueType === 'indexed') {
-                baseYearControl.style.display = 'block';
-            } else {
-                baseYearControl.style.display = 'none';
-            }
-
-            this.updateCountryList();
-        });
-
-        // Base year slider change
-        baseYearSlider.addEventListener('input', (e) => {
-            this.baseYear = parseInt(e.target.value);
-            baseYearValue.textContent = this.baseYear;
-            this.updateCountryList();
-            if (this.selectedCountry) {
-                this.updateCharts();
-            }
-        });
-
-        // Year slider change
-        yearSlider.addEventListener('input', (e) => {
-            this.currentYear = parseInt(e.target.value);
-            yearValue.textContent = this.currentYear;
-            this.updateCountryList();
-            if (this.selectedCountry) {
-                this.updateCharts();
-            }
-        });
+                this.updateCountryList();
+            });
+        }
 
         // Close detail panel
-        document.getElementById('close-detail').addEventListener('click', () => {
-            this.closeDetail();
-        });
+        const closeDetail = document.getElementById('close-detail');
+        if (closeDetail) {
+            closeDetail.addEventListener('click', () => {
+                this.closeDetail();
+            });
+        }
 
-        // Chart mode selects
-        document.getElementById('kaya-mode-select').addEventListener('change', (e) => {
-            this.kayaMode = e.target.value;
-            if (this.selectedCountry) {
-                this.updateCharts();
-            }
-        });
+        // Chart mode selects (only if they exist)
+        const rawDataModeSelect = document.getElementById('raw-data-mode-select');
+        if (rawDataModeSelect) {
+            rawDataModeSelect.addEventListener('change', (e) => {
+                this.rawDataMode = e.target.value;
+                if (this.selectedCountry && this.currentView === 'raw') {
+                    this.updateRawDataView();
+                }
+            });
+        }
 
-        document.getElementById('oil-mode-select').addEventListener('change', (e) => {
-            this.oilMode = e.target.value;
-            if (this.selectedCountry) {
-                this.updateCharts();
-            }
-        });
+        const oilModeSelect = document.getElementById('oil-mode-select');
+        if (oilModeSelect) {
+            oilModeSelect.addEventListener('change', (e) => {
+                this.oilMode = e.target.value;
+                if (this.selectedCountry && this.currentView === 'raw') {
+                    this.updateRawDataView();
+                }
+            });
+        }
 
-        document.getElementById('ev-mode-select').addEventListener('change', (e) => {
-            this.evMode = e.target.value;
-            if (this.selectedCountry) {
-                this.updateCharts();
-            }
+        const evModeSelect = document.getElementById('ev-mode-select');
+        if (evModeSelect) {
+            evModeSelect.addEventListener('change', (e) => {
+                this.evMode = e.target.value;
+                if (this.selectedCountry && this.currentView === 'raw') {
+                    this.updateRawDataView();
+                }
+            });
+        }
+
+        // View toggle buttons
+        document.querySelectorAll('.toggle-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const view = e.target.dataset.view;
+                this.currentView = view;
+
+                // Update active state
+                document.querySelectorAll('.toggle-btn').forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+
+                // Show/hide appropriate chart containers
+                this.switchChartView(view);
+
+                // Update charts based on view
+                if (this.selectedCountry) {
+                    this.updateCharts();
+                }
+            });
         });
+    }
+
+    switchChartView(view) {
+        // Hide all chart views
+        document.querySelectorAll('.charts-view').forEach(el => el.classList.add('hidden'));
+
+        // Show the selected view
+        const viewId = `charts-${view}`;
+        const viewElement = document.getElementById(viewId);
+        if (viewElement) {
+            viewElement.classList.remove('hidden');
+        }
     }
 
     updateCountryList() {
@@ -265,6 +327,9 @@ class App {
         // Update country name
         document.getElementById('country-name').textContent = countryName;
 
+        // Make sure raw view is shown by default
+        this.switchChartView(this.currentView);
+
         // Update charts
         this.updateCharts();
 
@@ -275,19 +340,28 @@ class App {
     updateCharts() {
         if (!this.selectedCountry) return;
 
-        console.log('Updating charts - kayaMode:', this.kayaMode, 'oilMode:', this.oilMode, 'evMode:', this.evMode);
+        console.log('Updating charts - view:', this.currentView, 'kayaMode:', this.kayaMode, 'oilMode:', this.oilMode, 'evMode:', this.evMode);
+
+        if (this.currentView === 'raw') {
+            this.updateRawDataView();
+        } else if (this.currentView === 'efficiency') {
+            this.updateEfficiencyView();
+        } else if (this.currentView === 'forecast') {
+            this.updateForecastView();
+        }
+    }
+
+    updateRawDataView() {
+        // Get raw data metrics
+        const rawDataMetrics = this.dataManager.getRawDataMetrics(this.selectedCountry);
+
+        // Get derived features
+        const derivedFeatures = this.dataManager.getDerivedFeatures(this.selectedCountry);
 
         // Get data for oil products chart
         const oilData = this.dataManager.getOilConsumptionTimeSeries(
             this.selectedCountry,
             this.oilMode === 'indexed',
-            this.baseYear
-        );
-
-        // Get data for Kaya chart
-        const kayaData = this.dataManager.getKayaData(
-            this.selectedCountry,
-            this.kayaMode === 'indexed',
             this.baseYear
         );
 
@@ -297,14 +371,46 @@ class App {
             this.evMode
         );
 
-        console.log('Oil data sample:', oilData?.datasets[0]?.data?.slice(0, 3));
-        console.log('Kaya data sample:', kayaData?.datasets[0]?.data?.slice(0, 3));
-        console.log('EV data sample:', evData?.datasets[0]?.data?.slice(0, 3));
+        // Get category mix data
+        const categoryData = this.dataManager.getVehicleCategoryData(this.selectedCountry);
+
+        console.log('Raw data metrics:', rawDataMetrics);
+        console.log('Derived features:', derivedFeatures);
+        console.log('Category data:', categoryData);
 
         // Update charts
+        this.chartsManager.updateRawDataChart(rawDataMetrics);
+        this.chartsManager.updateDerivedFeaturesChart(derivedFeatures);
         this.chartsManager.updateOilProductsChart(oilData, this.oilMode === 'indexed');
-        this.chartsManager.updateKayaChart(kayaData, this.kayaMode === 'indexed');
         this.chartsManager.updateEVChart(evData);
+        this.chartsManager.updateCategoryMixChart(categoryData);
+    }
+
+    updateEfficiencyView() {
+        // Get fuel saved data
+        const fuelSavedData = this.dataManager.getFuelSavedData(
+            this.selectedCountry,
+            this.baseYear
+        );
+
+        // Get efficiency trends data
+        const efficiencyTrendsData = this.dataManager.getEfficiencyTrendsData(
+            this.selectedCountry
+        );
+
+        console.log('Fuel saved data:', fuelSavedData);
+        console.log('Efficiency trends data:', efficiencyTrendsData);
+
+        // Update charts
+        this.chartsManager.updateFuelSavedChart(fuelSavedData);
+        this.chartsManager.updateEfficiencyTrendsChart(efficiencyTrendsData);
+    }
+
+    updateForecastView() {
+        // TODO: Implement forecast view with:
+        // - Forecast visualizations
+        // - Per capita metrics
+        console.log('Forecast view - to be implemented');
     }
 
     closeDetail() {

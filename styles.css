@@ -281,17 +281,65 @@ body {
     padding: 40px;
 }
 
+.detail-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
 #country-name {
     font-size: 28px;
-    margin-bottom: 30px;
+    margin: 0;
     color: #4fc3f7;
     text-transform: capitalize;
 }
 
-#charts {
+.view-toggle {
+    display: flex;
+    gap: 0;
+    background: rgba(20, 30, 50, 0.8);
+    border-radius: 6px;
+    border: 1px solid rgba(79, 195, 247, 0.3);
+    overflow: hidden;
+}
+
+.toggle-btn {
+    padding: 8px 16px;
+    background: transparent;
+    border: none;
+    color: #b0b0b0;
+    font-size: 13px;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-right: 1px solid rgba(79, 195, 247, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.toggle-btn:last-child {
+    border-right: none;
+}
+
+.toggle-btn:hover {
+    background: rgba(79, 195, 247, 0.1);
+    color: #e0e0e0;
+}
+
+.toggle-btn.active {
+    background: rgba(79, 195, 247, 0.3);
+    color: #4fc3f7;
+    font-weight: 600;
+}
+
+.charts-view {
     display: flex;
     flex-direction: column;
     gap: 40px;
+}
+
+.charts-view.hidden {
+    display: none;
 }
 
 .chart-container {

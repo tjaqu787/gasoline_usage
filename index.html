@@ -69,17 +69,31 @@
             <div id="detail-panel" class="hidden">
                 <button id="close-detail">&times;</button>
                 <div id="detail-content">
-                    <h2 id="country-name"></h2>
-                    <div id="charts">
+                    <div class="detail-header">
+                        <h2 id="country-name"></h2>
+                        <div class="view-toggle">
+                            <button class="toggle-btn active" data-view="raw">Raw Data</button>
+                            <button class="toggle-btn" data-view="efficiency">Efficiency</button>
+                            <button class="toggle-btn" data-view="forecast">Forecast</button>
+                        </div>
+                    </div>
+                    <!-- Raw Data View Charts -->
+                    <div id="charts-raw" class="charts-view">
                         <div class="chart-container">
                             <div class="chart-header">
-                                <h3>Variables</h3>
-                                <select id="kaya-mode-select" class="chart-mode-select">
-                                    <option value="indexed">Indexed</option>
+                                <h3>Raw Data Metrics</h3>
+                                <select id="raw-data-mode-select" class="chart-mode-select">
                                     <option value="absolute">Absolute</option>
+                                    <option value="indexed">Indexed</option>
                                 </select>
                             </div>
-                            <canvas id="kaya-chart"></canvas>
+                            <canvas id="raw-data-chart"></canvas>
+                        </div>
+                        <div class="chart-container">
+                            <div class="chart-header">
+                                <h3>Derived Features</h3>
+                            </div>
+                            <canvas id="derived-features-chart"></canvas>
                         </div>
                         <div class="chart-container">
                             <div class="chart-header">
@@ -100,6 +114,44 @@
                                 </select>
                             </div>
                             <canvas id="ev-chart"></canvas>
+                        </div>
+                        <div class="chart-container" id="category-mix-container">
+                            <div class="chart-header">
+                                <h3>Vehicle Category Mix</h3>
+                            </div>
+                            <canvas id="category-mix-chart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Efficiency View Charts -->
+                    <div id="charts-efficiency" class="charts-view hidden">
+                        <div class="chart-container">
+                            <div class="chart-header">
+                                <h3>Total Fuel Not Used (Efficiency Gains)</h3>
+                            </div>
+                            <canvas id="fuel-saved-chart"></canvas>
+                        </div>
+                        <div class="chart-container">
+                            <div class="chart-header">
+                                <h3>Fleet Efficiency Over Time</h3>
+                            </div>
+                            <canvas id="efficiency-trends-chart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Forecast View Charts -->
+                    <div id="charts-forecast" class="charts-view hidden">
+                        <div class="chart-container">
+                            <div class="chart-header">
+                                <h3>Forecasted Gasoline Demand</h3>
+                            </div>
+                            <canvas id="forecast-demand-chart"></canvas>
+                        </div>
+                        <div class="chart-container">
+                            <div class="chart-header">
+                                <h3>Forecasted Fleet Efficiency</h3>
+                            </div>
+                            <canvas id="forecast-efficiency-chart"></canvas>
                         </div>
                     </div>
                 </div>

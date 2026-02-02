@@ -1,0 +1,102 @@
+Primary Data Sources
+ACEA (European Automobile Manufacturers' Association)
+
+Vehicles in Use Europe 2023 Report: https://www.acea.auto/files/ACEA-report-vehicles-in-use-europe-2023.pdf
+Statistics page: https://www.acea.auto/reliable-data-statistics/
+Passenger car registrations 1990-2021: https://www.acea.auto/figure/passenger-car-registrations-in-europe-since-1990-by-country/
+Average age of EU vehicle fleet: https://www.acea.auto/figure/average-age-of-eu-vehicle-fleet-by-country/
+
+Eurostat
+
+Passenger cars in the EU: https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Passenger_cars_in_the_EU
+Stock of vehicles at regional level: https://ec.europa.eu/eurostat/statistics-explained/index.php/Stock_of_vehicles_at_regional_level
+
+OICA (International Organization of Motor Vehicle Manufacturers)
+
+Production statistics: https://oica.net/production-statistics/
+Sales statistics: https://oica.net/sales-statistics/
+
+Statbase.org (OICA historical data)
+
+Vehicles in use 2010-2023: https://statbase.org/datasets/road-transportation/vehicles-stock/
+
+
+National Statistical Agencies
+Australia
+
+ABS Motor Vehicle Census: https://www.abs.gov.au/statistics/industry/tourism-and-transport/motor-vehicle-census-australia
+
+Germany
+
+KBA (Kraftfahrt-Bundesamt) historical data via: https://www.best-selling-cars.com/germany/2024-germany-total-number-of-registered-cars-by-brand-kfz-bestand/
+
+Ireland
+
+Department of Transport Bulletin: https://www.gov.ie/en/department-of-transport/publications/bulletin-of-vehicle-and-driver-statistics/
+Irish Bulletin 2020 PDF: https://assets.gov.ie/140193/a56f69eb-317b-436b-b078-37a1cbe58aec.pdf
+SIMI National Vehicle Statistics: https://www.simi.ie/en/motorstats/national-vehicle-statistics
+
+Italy
+
+ANFIA Parco Circolante: https://www.anfia.it/it/attivita/studi-e-statistiche/automobile-in-cifre/statistiche-italia/parco-circolante/autoveicoli-motor-vehicles
+MIT Open Data: https://dati.mit.gov.it/catalog/dataset/dataset-parco-circolante-dei-veicoli
+
+Japan
+
+JAMA Motor Industry of Japan 2019: https://www.jama.org/wp-content/uploads/2019/08/motor-industry-of-japan-2019.pdf
+JAMA Motor Industry of Japan 2018: https://www.jama.org/wp-content/uploads/2018/07/mij2018.pdf
+JAMA Motor Industry of Japan 2011: https://www.jama.org/wp-content/uploads/2013/12/The-Motor-Industry-of-Japan-2011-Publications-Industry-Report-2011.pdf
+JAMA Auto Industry Data: https://www.jama.org/00-japan-audo-industry-data/
+
+Mexico
+
+INEGI Registered Motor Vehicles: https://en.www.inegi.org.mx/programas/vehiculosmotor/
+INEGI Vehicle Fleet: https://en.www.inegi.org.mx/temas/vehiculos/
+
+New Zealand
+
+NZ Transport Agency Motor Vehicle Register: https://nzta.govt.nz/resources/new-zealand-motor-vehicle-register-statistics/
+NZ Vehicle Fleet Open Data: https://nzta.govt.nz/resources/new-zealand-motor-vehicle-register-statistics/new-zealand-vehicle-fleet-open-data-sets
+Ministry of Transport Fleet Statistics: https://www.transport.govt.nz/statistics-and-insights/fleet-statistics/sheet/annual-fleet-statistics
+Figure.NZ Passenger cars: https://figure.nz/chart/mTtqAzmnm6Dat9K8-tIiXY3FvT4ple3dS
+
+Norway
+
+Statistics Norway (SSB) Registered Vehicles: https://www.ssb.no/en/transport-og-reiseliv/landtransport/statistikk/bilparken
+SSB 2015 Archive: https://www.ssb.no/en/transport-og-reiseliv/statistikker/bilreg/aar/2015-03-25
+Norway EV data: https://robbieandrew.github.io/EV/
+
+South Korea
+
+Statistics Korea via Statista: https://www.statista.com/statistics/1095105/south-korea-number-of-vehicles-registered/
+KOSIS car ownership rate: https://www.statista.com/statistics/644525/south-korea-car-ownership-rate/
+Passenger cars in use 2006-2015: https://www.statista.com/statistics/596586/passenger-cars-in-use-south-korea/
+
+
+Other Reference Sources
+CEIC Data
+
+Japan registered vehicles: https://www.ceicdata.com/en/indicator/japan/number-of-registered-vehicles
+Japan motor vehicle sales: https://www.ceicdata.com/en/indicator/japan/motor-vehicle-sales-passenger-cars
+South Korea registered vehicles: https://www.ceicdata.com/en/indicator/korea/number-of-registered-vehicles
+South Korea passenger car percentage: https://www.ceicdata.com/en/korea/motor-vehicles-statistics-oecd-member-annual/kr-total-road-motor-vehicles--passenger-cars
+Mexico motor vehicle sales: https://www.ceicdata.com/en/indicator/mexico/motor-vehicle-sales-passenger-cars
+
+japan total car registrations = https://www.airia.or.jp/publish/statistics/number.html
+us total vehicle registrations = https://www.fhwa.dot.gov/policyinformation/statistics/2010/mv1.cfm
+ACEA Vehicles in Use Report 2023: https://www.acea.auto/files/ACEA-report-vehicles-in-use-europe-2023.pdf
+KBA Germany (Bestand): https://www.kba.de/DE/Statistik/Fahrzeuge/Bestand/bestand_node.html
+Germany Historical by Brand: https://www.best-selling-cars.com/germany/2024-germany-total-number-of-registered-cars-by-brand-kfz-bestand/
+ABS Motor Vehicle Census: https://www.abs.gov.au/statistics/industry/tourism-and-transport/motor-vehicle-census-australia
+OICA Vehicles in Use: https://oica.net/category/vehicles-in-use/
+Statbase (OICA data): https://statbase.org/datasets/road-transportation/vehicles-stock/
+Eurostat Passenger Cars: https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Passenger_cars_in_the_EU
+ACEA Vehicles in Use Europe 2023: https://www.acea.auto/files/ACEA-report-vehicles-in-use-europe-2023.pdf
+Eurostat Passenger Cars: https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Passenger_cars_in_the_EU
+JAMA Motor Industry of Japan: https://www.jama.org/wp-content/uploads/2019/08/motor-industry-of-japan-2019.pdf
+Statistics Korea vehicles: https://www.statista.com/statistics/1095105/south-korea-number-of-vehicles-registered/
+Statistics Norway registered vehicles: https://www.ssb.no/en/transport-og-reiseliv/landtransport/statistikk/bilparken
+NZ Transport Agency fleet data: https://nzta.govt.nz/resources/new-zealand-motor-vehicle-register-statistics/new-zealand-vehicle-fleet-open-data-sets
+Ireland Dept Transport Bulletin: https://www.gov.ie/en/department-of-transport/publications/bulletin-of-vehicle-and-driver-statistics/
+Italy ANFIA: https://www.anfia.it/it/attivita/studi-e-statistiche/automobile-in-cifre/statistiche-italia/parco-circolante/autoveicoli-motor-vehicles
+korea https://kosis.kr/statHtml/statHtml.do?sso=ok&returnurl=https%3A%2F%2Fkosis.kr%3A443%2FstatHtml%2FstatHtml.do%3Flist_id%3DM2_18%26obj_var_id%3D%26seqNo%3D%26tblId%3DDT_MLTM_1244%26vw_cd%3DMT_ETITLE%26language%3Den%26orgId%3D116%26path%3D%252Feng%252FstatisticsList%252FstatisticsListIndex.do%26conn_path%3DMT_ETITLE%26itm_id%3D%26lang_mode%3Den%26scrId%3D%26
