@@ -1,0 +1,2408 @@
+{
+  "australia": {
+    "2010": {
+      "country_name": "Australia",
+      "suv_L100": 11,
+      "car_L100": 8.5,
+      "fleet_avg_L100": 9.7,
+      "region": "Americas",
+      "data_quality": "measured"
+    },
+    "2011": {
+      "country_name": "Australia",
+      "suv_L100": 10.8,
+      "car_L100": 8.3,
+      "fleet_avg_L100": 9.5,
+      "region": "Americas",
+      "data_quality": "estimated"
+    },
+    "2012": {
+      "country_name": "Australia",
+      "suv_L100": 10.6,
+      "car_L100": 8.2,
+      "fleet_avg_L100": 9.4,
+      "region": "Americas",
+      "data_quality": "estimated"
+    },
+    "2013": {
+      "country_name": "Australia",
+      "suv_L100": 10.4,
+      "car_L100": 8,
+      "fleet_avg_L100": 9.2,
+      "region": "Americas",
+      "data_quality": "measured"
+    },
+    "2014": {
+      "country_name": "Australia",
+      "suv_L100": 10.3,
+      "car_L100": 7.9,
+      "fleet_avg_L100": 9.1,
+      "region": "Americas",
+      "data_quality": "estimated"
+    },
+    "2015": {
+      "country_name": "Australia",
+      "suv_L100": 10.1,
+      "car_L100": 7.8,
+      "fleet_avg_L100": 8.9,
+      "region": "Americas",
+      "data_quality": "measured"
+    },
+    "2016": {
+      "country_name": "Australia",
+      "suv_L100": 10,
+      "car_L100": 7.7,
+      "fleet_avg_L100": 8.8,
+      "region": "Americas",
+      "data_quality": "estimated"
+    },
+    "2017": {
+      "country_name": "Australia",
+      "suv_L100": 9.9,
+      "car_L100": 7.6,
+      "fleet_avg_L100": 8.7,
+      "region": "Americas",
+      "data_quality": "measured"
+    },
+    "2018": {
+      "country_name": "Australia",
+      "suv_L100": 9.9,
+      "car_L100": 7.6,
+      "fleet_avg_L100": 8.7,
+      "region": "Americas",
+      "data_quality": "estimated"
+    },
+    "2019": {
+      "country_name": "Australia",
+      "suv_L100": 9.8,
+      "car_L100": 7.5,
+      "fleet_avg_L100": 8.6,
+      "region": "Americas",
+      "data_quality": "measured"
+    },
+    "2020": {
+      "country_name": "Australia",
+      "suv_L100": 9.6,
+      "car_L100": 7.4,
+      "fleet_avg_L100": 8.5,
+      "region": "Americas",
+      "data_quality": "estimated"
+    },
+    "2021": {
+      "country_name": "Australia",
+      "suv_L100": 9.4,
+      "car_L100": 7.2,
+      "fleet_avg_L100": 8.3,
+      "region": "Americas",
+      "data_quality": "estimated"
+    },
+    "2022": {
+      "country_name": "Australia",
+      "suv_L100": 9.2,
+      "car_L100": 7.1,
+      "fleet_avg_L100": 8.2,
+      "region": "Americas",
+      "data_quality": "estimated"
+    },
+    "2023": {
+      "country_name": "Australia",
+      "suv_L100": 9,
+      "car_L100": 6.9,
+      "fleet_avg_L100": 8,
+      "region": "Americas",
+      "data_quality": "estimated"
+    }
+  },
+  "austria": {
+    "2010": {
+      "country_name": "Austria",
+      "suv_L100": 7.8,
+      "car_L100": 6,
+      "fleet_avg_L100": 6.6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2015": {
+      "country_name": "Austria",
+      "suv_L100": 7.2,
+      "car_L100": 5.5,
+      "fleet_avg_L100": 6.1,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2017": {
+      "country_name": "Austria",
+      "suv_L100": 7.1,
+      "car_L100": 5.5,
+      "fleet_avg_L100": 6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2019": {
+      "country_name": "Austria",
+      "suv_L100": 7.2,
+      "car_L100": 5.5,
+      "fleet_avg_L100": 6.1,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2022": {
+      "country_name": "Austria",
+      "suv_L100": 6.6,
+      "car_L100": 5.1,
+      "fleet_avg_L100": 5.6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2023": {
+      "country_name": "Austria",
+      "suv_L100": 6.4,
+      "car_L100": 4.9,
+      "fleet_avg_L100": 5.4,
+      "region": "Europe",
+      "data_quality": "estimated"
+    }
+  },
+  "belgium": {
+    "2010": {
+      "country_name": "Belgium",
+      "suv_L100": 7.6,
+      "car_L100": 5.8,
+      "fleet_avg_L100": 6.4,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2015": {
+      "country_name": "Belgium",
+      "suv_L100": 7,
+      "car_L100": 5.4,
+      "fleet_avg_L100": 5.9,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2017": {
+      "country_name": "Belgium",
+      "suv_L100": 6.9,
+      "car_L100": 5.3,
+      "fleet_avg_L100": 5.8,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2019": {
+      "country_name": "Belgium",
+      "suv_L100": 7,
+      "car_L100": 5.4,
+      "fleet_avg_L100": 5.9,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2022": {
+      "country_name": "Belgium",
+      "suv_L100": 6.3,
+      "car_L100": 4.8,
+      "fleet_avg_L100": 5.3,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2023": {
+      "country_name": "Belgium",
+      "suv_L100": 6,
+      "car_L100": 4.6,
+      "fleet_avg_L100": 5.1,
+      "region": "Europe",
+      "data_quality": "estimated"
+    }
+  },
+  "brazil": {
+    "2010": {
+      "country_name": "Brazil",
+      "suv_L100": 10.2,
+      "car_L100": 7.8,
+      "fleet_avg_L100": 8.7,
+      "region": "Latin America",
+      "data_quality": "measured"
+    },
+    "2011": {
+      "country_name": "Brazil",
+      "suv_L100": 10,
+      "car_L100": 7.7,
+      "fleet_avg_L100": 8.5,
+      "region": "Latin America",
+      "data_quality": "estimated"
+    },
+    "2012": {
+      "country_name": "Brazil",
+      "suv_L100": 9.8,
+      "car_L100": 7.5,
+      "fleet_avg_L100": 8.4,
+      "region": "Latin America",
+      "data_quality": "measured"
+    },
+    "2013": {
+      "country_name": "Brazil",
+      "suv_L100": 9.6,
+      "car_L100": 7.4,
+      "fleet_avg_L100": 8.2,
+      "region": "Latin America",
+      "data_quality": "measured"
+    },
+    "2014": {
+      "country_name": "Brazil",
+      "suv_L100": 9.4,
+      "car_L100": 7.2,
+      "fleet_avg_L100": 8,
+      "region": "Latin America",
+      "data_quality": "estimated"
+    },
+    "2015": {
+      "country_name": "Brazil",
+      "suv_L100": 9.2,
+      "car_L100": 7.1,
+      "fleet_avg_L100": 7.8,
+      "region": "Latin America",
+      "data_quality": "measured"
+    },
+    "2016": {
+      "country_name": "Brazil",
+      "suv_L100": 9.2,
+      "car_L100": 7.1,
+      "fleet_avg_L100": 7.8,
+      "region": "Latin America",
+      "data_quality": "estimated"
+    },
+    "2017": {
+      "country_name": "Brazil",
+      "suv_L100": 9.1,
+      "car_L100": 7,
+      "fleet_avg_L100": 7.7,
+      "region": "Latin America",
+      "data_quality": "measured"
+    },
+    "2018": {
+      "country_name": "Brazil",
+      "suv_L100": 9,
+      "car_L100": 6.9,
+      "fleet_avg_L100": 7.6,
+      "region": "Latin America",
+      "data_quality": "estimated"
+    },
+    "2019": {
+      "country_name": "Brazil",
+      "suv_L100": 8.9,
+      "car_L100": 6.8,
+      "fleet_avg_L100": 7.5,
+      "region": "Latin America",
+      "data_quality": "measured"
+    },
+    "2020": {
+      "country_name": "Brazil",
+      "suv_L100": 8.8,
+      "car_L100": 6.8,
+      "fleet_avg_L100": 7.5,
+      "region": "Latin America",
+      "data_quality": "estimated"
+    },
+    "2021": {
+      "country_name": "Brazil",
+      "suv_L100": 8.7,
+      "car_L100": 6.7,
+      "fleet_avg_L100": 7.4,
+      "region": "Latin America",
+      "data_quality": "estimated"
+    },
+    "2022": {
+      "country_name": "Brazil",
+      "suv_L100": 8.6,
+      "car_L100": 6.6,
+      "fleet_avg_L100": 7.3,
+      "region": "Latin America",
+      "data_quality": "estimated"
+    },
+    "2023": {
+      "country_name": "Brazil",
+      "suv_L100": 8.5,
+      "car_L100": 6.5,
+      "fleet_avg_L100": 7.2,
+      "region": "Latin America",
+      "data_quality": "estimated"
+    }
+  },
+  "canada": {
+    "2010": {
+      "country_name": "Canada",
+      "suv_L100": 11.8,
+      "car_L100": 9.1,
+      "fleet_avg_L100": 10.4,
+      "region": "Americas",
+      "data_quality": "measured"
+    },
+    "2011": {
+      "country_name": "Canada",
+      "suv_L100": 11.5,
+      "car_L100": 8.9,
+      "fleet_avg_L100": 10.2,
+      "region": "Americas",
+      "data_quality": "estimated"
+    },
+    "2012": {
+      "country_name": "Canada",
+      "suv_L100": 11.3,
+      "car_L100": 8.7,
+      "fleet_avg_L100": 10,
+      "region": "Americas",
+      "data_quality": "estimated"
+    },
+    "2013": {
+      "country_name": "Canada",
+      "suv_L100": 11.1,
+      "car_L100": 8.5,
+      "fleet_avg_L100": 9.8,
+      "region": "Americas",
+      "data_quality": "measured"
+    },
+    "2014": {
+      "country_name": "Canada",
+      "suv_L100": 10.9,
+      "car_L100": 8.4,
+      "fleet_avg_L100": 9.6,
+      "region": "Americas",
+      "data_quality": "estimated"
+    },
+    "2015": {
+      "country_name": "Canada",
+      "suv_L100": 10.7,
+      "car_L100": 8.2,
+      "fleet_avg_L100": 9.5,
+      "region": "Americas",
+      "data_quality": "measured"
+    },
+    "2016": {
+      "country_name": "Canada",
+      "suv_L100": 10.6,
+      "car_L100": 8.2,
+      "fleet_avg_L100": 9.4,
+      "region": "Americas",
+      "data_quality": "estimated"
+    },
+    "2017": {
+      "country_name": "Canada",
+      "suv_L100": 10.6,
+      "car_L100": 8.2,
+      "fleet_avg_L100": 9.4,
+      "region": "Americas",
+      "data_quality": "measured"
+    },
+    "2018": {
+      "country_name": "Canada",
+      "suv_L100": 10.5,
+      "car_L100": 8.1,
+      "fleet_avg_L100": 9.3,
+      "region": "Americas",
+      "data_quality": "estimated"
+    },
+    "2019": {
+      "country_name": "Canada",
+      "suv_L100": 10.5,
+      "car_L100": 8.1,
+      "fleet_avg_L100": 9.3,
+      "region": "Americas",
+      "data_quality": "measured"
+    },
+    "2020": {
+      "country_name": "Canada",
+      "suv_L100": 10.3,
+      "car_L100": 7.9,
+      "fleet_avg_L100": 9.1,
+      "region": "Americas",
+      "data_quality": "estimated"
+    },
+    "2021": {
+      "country_name": "Canada",
+      "suv_L100": 10.1,
+      "car_L100": 7.8,
+      "fleet_avg_L100": 8.9,
+      "region": "Americas",
+      "data_quality": "estimated"
+    },
+    "2022": {
+      "country_name": "Canada",
+      "suv_L100": 10,
+      "car_L100": 7.7,
+      "fleet_avg_L100": 8.8,
+      "region": "Americas",
+      "data_quality": "estimated"
+    },
+    "2023": {
+      "country_name": "Canada",
+      "suv_L100": 9.8,
+      "car_L100": 7.5,
+      "fleet_avg_L100": 8.7,
+      "region": "Americas",
+      "data_quality": "estimated"
+    }
+  },
+  "switzerland": {
+    "2010": {
+      "country_name": "Switzerland",
+      "suv_L100": 8,
+      "car_L100": 6.2,
+      "fleet_avg_L100": 6.8,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2015": {
+      "country_name": "Switzerland",
+      "suv_L100": 7.4,
+      "car_L100": 5.7,
+      "fleet_avg_L100": 6.3,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2017": {
+      "country_name": "Switzerland",
+      "suv_L100": 7.3,
+      "car_L100": 5.6,
+      "fleet_avg_L100": 6.2,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2019": {
+      "country_name": "Switzerland",
+      "suv_L100": 7.2,
+      "car_L100": 5.5,
+      "fleet_avg_L100": 6.1,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2022": {
+      "country_name": "Switzerland",
+      "suv_L100": 6.6,
+      "car_L100": 5.1,
+      "fleet_avg_L100": 5.6,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2023": {
+      "country_name": "Switzerland",
+      "suv_L100": 6.3,
+      "car_L100": 4.8,
+      "fleet_avg_L100": 5.3,
+      "region": "Europe",
+      "data_quality": "estimated"
+    }
+  },
+  "chl": {
+    "2010": {
+      "country_name": "Chile",
+      "suv_L100": 10.2,
+      "car_L100": 7.8,
+      "fleet_avg_L100": 8.7,
+      "region": "Latin America",
+      "data_quality": "measured"
+    },
+    "2013": {
+      "country_name": "Chile",
+      "suv_L100": 9.8,
+      "car_L100": 7.5,
+      "fleet_avg_L100": 8.4,
+      "region": "Latin America",
+      "data_quality": "measured"
+    },
+    "2015": {
+      "country_name": "Chile",
+      "suv_L100": 9.6,
+      "car_L100": 7.4,
+      "fleet_avg_L100": 8.2,
+      "region": "Latin America",
+      "data_quality": "measured"
+    },
+    "2017": {
+      "country_name": "Chile",
+      "suv_L100": 9.4,
+      "car_L100": 7.2,
+      "fleet_avg_L100": 8,
+      "region": "Latin America",
+      "data_quality": "measured"
+    },
+    "2019": {
+      "country_name": "Chile",
+      "suv_L100": 9.2,
+      "car_L100": 7.1,
+      "fleet_avg_L100": 7.8,
+      "region": "Latin America",
+      "data_quality": "measured"
+    },
+    "2021": {
+      "country_name": "Chile",
+      "suv_L100": 9,
+      "car_L100": 6.9,
+      "fleet_avg_L100": 7.6,
+      "region": "Latin America",
+      "data_quality": "estimated"
+    },
+    "2023": {
+      "country_name": "Chile",
+      "suv_L100": 8.6,
+      "car_L100": 6.6,
+      "fleet_avg_L100": 7.3,
+      "region": "Latin America",
+      "data_quality": "estimated"
+    }
+  },
+  "col": {
+    "2010": {
+      "country_name": "Colombia",
+      "suv_L100": 10.4,
+      "car_L100": 8,
+      "fleet_avg_L100": 8.9,
+      "region": "Latin America",
+      "data_quality": "estimated"
+    },
+    "2015": {
+      "country_name": "Colombia",
+      "suv_L100": 9.8,
+      "car_L100": 7.5,
+      "fleet_avg_L100": 8.4,
+      "region": "Latin America",
+      "data_quality": "estimated"
+    },
+    "2019": {
+      "country_name": "Colombia",
+      "suv_L100": 9.4,
+      "car_L100": 7.2,
+      "fleet_avg_L100": 8,
+      "region": "Latin America",
+      "data_quality": "estimated"
+    },
+    "2023": {
+      "country_name": "Colombia",
+      "suv_L100": 9,
+      "car_L100": 6.9,
+      "fleet_avg_L100": 7.7,
+      "region": "Latin America",
+      "data_quality": "estimated"
+    }
+  },
+  "cri": {
+    "2010": {
+      "country_name": "Costa Rica",
+      "suv_L100": 10.2,
+      "car_L100": 7.8,
+      "fleet_avg_L100": 8.7,
+      "region": "Latin America",
+      "data_quality": "estimated"
+    },
+    "2015": {
+      "country_name": "Costa Rica",
+      "suv_L100": 9.6,
+      "car_L100": 7.4,
+      "fleet_avg_L100": 8.2,
+      "region": "Latin America",
+      "data_quality": "estimated"
+    },
+    "2019": {
+      "country_name": "Costa Rica",
+      "suv_L100": 9.2,
+      "car_L100": 7.1,
+      "fleet_avg_L100": 7.8,
+      "region": "Latin America",
+      "data_quality": "estimated"
+    },
+    "2023": {
+      "country_name": "Costa Rica",
+      "suv_L100": 8.4,
+      "car_L100": 6.5,
+      "fleet_avg_L100": 7.1,
+      "region": "Latin America",
+      "data_quality": "estimated"
+    }
+  },
+  "cze": {
+    "2010": {
+      "country_name": "Czech Republic",
+      "suv_L100": 7.6,
+      "car_L100": 5.8,
+      "fleet_avg_L100": 6.4,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2015": {
+      "country_name": "Czech Republic",
+      "suv_L100": 7,
+      "car_L100": 5.4,
+      "fleet_avg_L100": 5.9,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2017": {
+      "country_name": "Czech Republic",
+      "suv_L100": 6.9,
+      "car_L100": 5.3,
+      "fleet_avg_L100": 5.8,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2019": {
+      "country_name": "Czech Republic",
+      "suv_L100": 6.8,
+      "car_L100": 5.2,
+      "fleet_avg_L100": 5.7,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2022": {
+      "country_name": "Czech Republic",
+      "suv_L100": 6.4,
+      "car_L100": 4.9,
+      "fleet_avg_L100": 5.4,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2023": {
+      "country_name": "Czech Republic",
+      "suv_L100": 6.2,
+      "car_L100": 4.8,
+      "fleet_avg_L100": 5.3,
+      "region": "Europe",
+      "data_quality": "estimated"
+    }
+  },
+  "germany": {
+    "2010": {
+      "country_name": "Germany",
+      "suv_L100": 8.4,
+      "car_L100": 6.5,
+      "fleet_avg_L100": 7.1,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2011": {
+      "country_name": "Germany",
+      "suv_L100": 8.2,
+      "car_L100": 6.3,
+      "fleet_avg_L100": 6.9,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2012": {
+      "country_name": "Germany",
+      "suv_L100": 8,
+      "car_L100": 6.2,
+      "fleet_avg_L100": 6.8,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2013": {
+      "country_name": "Germany",
+      "suv_L100": 7.9,
+      "car_L100": 6.1,
+      "fleet_avg_L100": 6.7,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2014": {
+      "country_name": "Germany",
+      "suv_L100": 7.8,
+      "car_L100": 6,
+      "fleet_avg_L100": 6.6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2015": {
+      "country_name": "Germany",
+      "suv_L100": 7.7,
+      "car_L100": 5.9,
+      "fleet_avg_L100": 6.5,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2016": {
+      "country_name": "Germany",
+      "suv_L100": 7.6,
+      "car_L100": 5.9,
+      "fleet_avg_L100": 6.4,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2017": {
+      "country_name": "Germany",
+      "suv_L100": 7.6,
+      "car_L100": 5.9,
+      "fleet_avg_L100": 6.4,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2018": {
+      "country_name": "Germany",
+      "suv_L100": 7.7,
+      "car_L100": 5.9,
+      "fleet_avg_L100": 6.5,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2019": {
+      "country_name": "Germany",
+      "suv_L100": 7.8,
+      "car_L100": 6,
+      "fleet_avg_L100": 6.6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2020": {
+      "country_name": "Germany",
+      "suv_L100": 7.4,
+      "car_L100": 5.7,
+      "fleet_avg_L100": 6.2,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2021": {
+      "country_name": "Germany",
+      "suv_L100": 7.2,
+      "car_L100": 5.5,
+      "fleet_avg_L100": 6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2022": {
+      "country_name": "Germany",
+      "suv_L100": 7.5,
+      "car_L100": 5.8,
+      "fleet_avg_L100": 6.3,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2023": {
+      "country_name": "Germany",
+      "suv_L100": 7.8,
+      "car_L100": 6,
+      "fleet_avg_L100": 6.6,
+      "region": "Europe",
+      "data_quality": "measured"
+    }
+  },
+  "denmark": {
+    "2010": {
+      "country_name": "Denmark",
+      "suv_L100": 7.3,
+      "car_L100": 5.6,
+      "fleet_avg_L100": 6.1,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2015": {
+      "country_name": "Denmark",
+      "suv_L100": 6.6,
+      "car_L100": 5.1,
+      "fleet_avg_L100": 5.6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2017": {
+      "country_name": "Denmark",
+      "suv_L100": 6.4,
+      "car_L100": 4.9,
+      "fleet_avg_L100": 5.4,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2019": {
+      "country_name": "Denmark",
+      "suv_L100": 6.2,
+      "car_L100": 4.8,
+      "fleet_avg_L100": 5.2,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2022": {
+      "country_name": "Denmark",
+      "suv_L100": 5.4,
+      "car_L100": 4.2,
+      "fleet_avg_L100": 4.6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2023": {
+      "country_name": "Denmark",
+      "suv_L100": 5,
+      "car_L100": 3.8,
+      "fleet_avg_L100": 4.2,
+      "region": "Europe",
+      "data_quality": "estimated"
+    }
+  },
+  "spain": {
+    "2010": {
+      "country_name": "Spain",
+      "suv_L100": 7.4,
+      "car_L100": 5.7,
+      "fleet_avg_L100": 6.2,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2013": {
+      "country_name": "Spain",
+      "suv_L100": 6.9,
+      "car_L100": 5.3,
+      "fleet_avg_L100": 5.8,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2015": {
+      "country_name": "Spain",
+      "suv_L100": 6.7,
+      "car_L100": 5.2,
+      "fleet_avg_L100": 5.6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2017": {
+      "country_name": "Spain",
+      "suv_L100": 6.8,
+      "car_L100": 5.2,
+      "fleet_avg_L100": 5.7,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2019": {
+      "country_name": "Spain",
+      "suv_L100": 7,
+      "car_L100": 5.4,
+      "fleet_avg_L100": 5.9,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2020": {
+      "country_name": "Spain",
+      "suv_L100": 6.5,
+      "car_L100": 5,
+      "fleet_avg_L100": 5.5,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2022": {
+      "country_name": "Spain",
+      "suv_L100": 6.4,
+      "car_L100": 4.9,
+      "fleet_avg_L100": 5.4,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2023": {
+      "country_name": "Spain",
+      "suv_L100": 6.3,
+      "car_L100": 4.8,
+      "fleet_avg_L100": 5.3,
+      "region": "Europe",
+      "data_quality": "estimated"
+    }
+  },
+  "est": {
+    "2010": {
+      "country_name": "Estonia",
+      "suv_L100": 8.2,
+      "car_L100": 6.3,
+      "fleet_avg_L100": 6.9,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2015": {
+      "country_name": "Estonia",
+      "suv_L100": 7.6,
+      "car_L100": 5.8,
+      "fleet_avg_L100": 6.4,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2019": {
+      "country_name": "Estonia",
+      "suv_L100": 7.4,
+      "car_L100": 5.7,
+      "fleet_avg_L100": 6.2,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2022": {
+      "country_name": "Estonia",
+      "suv_L100": 7,
+      "car_L100": 5.4,
+      "fleet_avg_L100": 5.9,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2023": {
+      "country_name": "Estonia",
+      "suv_L100": 6.8,
+      "car_L100": 5.2,
+      "fleet_avg_L100": 5.7,
+      "region": "Europe",
+      "data_quality": "estimated"
+    }
+  },
+  "finland": {
+    "2010": {
+      "country_name": "Finland",
+      "suv_L100": 8,
+      "car_L100": 6.2,
+      "fleet_avg_L100": 6.8,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2015": {
+      "country_name": "Finland",
+      "suv_L100": 7.2,
+      "car_L100": 5.5,
+      "fleet_avg_L100": 6.1,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2017": {
+      "country_name": "Finland",
+      "suv_L100": 7,
+      "car_L100": 5.4,
+      "fleet_avg_L100": 5.9,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2019": {
+      "country_name": "Finland",
+      "suv_L100": 6.6,
+      "car_L100": 5.1,
+      "fleet_avg_L100": 5.6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2022": {
+      "country_name": "Finland",
+      "suv_L100": 5.6,
+      "car_L100": 4.3,
+      "fleet_avg_L100": 4.7,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2023": {
+      "country_name": "Finland",
+      "suv_L100": 5.2,
+      "car_L100": 4,
+      "fleet_avg_L100": 4.4,
+      "region": "Europe",
+      "data_quality": "estimated"
+    }
+  },
+  "fra": {
+    "2010": {
+      "country_name": "France",
+      "suv_L100": 7.5,
+      "car_L100": 5.8,
+      "fleet_avg_L100": 6.3,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2011": {
+      "country_name": "France",
+      "suv_L100": 7.3,
+      "car_L100": 5.6,
+      "fleet_avg_L100": 6.1,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2012": {
+      "country_name": "France",
+      "suv_L100": 7.1,
+      "car_L100": 5.5,
+      "fleet_avg_L100": 6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2013": {
+      "country_name": "France",
+      "suv_L100": 6.9,
+      "car_L100": 5.3,
+      "fleet_avg_L100": 5.8,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2014": {
+      "country_name": "France",
+      "suv_L100": 6.8,
+      "car_L100": 5.2,
+      "fleet_avg_L100": 5.7,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2015": {
+      "country_name": "France",
+      "suv_L100": 6.7,
+      "car_L100": 5.1,
+      "fleet_avg_L100": 5.6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2016": {
+      "country_name": "France",
+      "suv_L100": 6.7,
+      "car_L100": 5.1,
+      "fleet_avg_L100": 5.6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2017": {
+      "country_name": "France",
+      "suv_L100": 6.8,
+      "car_L100": 5.2,
+      "fleet_avg_L100": 5.7,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2018": {
+      "country_name": "France",
+      "suv_L100": 6.9,
+      "car_L100": 5.3,
+      "fleet_avg_L100": 5.8,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2019": {
+      "country_name": "France",
+      "suv_L100": 7,
+      "car_L100": 5.4,
+      "fleet_avg_L100": 5.9,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2020": {
+      "country_name": "France",
+      "suv_L100": 6.5,
+      "car_L100": 5,
+      "fleet_avg_L100": 5.5,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2021": {
+      "country_name": "France",
+      "suv_L100": 6.2,
+      "car_L100": 4.8,
+      "fleet_avg_L100": 5.2,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2022": {
+      "country_name": "France",
+      "suv_L100": 6.3,
+      "car_L100": 4.8,
+      "fleet_avg_L100": 5.3,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2023": {
+      "country_name": "France",
+      "suv_L100": 6.4,
+      "car_L100": 4.9,
+      "fleet_avg_L100": 5.4,
+      "region": "Europe",
+      "data_quality": "estimated"
+    }
+  },
+  "united-kingdom": {
+    "2010": {
+      "country_name": "United Kingdom",
+      "suv_L100": 7.8,
+      "car_L100": 6,
+      "fleet_avg_L100": 6.5,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2013": {
+      "country_name": "United Kingdom",
+      "suv_L100": 7.3,
+      "car_L100": 5.6,
+      "fleet_avg_L100": 6.1,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2015": {
+      "country_name": "United Kingdom",
+      "suv_L100": 7,
+      "car_L100": 5.4,
+      "fleet_avg_L100": 5.9,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2017": {
+      "country_name": "United Kingdom",
+      "suv_L100": 7.1,
+      "car_L100": 5.5,
+      "fleet_avg_L100": 6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2019": {
+      "country_name": "United Kingdom",
+      "suv_L100": 7.3,
+      "car_L100": 5.6,
+      "fleet_avg_L100": 6.1,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2020": {
+      "country_name": "United Kingdom",
+      "suv_L100": 6.8,
+      "car_L100": 5.2,
+      "fleet_avg_L100": 5.7,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2021": {
+      "country_name": "United Kingdom",
+      "suv_L100": 6.4,
+      "car_L100": 4.9,
+      "fleet_avg_L100": 5.4,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2022": {
+      "country_name": "United Kingdom",
+      "suv_L100": 6.2,
+      "car_L100": 4.8,
+      "fleet_avg_L100": 5.2,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2023": {
+      "country_name": "United Kingdom",
+      "suv_L100": 6,
+      "car_L100": 4.6,
+      "fleet_avg_L100": 5,
+      "region": "Europe",
+      "data_quality": "estimated"
+    }
+  },
+  "greece": {
+    "2010": {
+      "country_name": "Greece",
+      "suv_L100": 7.4,
+      "car_L100": 5.7,
+      "fleet_avg_L100": 6.2,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2015": {
+      "country_name": "Greece",
+      "suv_L100": 6.8,
+      "car_L100": 5.2,
+      "fleet_avg_L100": 5.7,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2017": {
+      "country_name": "Greece",
+      "suv_L100": 6.7,
+      "car_L100": 5.2,
+      "fleet_avg_L100": 5.6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2019": {
+      "country_name": "Greece",
+      "suv_L100": 6.6,
+      "car_L100": 5.1,
+      "fleet_avg_L100": 5.6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2022": {
+      "country_name": "Greece",
+      "suv_L100": 6,
+      "car_L100": 4.6,
+      "fleet_avg_L100": 5,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2023": {
+      "country_name": "Greece",
+      "suv_L100": 5.8,
+      "car_L100": 4.5,
+      "fleet_avg_L100": 4.9,
+      "region": "Europe",
+      "data_quality": "estimated"
+    }
+  },
+  "hun": {
+    "2010": {
+      "country_name": "Hungary",
+      "suv_L100": 7.8,
+      "car_L100": 6,
+      "fleet_avg_L100": 6.6,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2015": {
+      "country_name": "Hungary",
+      "suv_L100": 7.2,
+      "car_L100": 5.5,
+      "fleet_avg_L100": 6.1,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2017": {
+      "country_name": "Hungary",
+      "suv_L100": 7,
+      "car_L100": 5.4,
+      "fleet_avg_L100": 5.9,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2019": {
+      "country_name": "Hungary",
+      "suv_L100": 6.9,
+      "car_L100": 5.3,
+      "fleet_avg_L100": 5.8,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2022": {
+      "country_name": "Hungary",
+      "suv_L100": 6.5,
+      "car_L100": 5,
+      "fleet_avg_L100": 5.5,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2023": {
+      "country_name": "Hungary",
+      "suv_L100": 6.3,
+      "car_L100": 4.8,
+      "fleet_avg_L100": 5.3,
+      "region": "Europe",
+      "data_quality": "estimated"
+    }
+  },
+  "ireland": {
+    "2010": {
+      "country_name": "Ireland",
+      "suv_L100": 7.4,
+      "car_L100": 5.7,
+      "fleet_avg_L100": 6.2,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2015": {
+      "country_name": "Ireland",
+      "suv_L100": 6.8,
+      "car_L100": 5.2,
+      "fleet_avg_L100": 5.7,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2017": {
+      "country_name": "Ireland",
+      "suv_L100": 6.6,
+      "car_L100": 5.1,
+      "fleet_avg_L100": 5.6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2019": {
+      "country_name": "Ireland",
+      "suv_L100": 6.5,
+      "car_L100": 5,
+      "fleet_avg_L100": 5.5,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2022": {
+      "country_name": "Ireland",
+      "suv_L100": 6,
+      "car_L100": 4.6,
+      "fleet_avg_L100": 5,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2023": {
+      "country_name": "Ireland",
+      "suv_L100": 5.8,
+      "car_L100": 4.5,
+      "fleet_avg_L100": 4.9,
+      "region": "Europe",
+      "data_quality": "estimated"
+    }
+  },
+  "iceland": {
+    "2010": {
+      "country_name": "Iceland",
+      "suv_L100": 8,
+      "car_L100": 6.2,
+      "fleet_avg_L100": 6.8,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2015": {
+      "country_name": "Iceland",
+      "suv_L100": 7.2,
+      "car_L100": 5.5,
+      "fleet_avg_L100": 6.1,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2019": {
+      "country_name": "Iceland",
+      "suv_L100": 6,
+      "car_L100": 4.6,
+      "fleet_avg_L100": 5,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2022": {
+      "country_name": "Iceland",
+      "suv_L100": 4.8,
+      "car_L100": 3.7,
+      "fleet_avg_L100": 4,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2023": {
+      "country_name": "Iceland",
+      "suv_L100": 4.5,
+      "car_L100": 3.5,
+      "fleet_avg_L100": 3.8,
+      "region": "Europe",
+      "data_quality": "estimated"
+    }
+  },
+  "isr": {
+    "2010": {
+      "country_name": "Israel",
+      "suv_L100": 8.6,
+      "car_L100": 6.6,
+      "fleet_avg_L100": 7.3,
+      "region": "Middle East",
+      "data_quality": "estimated"
+    },
+    "2015": {
+      "country_name": "Israel",
+      "suv_L100": 7.8,
+      "car_L100": 6,
+      "fleet_avg_L100": 6.6,
+      "region": "Middle East",
+      "data_quality": "estimated"
+    },
+    "2019": {
+      "country_name": "Israel",
+      "suv_L100": 7.2,
+      "car_L100": 5.5,
+      "fleet_avg_L100": 6.1,
+      "region": "Middle East",
+      "data_quality": "estimated"
+    },
+    "2023": {
+      "country_name": "Israel",
+      "suv_L100": 6.4,
+      "car_L100": 4.9,
+      "fleet_avg_L100": 5.4,
+      "region": "Middle East",
+      "data_quality": "estimated"
+    }
+  },
+  "italy": {
+    "2010": {
+      "country_name": "Italy",
+      "suv_L100": 7.2,
+      "car_L100": 5.5,
+      "fleet_avg_L100": 6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2013": {
+      "country_name": "Italy",
+      "suv_L100": 6.8,
+      "car_L100": 5.2,
+      "fleet_avg_L100": 5.7,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2015": {
+      "country_name": "Italy",
+      "suv_L100": 6.6,
+      "car_L100": 5.1,
+      "fleet_avg_L100": 5.6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2017": {
+      "country_name": "Italy",
+      "suv_L100": 6.5,
+      "car_L100": 5,
+      "fleet_avg_L100": 5.5,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2019": {
+      "country_name": "Italy",
+      "suv_L100": 6.7,
+      "car_L100": 5.2,
+      "fleet_avg_L100": 5.6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2020": {
+      "country_name": "Italy",
+      "suv_L100": 6.4,
+      "car_L100": 4.9,
+      "fleet_avg_L100": 5.4,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2022": {
+      "country_name": "Italy",
+      "suv_L100": 6.5,
+      "car_L100": 5,
+      "fleet_avg_L100": 5.5,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2023": {
+      "country_name": "Italy",
+      "suv_L100": 6.8,
+      "car_L100": 5.2,
+      "fleet_avg_L100": 5.7,
+      "region": "Europe",
+      "data_quality": "measured"
+    }
+  },
+  "japan": {
+    "2010": {
+      "country_name": "Japan",
+      "suv_L100": 7,
+      "car_L100": 5.4,
+      "fleet_avg_L100": 5.9,
+      "region": "Asia",
+      "data_quality": "measured"
+    },
+    "2011": {
+      "country_name": "Japan",
+      "suv_L100": 6.6,
+      "car_L100": 5.1,
+      "fleet_avg_L100": 5.6,
+      "region": "Asia",
+      "data_quality": "measured"
+    },
+    "2012": {
+      "country_name": "Japan",
+      "suv_L100": 6.2,
+      "car_L100": 4.8,
+      "fleet_avg_L100": 5.2,
+      "region": "Asia",
+      "data_quality": "measured"
+    },
+    "2013": {
+      "country_name": "Japan",
+      "suv_L100": 5.9,
+      "car_L100": 4.5,
+      "fleet_avg_L100": 4.9,
+      "region": "Asia",
+      "data_quality": "measured"
+    },
+    "2014": {
+      "country_name": "Japan",
+      "suv_L100": 5.7,
+      "car_L100": 4.4,
+      "fleet_avg_L100": 4.8,
+      "region": "Asia",
+      "data_quality": "measured"
+    },
+    "2015": {
+      "country_name": "Japan",
+      "suv_L100": 5.6,
+      "car_L100": 4.3,
+      "fleet_avg_L100": 4.7,
+      "region": "Asia",
+      "data_quality": "measured"
+    },
+    "2016": {
+      "country_name": "Japan",
+      "suv_L100": 5.6,
+      "car_L100": 4.3,
+      "fleet_avg_L100": 4.7,
+      "region": "Asia",
+      "data_quality": "measured"
+    },
+    "2017": {
+      "country_name": "Japan",
+      "suv_L100": 5.8,
+      "car_L100": 4.5,
+      "fleet_avg_L100": 4.9,
+      "region": "Asia",
+      "data_quality": "measured"
+    },
+    "2018": {
+      "country_name": "Japan",
+      "suv_L100": 5.7,
+      "car_L100": 4.4,
+      "fleet_avg_L100": 4.8,
+      "region": "Asia",
+      "data_quality": "measured"
+    },
+    "2019": {
+      "country_name": "Japan",
+      "suv_L100": 5.5,
+      "car_L100": 4.2,
+      "fleet_avg_L100": 4.6,
+      "region": "Asia",
+      "data_quality": "measured"
+    },
+    "2020": {
+      "country_name": "Japan",
+      "suv_L100": 5.4,
+      "car_L100": 4.2,
+      "fleet_avg_L100": 4.5,
+      "region": "Asia",
+      "data_quality": "measured"
+    },
+    "2021": {
+      "country_name": "Japan",
+      "suv_L100": 5.3,
+      "car_L100": 4.1,
+      "fleet_avg_L100": 4.4,
+      "region": "Asia",
+      "data_quality": "measured"
+    },
+    "2022": {
+      "country_name": "Japan",
+      "suv_L100": 5.2,
+      "car_L100": 4,
+      "fleet_avg_L100": 4.3,
+      "region": "Asia",
+      "data_quality": "measured"
+    },
+    "2023": {
+      "country_name": "Japan",
+      "suv_L100": 5,
+      "car_L100": 3.8,
+      "fleet_avg_L100": 4.1,
+      "region": "Asia",
+      "data_quality": "estimated"
+    }
+  },
+  "korea": {
+    "2010": {
+      "country_name": "South Korea",
+      "suv_L100": 8.2,
+      "car_L100": 6.3,
+      "fleet_avg_L100": 6.9,
+      "region": "Asia",
+      "data_quality": "measured"
+    },
+    "2013": {
+      "country_name": "South Korea",
+      "suv_L100": 7.6,
+      "car_L100": 5.8,
+      "fleet_avg_L100": 6.4,
+      "region": "Asia",
+      "data_quality": "measured"
+    },
+    "2015": {
+      "country_name": "South Korea",
+      "suv_L100": 7.2,
+      "car_L100": 5.5,
+      "fleet_avg_L100": 6.1,
+      "region": "Asia",
+      "data_quality": "measured"
+    },
+    "2017": {
+      "country_name": "South Korea",
+      "suv_L100": 7,
+      "car_L100": 5.4,
+      "fleet_avg_L100": 5.9,
+      "region": "Asia",
+      "data_quality": "measured"
+    },
+    "2019": {
+      "country_name": "South Korea",
+      "suv_L100": 6.8,
+      "car_L100": 5.2,
+      "fleet_avg_L100": 5.7,
+      "region": "Asia",
+      "data_quality": "measured"
+    },
+    "2021": {
+      "country_name": "South Korea",
+      "suv_L100": 6.4,
+      "car_L100": 4.9,
+      "fleet_avg_L100": 5.4,
+      "region": "Asia",
+      "data_quality": "estimated"
+    },
+    "2022": {
+      "country_name": "South Korea",
+      "suv_L100": 6.2,
+      "car_L100": 4.8,
+      "fleet_avg_L100": 5.2,
+      "region": "Asia",
+      "data_quality": "estimated"
+    },
+    "2023": {
+      "country_name": "South Korea",
+      "suv_L100": 6,
+      "car_L100": 4.6,
+      "fleet_avg_L100": 5,
+      "region": "Asia",
+      "data_quality": "estimated"
+    }
+  },
+  "ltu": {
+    "2010": {
+      "country_name": "Lithuania",
+      "suv_L100": 8,
+      "car_L100": 6.2,
+      "fleet_avg_L100": 6.8,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2015": {
+      "country_name": "Lithuania",
+      "suv_L100": 7.4,
+      "car_L100": 5.7,
+      "fleet_avg_L100": 6.3,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2019": {
+      "country_name": "Lithuania",
+      "suv_L100": 7.2,
+      "car_L100": 5.5,
+      "fleet_avg_L100": 6.1,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2022": {
+      "country_name": "Lithuania",
+      "suv_L100": 6.8,
+      "car_L100": 5.2,
+      "fleet_avg_L100": 5.7,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2023": {
+      "country_name": "Lithuania",
+      "suv_L100": 6.6,
+      "car_L100": 5.1,
+      "fleet_avg_L100": 5.6,
+      "region": "Europe",
+      "data_quality": "estimated"
+    }
+  },
+  "luxembourg": {
+    "2010": {
+      "country_name": "Luxembourg",
+      "suv_L100": 8.4,
+      "car_L100": 6.5,
+      "fleet_avg_L100": 7.1,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2015": {
+      "country_name": "Luxembourg",
+      "suv_L100": 7.8,
+      "car_L100": 6,
+      "fleet_avg_L100": 6.6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2019": {
+      "country_name": "Luxembourg",
+      "suv_L100": 7.6,
+      "car_L100": 5.8,
+      "fleet_avg_L100": 6.4,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2022": {
+      "country_name": "Luxembourg",
+      "suv_L100": 7.2,
+      "car_L100": 5.5,
+      "fleet_avg_L100": 6.1,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2023": {
+      "country_name": "Luxembourg",
+      "suv_L100": 7,
+      "car_L100": 5.4,
+      "fleet_avg_L100": 5.9,
+      "region": "Europe",
+      "data_quality": "estimated"
+    }
+  },
+  "latvia": {
+    "2010": {
+      "country_name": "Latvia",
+      "suv_L100": 8,
+      "car_L100": 6.2,
+      "fleet_avg_L100": 6.8,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2015": {
+      "country_name": "Latvia",
+      "suv_L100": 7.4,
+      "car_L100": 5.7,
+      "fleet_avg_L100": 6.3,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2019": {
+      "country_name": "Latvia",
+      "suv_L100": 7.2,
+      "car_L100": 5.5,
+      "fleet_avg_L100": 6.1,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2022": {
+      "country_name": "Latvia",
+      "suv_L100": 6.8,
+      "car_L100": 5.2,
+      "fleet_avg_L100": 5.7,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2023": {
+      "country_name": "Latvia",
+      "suv_L100": 6.6,
+      "car_L100": 5.1,
+      "fleet_avg_L100": 5.6,
+      "region": "Europe",
+      "data_quality": "estimated"
+    }
+  },
+  "mex": {
+    "2010": {
+      "country_name": "Mexico",
+      "suv_L100": 10,
+      "car_L100": 7.7,
+      "fleet_avg_L100": 8.5,
+      "region": "Latin America",
+      "data_quality": "measured"
+    },
+    "2013": {
+      "country_name": "Mexico",
+      "suv_L100": 9.6,
+      "car_L100": 7.4,
+      "fleet_avg_L100": 8.2,
+      "region": "Latin America",
+      "data_quality": "measured"
+    },
+    "2015": {
+      "country_name": "Mexico",
+      "suv_L100": 9.4,
+      "car_L100": 7.2,
+      "fleet_avg_L100": 8,
+      "region": "Latin America",
+      "data_quality": "measured"
+    },
+    "2017": {
+      "country_name": "Mexico",
+      "suv_L100": 9.2,
+      "car_L100": 7.1,
+      "fleet_avg_L100": 7.8,
+      "region": "Latin America",
+      "data_quality": "measured"
+    },
+    "2019": {
+      "country_name": "Mexico",
+      "suv_L100": 9,
+      "car_L100": 6.9,
+      "fleet_avg_L100": 7.7,
+      "region": "Latin America",
+      "data_quality": "measured"
+    },
+    "2021": {
+      "country_name": "Mexico",
+      "suv_L100": 8.8,
+      "car_L100": 6.8,
+      "fleet_avg_L100": 7.5,
+      "region": "Latin America",
+      "data_quality": "estimated"
+    },
+    "2023": {
+      "country_name": "Mexico",
+      "suv_L100": 8.6,
+      "car_L100": 6.6,
+      "fleet_avg_L100": 7.3,
+      "region": "Latin America",
+      "data_quality": "estimated"
+    }
+  },
+  "netherlands": {
+    "2010": {
+      "country_name": "Netherlands",
+      "suv_L100": 7.5,
+      "car_L100": 5.8,
+      "fleet_avg_L100": 6.3,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2015": {
+      "country_name": "Netherlands",
+      "suv_L100": 6.5,
+      "car_L100": 5,
+      "fleet_avg_L100": 5.5,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2017": {
+      "country_name": "Netherlands",
+      "suv_L100": 6.3,
+      "car_L100": 4.8,
+      "fleet_avg_L100": 5.3,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2019": {
+      "country_name": "Netherlands",
+      "suv_L100": 6,
+      "car_L100": 4.6,
+      "fleet_avg_L100": 5,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2022": {
+      "country_name": "Netherlands",
+      "suv_L100": 5.5,
+      "car_L100": 4.2,
+      "fleet_avg_L100": 4.6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2023": {
+      "country_name": "Netherlands",
+      "suv_L100": 5.2,
+      "car_L100": 4,
+      "fleet_avg_L100": 4.4,
+      "region": "Europe",
+      "data_quality": "estimated"
+    }
+  },
+  "norway": {
+    "2010": {
+      "country_name": "Norway",
+      "suv_L100": 7.8,
+      "car_L100": 6,
+      "fleet_avg_L100": 6.6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2015": {
+      "country_name": "Norway",
+      "suv_L100": 6.8,
+      "car_L100": 5.2,
+      "fleet_avg_L100": 5.7,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2017": {
+      "country_name": "Norway",
+      "suv_L100": 6.2,
+      "car_L100": 4.8,
+      "fleet_avg_L100": 5.2,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2019": {
+      "country_name": "Norway",
+      "suv_L100": 5.5,
+      "car_L100": 4.2,
+      "fleet_avg_L100": 4.6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2022": {
+      "country_name": "Norway",
+      "suv_L100": 4.5,
+      "car_L100": 3.5,
+      "fleet_avg_L100": 3.8,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2023": {
+      "country_name": "Norway",
+      "suv_L100": 4.2,
+      "car_L100": 3.2,
+      "fleet_avg_L100": 3.5,
+      "region": "Europe",
+      "data_quality": "estimated"
+    }
+  },
+  "new-zealand": {
+    "2010": {
+      "country_name": "New Zealand",
+      "suv_L100": 10.6,
+      "car_L100": 8.2,
+      "fleet_avg_L100": 9.4,
+      "region": "Americas",
+      "data_quality": "estimated"
+    },
+    "2013": {
+      "country_name": "New Zealand",
+      "suv_L100": 10.1,
+      "car_L100": 7.8,
+      "fleet_avg_L100": 8.9,
+      "region": "Americas",
+      "data_quality": "estimated"
+    },
+    "2015": {
+      "country_name": "New Zealand",
+      "suv_L100": 9.8,
+      "car_L100": 7.5,
+      "fleet_avg_L100": 8.6,
+      "region": "Americas",
+      "data_quality": "estimated"
+    },
+    "2017": {
+      "country_name": "New Zealand",
+      "suv_L100": 9.5,
+      "car_L100": 7.3,
+      "fleet_avg_L100": 8.4,
+      "region": "Americas",
+      "data_quality": "estimated"
+    },
+    "2019": {
+      "country_name": "New Zealand",
+      "suv_L100": 9.3,
+      "car_L100": 7.1,
+      "fleet_avg_L100": 8.2,
+      "region": "Americas",
+      "data_quality": "estimated"
+    },
+    "2021": {
+      "country_name": "New Zealand",
+      "suv_L100": 8.9,
+      "car_L100": 6.8,
+      "fleet_avg_L100": 7.9,
+      "region": "Americas",
+      "data_quality": "estimated"
+    },
+    "2023": {
+      "country_name": "New Zealand",
+      "suv_L100": 8.5,
+      "car_L100": 6.5,
+      "fleet_avg_L100": 7.5,
+      "region": "Americas",
+      "data_quality": "estimated"
+    }
+  },
+  "pol": {
+    "2010": {
+      "country_name": "Poland",
+      "suv_L100": 7.8,
+      "car_L100": 6,
+      "fleet_avg_L100": 6.6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2015": {
+      "country_name": "Poland",
+      "suv_L100": 7.3,
+      "car_L100": 5.6,
+      "fleet_avg_L100": 6.1,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2017": {
+      "country_name": "Poland",
+      "suv_L100": 7.1,
+      "car_L100": 5.5,
+      "fleet_avg_L100": 6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2019": {
+      "country_name": "Poland",
+      "suv_L100": 7,
+      "car_L100": 5.4,
+      "fleet_avg_L100": 5.9,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2022": {
+      "country_name": "Poland",
+      "suv_L100": 6.6,
+      "car_L100": 5.1,
+      "fleet_avg_L100": 5.6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2023": {
+      "country_name": "Poland",
+      "suv_L100": 6.4,
+      "car_L100": 4.9,
+      "fleet_avg_L100": 5.4,
+      "region": "Europe",
+      "data_quality": "estimated"
+    }
+  },
+  "portugal": {
+    "2010": {
+      "country_name": "Portugal",
+      "suv_L100": 7.2,
+      "car_L100": 5.5,
+      "fleet_avg_L100": 6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2015": {
+      "country_name": "Portugal",
+      "suv_L100": 6.6,
+      "car_L100": 5.1,
+      "fleet_avg_L100": 5.6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2017": {
+      "country_name": "Portugal",
+      "suv_L100": 6.5,
+      "car_L100": 5,
+      "fleet_avg_L100": 5.5,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2019": {
+      "country_name": "Portugal",
+      "suv_L100": 6.6,
+      "car_L100": 5.1,
+      "fleet_avg_L100": 5.6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2022": {
+      "country_name": "Portugal",
+      "suv_L100": 6.2,
+      "car_L100": 4.8,
+      "fleet_avg_L100": 5.2,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2023": {
+      "country_name": "Portugal",
+      "suv_L100": 6,
+      "car_L100": 4.6,
+      "fleet_avg_L100": 5,
+      "region": "Europe",
+      "data_quality": "estimated"
+    }
+  },
+  "svk": {
+    "2010": {
+      "country_name": "Slovakia",
+      "suv_L100": 7.6,
+      "car_L100": 5.8,
+      "fleet_avg_L100": 6.4,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2015": {
+      "country_name": "Slovakia",
+      "suv_L100": 7,
+      "car_L100": 5.4,
+      "fleet_avg_L100": 5.9,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2017": {
+      "country_name": "Slovakia",
+      "suv_L100": 6.8,
+      "car_L100": 5.2,
+      "fleet_avg_L100": 5.7,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2019": {
+      "country_name": "Slovakia",
+      "suv_L100": 6.7,
+      "car_L100": 5.2,
+      "fleet_avg_L100": 5.6,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2022": {
+      "country_name": "Slovakia",
+      "suv_L100": 6.3,
+      "car_L100": 4.8,
+      "fleet_avg_L100": 5.3,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2023": {
+      "country_name": "Slovakia",
+      "suv_L100": 6.1,
+      "car_L100": 4.7,
+      "fleet_avg_L100": 5.1,
+      "region": "Europe",
+      "data_quality": "estimated"
+    }
+  },
+  "slovenia": {
+    "2010": {
+      "country_name": "Slovenia",
+      "suv_L100": 7.4,
+      "car_L100": 5.7,
+      "fleet_avg_L100": 6.2,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2015": {
+      "country_name": "Slovenia",
+      "suv_L100": 6.8,
+      "car_L100": 5.2,
+      "fleet_avg_L100": 5.7,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2019": {
+      "country_name": "Slovenia",
+      "suv_L100": 6.6,
+      "car_L100": 5.1,
+      "fleet_avg_L100": 5.6,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2022": {
+      "country_name": "Slovenia",
+      "suv_L100": 6.2,
+      "car_L100": 4.8,
+      "fleet_avg_L100": 5.2,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2023": {
+      "country_name": "Slovenia",
+      "suv_L100": 6,
+      "car_L100": 4.6,
+      "fleet_avg_L100": 5,
+      "region": "Europe",
+      "data_quality": "estimated"
+    }
+  },
+  "sweden": {
+    "2010": {
+      "country_name": "Sweden",
+      "suv_L100": 8.2,
+      "car_L100": 6.3,
+      "fleet_avg_L100": 6.9,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2015": {
+      "country_name": "Sweden",
+      "suv_L100": 7.4,
+      "car_L100": 5.7,
+      "fleet_avg_L100": 6.3,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2017": {
+      "country_name": "Sweden",
+      "suv_L100": 7.2,
+      "car_L100": 5.5,
+      "fleet_avg_L100": 6.1,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2019": {
+      "country_name": "Sweden",
+      "suv_L100": 6.8,
+      "car_L100": 5.2,
+      "fleet_avg_L100": 5.7,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2022": {
+      "country_name": "Sweden",
+      "suv_L100": 5,
+      "car_L100": 3.8,
+      "fleet_avg_L100": 4.2,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2023": {
+      "country_name": "Sweden",
+      "suv_L100": 4.5,
+      "car_L100": 3.5,
+      "fleet_avg_L100": 3.8,
+      "region": "Europe",
+      "data_quality": "measured"
+    }
+  },
+  "turkiye": {
+    "2010": {
+      "country_name": "Turkey",
+      "suv_L100": 7.8,
+      "car_L100": 6,
+      "fleet_avg_L100": 6.6,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2013": {
+      "country_name": "Turkey",
+      "suv_L100": 7.2,
+      "car_L100": 5.5,
+      "fleet_avg_L100": 6.1,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2015": {
+      "country_name": "Turkey",
+      "suv_L100": 6.9,
+      "car_L100": 5.3,
+      "fleet_avg_L100": 5.8,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2017": {
+      "country_name": "Turkey",
+      "suv_L100": 6.8,
+      "car_L100": 5.2,
+      "fleet_avg_L100": 5.7,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2019": {
+      "country_name": "Turkey",
+      "suv_L100": 6.9,
+      "car_L100": 5.3,
+      "fleet_avg_L100": 5.8,
+      "region": "Europe",
+      "data_quality": "measured"
+    },
+    "2022": {
+      "country_name": "Turkey",
+      "suv_L100": 6.6,
+      "car_L100": 5.1,
+      "fleet_avg_L100": 5.6,
+      "region": "Europe",
+      "data_quality": "estimated"
+    },
+    "2023": {
+      "country_name": "Turkey",
+      "suv_L100": 6.4,
+      "car_L100": 4.9,
+      "fleet_avg_L100": 5.4,
+      "region": "Europe",
+      "data_quality": "estimated"
+    }
+  },
+  "united-states": {
+    "2010": {
+      "country_name": "United States",
+      "suv_L100": 11.2,
+      "car_L100": 8.6,
+      "fleet_avg_L100": 9.8,
+      "region": "Americas",
+      "data_quality": "measured"
+    },
+    "2011": {
+      "country_name": "United States",
+      "suv_L100": 10.9,
+      "car_L100": 8.4,
+      "fleet_avg_L100": 9.6,
+      "region": "Americas",
+      "data_quality": "measured"
+    },
+    "2012": {
+      "country_name": "United States",
+      "suv_L100": 10.7,
+      "car_L100": 8.2,
+      "fleet_avg_L100": 9.4,
+      "region": "Americas",
+      "data_quality": "measured"
+    },
+    "2013": {
+      "country_name": "United States",
+      "suv_L100": 10.5,
+      "car_L100": 8.1,
+      "fleet_avg_L100": 9.3,
+      "region": "Americas",
+      "data_quality": "measured"
+    },
+    "2014": {
+      "country_name": "United States",
+      "suv_L100": 10.4,
+      "car_L100": 8,
+      "fleet_avg_L100": 9.2,
+      "region": "Americas",
+      "data_quality": "measured"
+    },
+    "2015": {
+      "country_name": "United States",
+      "suv_L100": 10.3,
+      "car_L100": 7.9,
+      "fleet_avg_L100": 9.1,
+      "region": "Americas",
+      "data_quality": "measured"
+    },
+    "2016": {
+      "country_name": "United States",
+      "suv_L100": 10.2,
+      "car_L100": 7.8,
+      "fleet_avg_L100": 9,
+      "region": "Americas",
+      "data_quality": "measured"
+    },
+    "2017": {
+      "country_name": "United States",
+      "suv_L100": 10.1,
+      "car_L100": 7.8,
+      "fleet_avg_L100": 8.9,
+      "region": "Americas",
+      "data_quality": "measured"
+    },
+    "2018": {
+      "country_name": "United States",
+      "suv_L100": 10.1,
+      "car_L100": 7.8,
+      "fleet_avg_L100": 8.9,
+      "region": "Americas",
+      "data_quality": "measured"
+    },
+    "2019": {
+      "country_name": "United States",
+      "suv_L100": 10.2,
+      "car_L100": 7.8,
+      "fleet_avg_L100": 9,
+      "region": "Americas",
+      "data_quality": "measured"
+    },
+    "2020": {
+      "country_name": "United States",
+      "suv_L100": 10,
+      "car_L100": 7.6,
+      "fleet_avg_L100": 8.8,
+      "region": "Americas",
+      "data_quality": "measured"
+    },
+    "2021": {
+      "country_name": "United States",
+      "suv_L100": 9.8,
+      "car_L100": 7.5,
+      "fleet_avg_L100": 8.6,
+      "region": "Americas",
+      "data_quality": "measured"
+    },
+    "2022": {
+      "country_name": "United States",
+      "suv_L100": 9.6,
+      "car_L100": 7.3,
+      "fleet_avg_L100": 8.5,
+      "region": "Americas",
+      "data_quality": "measured"
+    },
+    "2023": {
+      "country_name": "United States",
+      "suv_L100": 9.4,
+      "car_L100": 7.2,
+      "fleet_avg_L100": 8.3,
+      "region": "Americas",
+      "data_quality": "measured"
+    }
+  }
+}

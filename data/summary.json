@@ -38,9 +38,13 @@
     "Other oil products"
   ],
   "total_countries": 26,
-  "total_records": 43560,
-  "kaya_countries": 19,
-  "kaya_records": 384,
+  "total_records": 29952,
+  "kaya_countries": 26,
+  "kaya_records": 643,
   "ev_countries": 40,
-  "ev_records": 37766
+  "ev_records": 38073,
+  "category_countries": 54,
+  "category_records": 74108,
+  "fuel_benchmarks_countries": 39,
+  "fuel_benchmarks_historical_records": 291
 }

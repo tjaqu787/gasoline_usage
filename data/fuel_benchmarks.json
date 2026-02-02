@@ -1,0 +1,236 @@
+{
+  "australia": {
+    "country_name": "Australia",
+    "suv_L100": 9.8,
+    "car_L100": 7.5,
+    "region": "Americas"
+  },
+  "austria": {
+    "country_name": "Austria",
+    "suv_L100": 7.2,
+    "car_L100": 5.5,
+    "region": "Europe"
+  },
+  "belgium": {
+    "country_name": "Belgium",
+    "suv_L100": 7,
+    "car_L100": 5.4,
+    "region": "Europe"
+  },
+  "brazil": {
+    "country_name": "Brazil",
+    "suv_L100": 8.5,
+    "car_L100": 6.5,
+    "region": "Latin America"
+  },
+  "canada": {
+    "country_name": "Canada",
+    "suv_L100": 10.2,
+    "car_L100": 7.8,
+    "region": "Americas"
+  },
+  "switzerland": {
+    "country_name": "Switzerland",
+    "suv_L100": 7,
+    "car_L100": 5.4,
+    "region": "Europe"
+  },
+  "chl": {
+    "country_name": "Chile",
+    "suv_L100": 8.5,
+    "car_L100": 6.5,
+    "region": "Latin America"
+  },
+  "col": {
+    "country_name": "Colombia",
+    "suv_L100": 8.8,
+    "car_L100": 6.8,
+    "region": "Latin America"
+  },
+  "cri": {
+    "country_name": "Costa Rica",
+    "suv_L100": 8.5,
+    "car_L100": 6.5,
+    "region": "Latin America"
+  },
+  "cze": {
+    "country_name": "Czech Republic",
+    "suv_L100": 7.3,
+    "car_L100": 5.6,
+    "region": "Europe"
+  },
+  "germany": {
+    "country_name": "Germany",
+    "suv_L100": 7.8,
+    "car_L100": 6,
+    "region": "Europe"
+  },
+  "denmark": {
+    "country_name": "Denmark",
+    "suv_L100": 6.8,
+    "car_L100": 5.2,
+    "region": "Europe"
+  },
+  "spain": {
+    "country_name": "Spain",
+    "suv_L100": 7,
+    "car_L100": 5.4,
+    "region": "Europe"
+  },
+  "est": {
+    "country_name": "Estonia",
+    "suv_L100": 7.8,
+    "car_L100": 6,
+    "region": "Europe"
+  },
+  "finland": {
+    "country_name": "Finland",
+    "suv_L100": 7,
+    "car_L100": 5.4,
+    "region": "Europe"
+  },
+  "fra": {
+    "country_name": "France",
+    "suv_L100": 6.6,
+    "car_L100": 5.1,
+    "region": "Europe"
+  },
+  "united-kingdom": {
+    "country_name": "United Kingdom",
+    "suv_L100": 7.2,
+    "car_L100": 5.5,
+    "region": "Europe"
+  },
+  "greece": {
+    "country_name": "Greece",
+    "suv_L100": 6.6,
+    "car_L100": 5.1,
+    "region": "Europe"
+  },
+  "hun": {
+    "country_name": "Hungary",
+    "suv_L100": 7.2,
+    "car_L100": 5.5,
+    "region": "Europe"
+  },
+  "ireland": {
+    "country_name": "Ireland",
+    "suv_L100": 6.5,
+    "car_L100": 5,
+    "region": "Europe"
+  },
+  "iceland": {
+    "country_name": "Iceland",
+    "suv_L100": 8.5,
+    "car_L100": 6.5,
+    "region": "Europe"
+  },
+  "isr": {
+    "country_name": "Israel",
+    "suv_L100": 7.5,
+    "car_L100": 5.8,
+    "region": "Middle East/Other"
+  },
+  "italy": {
+    "country_name": "Italy",
+    "suv_L100": 6.8,
+    "car_L100": 5.2,
+    "region": "Europe"
+  },
+  "japan": {
+    "country_name": "Japan",
+    "suv_L100": 5.8,
+    "car_L100": 4.5,
+    "region": "Asia"
+  },
+  "korea": {
+    "country_name": "Korea",
+    "suv_L100": 6.5,
+    "car_L100": 5,
+    "region": "Asia"
+  },
+  "ltu": {
+    "country_name": "Lithuania",
+    "suv_L100": 7.9,
+    "car_L100": 6.1,
+    "region": "Europe"
+  },
+  "luxembourg": {
+    "country_name": "Luxembourg",
+    "suv_L100": 7.8,
+    "car_L100": 6,
+    "region": "Europe"
+  },
+  "latvia": {
+    "country_name": "Latvia",
+    "suv_L100": 7.9,
+    "car_L100": 6.1,
+    "region": "Europe"
+  },
+  "mex": {
+    "country_name": "Mexico",
+    "suv_L100": 9.5,
+    "car_L100": 7.3,
+    "region": "Latin America"
+  },
+  "netherlands": {
+    "country_name": "Netherlands",
+    "suv_L100": 6.8,
+    "car_L100": 5.2,
+    "region": "Europe"
+  },
+  "norway": {
+    "country_name": "Norway",
+    "suv_L100": 6,
+    "car_L100": 4.6,
+    "region": "Europe"
+  },
+  "new-zealand": {
+    "country_name": "New Zealand",
+    "suv_L100": 9,
+    "car_L100": 7,
+    "region": "Americas"
+  },
+  "pol": {
+    "country_name": "Poland",
+    "suv_L100": 7.4,
+    "car_L100": 5.7,
+    "region": "Europe"
+  },
+  "portugal": {
+    "country_name": "Portugal",
+    "suv_L100": 6.6,
+    "car_L100": 5.1,
+    "region": "Europe"
+  },
+  "svk": {
+    "country_name": "Slovakia",
+    "suv_L100": 7.2,
+    "car_L100": 5.5,
+    "region": "Europe"
+  },
+  "slovenia": {
+    "country_name": "Slovenia",
+    "suv_L100": 7.2,
+    "car_L100": 5.5,
+    "region": "Europe"
+  },
+  "sweden": {
+    "country_name": "Sweden",
+    "suv_L100": 6.5,
+    "car_L100": 5,
+    "region": "Europe"
+  },
+  "turkiye": {
+    "country_name": "Turkey",
+    "suv_L100": 6.8,
+    "car_L100": 5.2,
+    "region": "Middle East/Other"
+  },
+  "united-states": {
+    "country_name": "United States",
+    "suv_L100": 10.5,
+    "car_L100": 8,
+    "region": "Americas"
+  }
+}

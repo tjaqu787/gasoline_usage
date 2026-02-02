@@ -2,1708 +2,1372 @@
   "australia": {
     "2000": {
       "Gas/Diesel": 434003.0,
-      "Jet kerosene": 70087.0,
       "Motor gasoline": 573172.0
     },
     "2001": {
       "Gas/Diesel": 437897.0,
-      "Jet kerosene": 77162.0,
       "Motor gasoline": 548470.0
     },
     "2002": {
       "Gas/Diesel": 454728.0,
-      "Jet kerosene": 70505.0,
       "Motor gasoline": 577945.0
     },
     "2003": {
       "Gas/Diesel": 474908.0,
-      "Jet kerosene": 63723.0,
       "Motor gasoline": 581588.0
     },
     "2004": {
       "Gas/Diesel": 489478.0,
-      "Jet kerosene": 50827.0,
       "Motor gasoline": 616506.0
     },
     "2005": {
       "Gas/Diesel": 517949.0,
-      "Jet kerosene": 49655.0,
       "Motor gasoline": 597749.0
     },
     "2006": {
       "Gas/Diesel": 516692.0,
-      "Jet kerosene": 69165.0,
       "Motor gasoline": 585272.0
     },
     "2007": {
       "Gas/Diesel": 553369.0,
-      "Jet kerosene": 72515.0,
       "Motor gasoline": 590003.0
     },
     "2008": {
       "Gas/Diesel": 585105.0,
-      "Jet kerosene": 81265.0,
       "Motor gasoline": 583849.0
     },
     "2009": {
       "Gas/Diesel": 583804.0,
-      "Jet kerosene": 91942.0,
       "Motor gasoline": 586475.0
     },
     "2010": {
       "Gas/Diesel": 612771.0,
-      "Jet kerosene": 93742.0,
       "Motor gasoline": 587893.0
     },
     "2011": {
       "Gas/Diesel": 634051.0,
-      "Jet kerosene": 103839.0,
       "Motor gasoline": 595470.0
     },
     "2012": {
       "Gas/Diesel": 672388.0,
-      "Jet kerosene": 107838.0,
       "Motor gasoline": 585270.0
     },
     "2013": {
       "Gas/Diesel": 711022.0,
-      "Jet kerosene": 115182.0,
       "Motor gasoline": 583128.0
     },
     "2014": {
       "Gas/Diesel": 731758.0,
-      "Jet kerosene": 117036.0,
       "Motor gasoline": 565976.0
     },
     "2015": {
       "Gas/Diesel": 739766.0,
-      "Jet kerosene": 117148.0,
       "Motor gasoline": 566894.0
     },
     "2016": {
       "Gas/Diesel": 764922.0,
-      "Jet kerosene": 119348.0,
       "Motor gasoline": 564940.0
     },
     "2017": {
       "Gas/Diesel": 796302.0,
-      "Jet kerosene": 120211.0,
       "Motor gasoline": 571248.0
     },
     "2018": {
       "Gas/Diesel": 852964.0,
-      "Jet kerosene": 122718.0,
       "Motor gasoline": 562122.0
     },
     "2019": {
       "Gas/Diesel": 851971.0,
-      "Jet kerosene": 114770.0,
       "Motor gasoline": 552961.0
     },
     "2020": {
       "Gas/Diesel": 848333.0,
-      "Jet kerosene": 91719.0,
       "Motor gasoline": 490767.0
     },
     "2021": {
       "Gas/Diesel": 877416.0,
-      "Jet kerosene": 62527.0,
       "Motor gasoline": 489348.0
     },
     "2022": {
       "Gas/Diesel": 914903.0,
-      "Jet kerosene": 80025.0,
       "Motor gasoline": 451038.0
     },
     "2023": {
       "Gas/Diesel": 936809.0,
-      "Jet kerosene": 123327.0,
       "Motor gasoline": 487189.0
     }
   },
   "austria": {
     "2000": {
       "Gas/Diesel": 249533.0,
-      "Jet kerosene": 1339.0,
       "Motor gasoline": 83024.0
     },
     "2001": {
       "Gas/Diesel": 270383.0,
-      "Jet kerosene": 1256.0,
       "Motor gasoline": 83401.0
     },
     "2002": {
       "Gas/Diesel": 289266.0,
-      "Jet kerosene": 1256.0,
       "Motor gasoline": 89932.0
     },
     "2003": {
       "Gas/Diesel": 316480.0,
-      "Jet kerosene": 1256.0,
       "Motor gasoline": 92025.0
     },
     "2004": {
       "Gas/Diesel": 322383.0,
-      "Jet kerosene": 1297.0,
       "Motor gasoline": 90560.0
     },
     "2005": {
       "Gas/Diesel": 338907.0,
-      "Jet kerosene": 1322.0,
       "Motor gasoline": 88314.0
     },
     "2006": {
       "Gas/Diesel": 321841.0,
-      "Jet kerosene": 1393.0,
       "Motor gasoline": 83522.0
     },
     "2007": {
       "Gas/Diesel": 314673.0,
-      "Jet kerosene": 1426.0,
       "Motor gasoline": 81583.0
     },
     "2008": {
       "Gas/Diesel": 309086.0,
-      "Jet kerosene": 1392.0,
       "Motor gasoline": 76325.0
     },
     "2009": {
       "Gas/Diesel": 293864.0,
-      "Jet kerosene": 1342.0,
       "Motor gasoline": 74127.0
     },
     "2010": {
       "Gas/Diesel": 303408.0,
-      "Jet kerosene": 1311.0,
       "Motor gasoline": 73275.0
     },
     "2011": {
       "Gas/Diesel": 289754.0,
-      "Jet kerosene": 1234.0,
       "Motor gasoline": 67855.0
     },
     "2012": {
       "Gas/Diesel": 286006.0,
-      "Jet kerosene": 1224.0,
       "Motor gasoline": 67486.0
     },
     "2013": {
       "Gas/Diesel": 300781.0,
-      "Jet kerosene": 1228.0,
       "Motor gasoline": 66094.0
     },
     "2014": {
       "Gas/Diesel": 291137.0,
-      "Jet kerosene": 1182.0,
       "Motor gasoline": 64365.0
     },
     "2015": {
       "Gas/Diesel": 298804.0,
-      "Jet kerosene": 1178.0,
       "Motor gasoline": 65037.0
     },
     "2016": {
       "Gas/Diesel": 307986.0,
-      "Jet kerosene": 1130.0,
       "Motor gasoline": 65066.0
     },
     "2017": {
       "Gas/Diesel": 318950.0,
-      "Jet kerosene": 1108.0,
       "Motor gasoline": 64305.0
     },
     "2018": {
       "Gas/Diesel": 317140.0,
-      "Jet kerosene": 1166.0,
       "Motor gasoline": 65829.0
     },
     "2019": {
       "Gas/Diesel": 318866.0,
-      "Jet kerosene": 954.0,
       "Motor gasoline": 65555.0
     },
     "2020": {
       "Gas/Diesel": 288853.0,
-      "Jet kerosene": 600.0,
       "Motor gasoline": 54369.0
     },
     "2021": {
       "Gas/Diesel": 301077.0,
-      "Jet kerosene": 581.0,
       "Motor gasoline": 57374.0
     },
     "2022": {
       "Gas/Diesel": 280902.0,
-      "Jet kerosene": 662.0,
       "Motor gasoline": 59725.0
     },
     "2023": {
       "Gas/Diesel": 258456.0,
-      "Jet kerosene": 676.0,
       "Motor gasoline": 65056.0
     }
   },
   "belgium": {
     "2000": {
       "Gas/Diesel": 441996.0,
-      "Jet kerosene": 2960.0,
       "Motor gasoline": 94085.0
     },
     "2001": {
       "Gas/Diesel": 469980.0,
-      "Jet kerosene": 3089.0,
       "Motor gasoline": 91615.0
     },
     "2002": {
       "Gas/Diesel": 446865.0,
-      "Jet kerosene": 2926.0,
       "Motor gasoline": 87487.0
     },
     "2003": {
       "Gas/Diesel": 476838.0,
-      "Jet kerosene": 3064.0,
       "Motor gasoline": 88232.0
     },
     "2004": {
       "Gas/Diesel": 496261.0,
-      "Jet kerosene": 2788.0,
       "Motor gasoline": 80947.0
     },
     "2005": {
       "Gas/Diesel": 493502.0,
-      "Jet kerosene": 2750.0,
       "Motor gasoline": 75073.0
     },
     "2006": {
       "Gas/Diesel": 477408.0,
-      "Jet kerosene": 2759.0,
       "Motor gasoline": 69840.0
     },
     "2007": {
       "Gas/Diesel": 459342.0,
-      "Jet kerosene": 2210.0,
       "Motor gasoline": 66030.0
     },
     "2008": {
       "Gas/Diesel": 503667.0,
-      "Jet kerosene": 2227.0,
       "Motor gasoline": 60595.0
     },
     "2009": {
       "Gas/Diesel": 460143.0,
-      "Jet kerosene": 1984.0,
       "Motor gasoline": 57502.0
     },
     "2010": {
       "Gas/Diesel": 478942.0,
-      "Jet kerosene": 1687.0,
       "Motor gasoline": 51380.0
     },
     "2011": {
       "Gas/Diesel": 444963.0,
-      "Jet kerosene": 1628.0,
       "Motor gasoline": 49497.0
     },
     "2012": {
       "Gas/Diesel": 438480.0,
-      "Jet kerosene": 1561.0,
       "Motor gasoline": 48263.0
     },
     "2013": {
       "Gas/Diesel": 446589.0,
-      "Jet kerosene": 1503.0,
       "Motor gasoline": 48177.0
     },
     "2014": {
       "Gas/Diesel": 414479.0,
-      "Jet kerosene": 1427.0,
       "Motor gasoline": 51695.0
     },
     "2015": {
       "Gas/Diesel": 451514.0,
-      "Jet kerosene": 1528.0,
       "Motor gasoline": 54851.0
     },
     "2016": {
       "Gas/Diesel": 431239.0,
-      "Jet kerosene": 1528.0,
       "Motor gasoline": 59140.0
     },
     "2017": {
       "Gas/Diesel": 423536.0,
-      "Jet kerosene": 1507.0,
       "Motor gasoline": 59137.0
     },
     "2018": {
       "Gas/Diesel": 414138.0,
-      "Jet kerosene": 1570.0,
       "Motor gasoline": 65989.0
     },
     "2019": {
       "Gas/Diesel": 392909.0,
-      "Jet kerosene": 1356.0,
       "Motor gasoline": 73782.0
     },
     "2020": {
       "Gas/Diesel": 358484.0,
-      "Jet kerosene": 1469.0,
       "Motor gasoline": 60949.0
     },
     "2021": {
       "Gas/Diesel": 363082.0,
-      "Jet kerosene": 1222.0,
       "Motor gasoline": 73920.0
     },
     "2022": {
       "Gas/Diesel": 344310.0,
-      "Jet kerosene": 1343.0,
       "Motor gasoline": 83934.0
     },
     "2023": {
       "Gas/Diesel": 338166.0,
-      "Jet kerosene": 1339.0,
       "Motor gasoline": 91134.0
     }
   },
   "brazil": {
     "2000": {
       "Gas/Diesel": 1208980.0,
-      "Jet kerosene": 125771.0,
       "Motor gasoline": 533607.0
     },
     "2001": {
       "Gas/Diesel": 1258510.0,
-      "Jet kerosene": 129413.0,
       "Motor gasoline": 525359.0
     },
     "2002": {
       "Gas/Diesel": 1303015.0,
-      "Jet kerosene": 124473.0,
       "Motor gasoline": 501913.0
     },
     "2003": {
       "Gas/Diesel": 1274043.0,
-      "Jet kerosene": 88341.0,
       "Motor gasoline": 529839.0
     },
     "2004": {
       "Gas/Diesel": 1356313.0,
-      "Jet kerosene": 94412.0,
       "Motor gasoline": 547759.0
     },
     "2005": {
       "Gas/Diesel": 1344381.0,
-      "Jet kerosene": 102785.0,
       "Motor gasoline": 548973.0
     },
     "2006": {
       "Gas/Diesel": 1354722.0,
-      "Jet kerosene": 95877.0,
       "Motor gasoline": 583430.0
     },
     "2007": {
       "Gas/Diesel": 1433769.0,
-      "Jet kerosene": 106679.0,
       "Motor gasoline": 577317.0
     },
     "2008": {
       "Gas/Diesel": 1512648.0,
-      "Jet kerosene": 114550.0,
       "Motor gasoline": 587114.0
     },
     "2009": {
       "Gas/Diesel": 1474381.0,
-      "Jet kerosene": 115220.0,
       "Motor gasoline": 592641.0
     },
     "2010": {
       "Gas/Diesel": 1600571.0,
-      "Jet kerosene": 129916.0,
       "Motor gasoline": 707611.0
     },
     "2011": {
       "Gas/Diesel": 1686610.0,
-      "Jet kerosene": 145407.0,
       "Motor gasoline": 841002.0
     },
     "2012": {
       "Gas/Diesel": 1781441.0,
-      "Jet kerosene": 153278.0,
       "Motor gasoline": 986745.0
     },
     "2013": {
       "Gas/Diesel": 1880584.0,
-      "Jet kerosene": 147040.0,
       "Motor gasoline": 984316.0
     },
     "2014": {
       "Gas/Diesel": 1904994.0,
-      "Jet kerosene": 148757.0,
       "Motor gasoline": 1036191.0
     },
     "2015": {
       "Gas/Diesel": 1816903.0,
-      "Jet kerosene": 147082.0,
       "Motor gasoline": 938178.0
     },
     "2016": {
       "Gas/Diesel": 1759335.0,
-      "Jet kerosene": 134605.0,
       "Motor gasoline": 975189.0
     },
     "2017": {
       "Gas/Diesel": 1767136.0,
-      "Jet kerosene": 134289.0,
       "Motor gasoline": 1000601.0
     },
     "2018": {
       "Gas/Diesel": 1746082.0,
-      "Jet kerosene": 138029.0,
       "Motor gasoline": 869317.0
     },
     "2019": {
       "Gas/Diesel": 1780888.0,
-      "Jet kerosene": 135075.0,
       "Motor gasoline": 864931.0
     },
     "2020": {
       "Gas/Diesel": 1768836.0,
-      "Jet kerosene": 77203.0,
       "Motor gasoline": 811822.0
     },
     "2021": {
       "Gas/Diesel": 1908062.0,
-      "Jet kerosene": 102511.0,
       "Motor gasoline": 891146.0
     },
     "2022": {
       "Gas/Diesel": 1983792.0,
-      "Jet kerosene": 127397.0,
       "Motor gasoline": 975296.0
     },
     "2023": {
       "Gas/Diesel": 2026087.0,
-      "Jet kerosene": 134091.0,
       "Motor gasoline": 1042880.0
     }
   },
   "canada": {
     "2000": {
       "Gas/Diesel": 829321.0,
-      "Jet kerosene": 160103.0,
       "Motor gasoline": 1184822.0
     },
     "2001": {
       "Gas/Diesel": 785569.0,
-      "Jet kerosene": 139336.0,
       "Motor gasoline": 1199685.0
     },
     "2002": {
       "Gas/Diesel": 927041.0,
-      "Jet kerosene": 155539.0,
       "Motor gasoline": 1222126.0
     },
     "2003": {
       "Gas/Diesel": 955846.0,
-      "Jet kerosene": 169900.0,
       "Motor gasoline": 1232845.0
     },
     "2004": {
       "Gas/Diesel": 978078.0,
-      "Jet kerosene": 96567.0,
       "Motor gasoline": 1255429.0
     },
     "2005": {
       "Gas/Diesel": 1050978.0,
-      "Jet kerosene": 97324.0,
       "Motor gasoline": 1262473.0
     },
     "2006": {
       "Gas/Diesel": 1037397.0,
-      "Jet kerosene": 97970.0,
       "Motor gasoline": 1264732.0
     },
     "2007": {
       "Gas/Diesel": 1090710.0,
-      "Jet kerosene": 98828.0,
       "Motor gasoline": 1304255.0
     },
     "2008": {
       "Gas/Diesel": 1091477.0,
-      "Jet kerosene": 94250.0,
       "Motor gasoline": 1303998.0
     },
     "2009": {
       "Gas/Diesel": 998444.0,
-      "Jet kerosene": 83757.0,
       "Motor gasoline": 1307832.0
     },
     "2010": {
       "Gas/Diesel": 1084506.0,
-      "Jet kerosene": 84570.0,
       "Motor gasoline": 1341836.0
     },
     "2011": {
       "Gas/Diesel": 1147303.0,
-      "Jet kerosene": 83720.0,
       "Motor gasoline": 1327897.0
     },
     "2012": {
       "Gas/Diesel": 1111267.0,
-      "Jet kerosene": 96396.0,
       "Motor gasoline": 1330307.0
     },
     "2013": {
       "Gas/Diesel": 1123232.0,
-      "Jet kerosene": 100415.0,
       "Motor gasoline": 1366139.0
     },
     "2014": {
       "Gas/Diesel": 1124182.0,
-      "Jet kerosene": 96928.0,
       "Motor gasoline": 1339486.0
     },
     "2015": {
       "Gas/Diesel": 1104461.0,
-      "Jet kerosene": 96635.0,
       "Motor gasoline": 1371503.0
     },
     "2016": {
       "Gas/Diesel": 1044882.0,
-      "Jet kerosene": 95692.0,
       "Motor gasoline": 1420202.0
     },
     "2017": {
       "Gas/Diesel": 1131611.0,
-      "Jet kerosene": 101164.0,
       "Motor gasoline": 1422001.0
     },
     "2018": {
       "Gas/Diesel": 1156440.0,
-      "Jet kerosene": 110981.0,
       "Motor gasoline": 1467199.0
     },
     "2019": {
       "Gas/Diesel": 1113330.0,
-      "Jet kerosene": 109631.0,
       "Motor gasoline": 1458575.0
     },
     "2020": {
       "Gas/Diesel": 980296.0,
-      "Jet kerosene": 60119.0,
       "Motor gasoline": 1227803.0
     },
     "2021": {
       "Gas/Diesel": 1024356.0,
-      "Jet kerosene": 71001.0,
       "Motor gasoline": 1270367.0
     },
     "2022": {
       "Gas/Diesel": 1050034.0,
-      "Jet kerosene": 97843.0,
       "Motor gasoline": 1299682.0
     },
     "2023": {
       "Gas/Diesel": 1019845.0,
-      "Jet kerosene": 107105.0,
       "Motor gasoline": 1328072.0
     }
   },
   "denmark": {
     "2000": {
       "Gas/Diesel": 148547.0,
-      "Jet kerosene": 2847.0,
       "Motor gasoline": 82312.0
     },
     "2001": {
       "Gas/Diesel": 152860.0,
-      "Jet kerosene": 2219.0,
       "Motor gasoline": 81182.0
     },
     "2002": {
       "Gas/Diesel": 150306.0,
-      "Jet kerosene": 2219.0,
       "Motor gasoline": 81475.0
     },
     "2003": {
       "Gas/Diesel": 155162.0,
-      "Jet kerosene": 2051.0,
       "Motor gasoline": 81684.0
     },
     "2004": {
       "Gas/Diesel": 157842.0,
-      "Jet kerosene": 3014.0,
       "Motor gasoline": 80679.0
     },
     "2005": {
       "Gas/Diesel": 160354.0,
-      "Jet kerosene": 3642.0,
       "Motor gasoline": 78293.0
     },
     "2006": {
       "Gas/Diesel": 161819.0,
-      "Jet kerosene": 2428.0,
       "Motor gasoline": 76869.0
     },
     "2007": {
       "Gas/Diesel": 166006.0,
-      "Jet kerosene": 3265.0,
       "Motor gasoline": 76157.0
     },
     "2008": {
       "Gas/Diesel": 166136.0,
-      "Jet kerosene": 2512.0,
       "Motor gasoline": 72515.0
     },
     "2009": {
       "Gas/Diesel": 157329.0,
-      "Jet kerosene": 2763.0,
       "Motor gasoline": 68956.0
     },
     "2010": {
       "Gas/Diesel": 161126.0,
-      "Jet kerosene": 2679.0,
       "Motor gasoline": 64141.0
     },
     "2011": {
       "Gas/Diesel": 152414.0,
-      "Jet kerosene": 3307.0,
       "Motor gasoline": 62718.0
     },
     "2012": {
       "Gas/Diesel": 139856.0,
-      "Jet kerosene": 2177.0,
       "Motor gasoline": 56270.0
     },
     "2013": {
       "Gas/Diesel": 137477.0,
-      "Jet kerosene": 2470.0,
       "Motor gasoline": 54386.0
     },
     "2014": {
       "Gas/Diesel": 133591.0,
-      "Jet kerosene": 2344.0,
       "Motor gasoline": 53800.0
     },
     "2015": {
       "Gas/Diesel": 138689.0,
-      "Jet kerosene": 2023.0,
       "Motor gasoline": 56563.0
     },
     "2016": {
       "Gas/Diesel": 140921.0,
-      "Jet kerosene": 2019.0,
       "Motor gasoline": 56075.0
     },
     "2017": {
       "Gas/Diesel": 141057.0,
-      "Jet kerosene": 2605.0,
       "Motor gasoline": 53479.0
     },
     "2018": {
       "Gas/Diesel": 144899.0,
-      "Jet kerosene": 1835.0,
       "Motor gasoline": 53620.0
     },
     "2019": {
       "Gas/Diesel": 138123.0,
-      "Jet kerosene": 2150.0,
       "Motor gasoline": 53645.0
     },
     "2020": {
       "Gas/Diesel": 130231.0,
-      "Jet kerosene": 2118.0,
       "Motor gasoline": 47843.0
     },
     "2021": {
       "Gas/Diesel": 133478.0,
-      "Jet kerosene": 1766.0,
       "Motor gasoline": 49003.0
     },
     "2022": {
       "Gas/Diesel": 136610.0,
-      "Jet kerosene": 1884.0,
       "Motor gasoline": 48573.0
     },
     "2023": {
       "Gas/Diesel": 133197.0,
-      "Jet kerosene": 3073.0,
       "Motor gasoline": 49065.0
     }
   },
   "finland": {
     "2000": {
       "Gas/Diesel": 164750.0,
-      "Jet kerosene": 6573.0,
       "Motor gasoline": 74859.0
     },
     "2001": {
       "Gas/Diesel": 174380.0,
-      "Jet kerosene": 6196.0,
       "Motor gasoline": 75864.0
     },
     "2002": {
       "Gas/Diesel": 172579.0,
-      "Jet kerosene": 5861.0,
       "Motor gasoline": 77162.0
     },
     "2003": {
       "Gas/Diesel": 177855.0,
-      "Jet kerosene": 5945.0,
       "Motor gasoline": 77497.0
     },
     "2004": {
       "Gas/Diesel": 174296.0,
-      "Jet kerosene": 5400.0,
       "Motor gasoline": 78795.0
     },
     "2005": {
       "Gas/Diesel": 170486.0,
-      "Jet kerosene": 5987.0,
       "Motor gasoline": 78669.0
     },
     "2006": {
       "Gas/Diesel": 170109.0,
-      "Jet kerosene": 5819.0,
       "Motor gasoline": 78125.0
     },
     "2007": {
       "Gas/Diesel": 177478.0,
-      "Jet kerosene": 5694.0,
       "Motor gasoline": 78041.0
     },
     "2008": {
       "Gas/Diesel": 168560.0,
-      "Jet kerosene": 5694.0,
       "Motor gasoline": 69752.0
     },
     "2009": {
       "Gas/Diesel": 161652.0,
-      "Jet kerosene": 5442.0,
       "Motor gasoline": 67114.0
     },
     "2010": {
       "Gas/Diesel": 173877.0,
-      "Jet kerosene": 5652.0,
       "Motor gasoline": 65858.0
     },
     "2011": {
       "Gas/Diesel": 166802.0,
-      "Jet kerosene": 5149.0,
       "Motor gasoline": 62215.0
     },
     "2012": {
       "Gas/Diesel": 168602.0,
-      "Jet kerosene": 4940.0,
       "Motor gasoline": 60038.0
     },
     "2013": {
       "Gas/Diesel": 162364.0,
-      "Jet kerosene": 4396.0,
       "Motor gasoline": 60792.0
     },
     "2014": {
       "Gas/Diesel": 148589.0,
-      "Jet kerosene": 3977.0,
       "Motor gasoline": 58573.0
     },
     "2015": {
       "Gas/Diesel": 147417.0,
-      "Jet kerosene": 3977.0,
       "Motor gasoline": 58238.0
     },
     "2016": {
       "Gas/Diesel": 163871.0,
-      "Jet kerosene": 4647.0,
       "Motor gasoline": 57861.0
     },
     "2017": {
       "Gas/Diesel": 157800.0,
-      "Jet kerosene": 4605.0,
       "Motor gasoline": 55600.0
     },
     "2018": {
       "Gas/Diesel": 158177.0,
-      "Jet kerosene": 4479.0,
       "Motor gasoline": 54721.0
     },
     "2019": {
       "Gas/Diesel": 154702.0,
-      "Jet kerosene": 4982.0,
       "Motor gasoline": 53465.0
     },
     "2020": {
       "Gas/Diesel": 149468.0,
-      "Jet kerosene": 3349.0,
       "Motor gasoline": 49739.0
     },
     "2021": {
       "Gas/Diesel": 137852.0,
-      "Jet kerosene": 2386.0,
       "Motor gasoline": 50115.0
     },
     "2022": {
       "Gas/Diesel": 138115.0,
-      "Jet kerosene": 3307.0,
       "Motor gasoline": 46473.0
     },
     "2023": {
       "Gas/Diesel": 127680.0,
-      "Jet kerosene": 4103.0,
       "Motor gasoline": 46264.0
     }
   },
   "germany": {
     "2000": {
       "Gas/Diesel": 2336443.0,
-      "Jet kerosene": 35839.0,
       "Motor gasoline": 1207138.0
     },
     "2001": {
       "Gas/Diesel": 2483860.0,
-      "Jet kerosene": 33410.0,
       "Motor gasoline": 1171131.0
     },
     "2002": {
       "Gas/Diesel": 2341049.0,
-      "Jet kerosene": 32782.0,
       "Motor gasoline": 1139395.0
     },
     "2003": {
       "Gas/Diesel": 2314421.0,
-      "Jet kerosene": 32657.0,
       "Motor gasoline": 1083041.0
     },
     "2004": {
       "Gas/Diesel": 2234830.0,
-      "Jet kerosene": 32489.0,
       "Motor gasoline": 1047034.0
     },
     "2005": {
       "Gas/Diesel": 2191245.0,
-      "Jet kerosene": 33620.0,
       "Motor gasoline": 971714.0
     },
     "2006": {
       "Gas/Diesel": 2262672.0,
-      "Jet kerosene": 34666.0,
       "Motor gasoline": 925575.0
     },
     "2007": {
       "Gas/Diesel": 1850523.0,
-      "Jet kerosene": 35085.0,
       "Motor gasoline": 873031.0
     },
     "2008": {
       "Gas/Diesel": 2156955.0,
-      "Jet kerosene": 35001.0,
       "Motor gasoline": 849878.0
     },
     "2009": {
       "Gas/Diesel": 2039264.0,
-      "Jet kerosene": 33829.0,
       "Motor gasoline": 808387.0
     },
     "2010": {
       "Gas/Diesel": 2103741.0,
-      "Jet kerosene": 31652.0,
       "Motor gasoline": 773636.0
     },
     "2011": {
       "Gas/Diesel": 2008073.0,
-      "Jet kerosene": 29056.0,
       "Motor gasoline": 770329.0
     },
     "2012": {
       "Gas/Diesel": 2071670.0,
-      "Jet kerosene": 29098.0,
       "Motor gasoline": 723018.0
     },
     "2013": {
       "Gas/Diesel": 2176005.0,
-      "Jet kerosene": 27297.0,
       "Motor gasoline": 721762.0
     },
     "2014": {
       "Gas/Diesel": 2078829.0,
-      "Jet kerosene": 29307.0,
       "Motor gasoline": 725070.0
     },
     "2015": {
       "Gas/Diesel": 2108933.0,
-      "Jet kerosene": 29349.0,
       "Motor gasoline": 714728.0
     },
     "2016": {
       "Gas/Diesel": 2138743.0,
-      "Jet kerosene": 31401.0,
       "Motor gasoline": 714770.0
     },
     "2017": {
       "Gas/Diesel": 2172195.0,
-      "Jet kerosene": 27172.0,
       "Motor gasoline": 724567.0
     },
     "2018": {
       "Gas/Diesel": 2041441.0,
-      "Jet kerosene": 26293.0,
       "Motor gasoline": 811820.0
     },
     "2019": {
       "Gas/Diesel": 2126768.0,
-      "Jet kerosene": 29600.0,
       "Motor gasoline": 819231.0
     },
     "2020": {
       "Gas/Diesel": 2030053.0,
-      "Jet kerosene": 13858.0,
       "Motor gasoline": 756094.0
     },
     "2021": {
       "Gas/Diesel": 1848932.0,
-      "Jet kerosene": 10132.0,
       "Motor gasoline": 759527.0
     },
     "2022": {
       "Gas/Diesel": 1856259.0,
-      "Jet kerosene": 13774.0,
       "Motor gasoline": 770329.0
     },
     "2023": {
       "Gas/Diesel": 1775789.0,
-      "Jet kerosene": 14905.0,
       "Motor gasoline": 752451.0
     }
   },
   "greece": {
     "2000": {
       "Gas/Diesel": 249114.0,
-      "Jet kerosene": 20096.0,
       "Motor gasoline": 138038.0
     },
     "2001": {
       "Gas/Diesel": 263349.0,
-      "Jet kerosene": 16914.0,
       "Motor gasoline": 142518.0
     },
     "2002": {
       "Gas/Diesel": 272686.0,
-      "Jet kerosene": 15449.0,
       "Motor gasoline": 149091.0
     },
     "2003": {
       "Gas/Diesel": 305720.0,
-      "Jet kerosene": 14653.0,
       "Motor gasoline": 155120.0
     },
     "2004": {
       "Gas/Diesel": 277752.0,
-      "Jet kerosene": 15491.0,
       "Motor gasoline": 158470.0
     },
     "2005": {
       "Gas/Diesel": 294038.0,
-      "Jet kerosene": 15867.0,
       "Motor gasoline": 164624.0
     },
     "2006": {
       "Gas/Diesel": 296885.0,
-      "Jet kerosene": 14151.0,
       "Motor gasoline": 166383.0
     },
     "2007": {
       "Gas/Diesel": 278045.0,
-      "Jet kerosene": 14486.0,
       "Motor gasoline": 173333.0
     },
     "2008": {
       "Gas/Diesel": 269085.0,
-      "Jet kerosene": 13983.0,
       "Motor gasoline": 169984.0
     },
     "2009": {
       "Gas/Diesel": 263684.0,
-      "Jet kerosene": 11639.0,
       "Motor gasoline": 170612.0
     },
     "2010": {
       "Gas/Diesel": 233246.0,
-      "Jet kerosene": 9545.0,
       "Motor gasoline": 155246.0
     },
     "2011": {
       "Gas/Diesel": 239359.0,
-      "Jet kerosene": 8959.0,
       "Motor gasoline": 139797.0
     },
     "2012": {
       "Gas/Diesel": 174380.0,
-      "Jet kerosene": 13188.0,
       "Motor gasoline": 123301.0
     },
     "2013": {
       "Gas/Diesel": 137452.0,
-      "Jet kerosene": 12853.0,
       "Motor gasoline": 111871.0
     },
     "2014": {
       "Gas/Diesel": 144318.0,
-      "Jet kerosene": 13146.0,
       "Motor gasoline": 105800.0
     },
     "2015": {
       "Gas/Diesel": 165462.0,
-      "Jet kerosene": 12392.0,
       "Motor gasoline": 103079.0
     },
     "2016": {
       "Gas/Diesel": 163410.0,
-      "Jet kerosene": 13104.0,
       "Motor gasoline": 101613.0
     },
     "2017": {
       "Gas/Diesel": 161921.0,
-      "Jet kerosene": 13131.0,
       "Motor gasoline": 98530.0
     },
     "2018": {
       "Gas/Diesel": 157062.0,
-      "Jet kerosene": 14036.0,
       "Motor gasoline": 96254.0
     },
     "2019": {
       "Gas/Diesel": 163610.0,
-      "Jet kerosene": 14075.0,
       "Motor gasoline": 93980.0
     },
     "2020": {
       "Gas/Diesel": 162158.0,
-      "Jet kerosene": 9790.0,
       "Motor gasoline": 75583.0
     },
     "2021": {
       "Gas/Diesel": 158614.0,
-      "Jet kerosene": 9642.0,
       "Motor gasoline": 80820.0
     },
     "2022": {
       "Gas/Diesel": 178964.0,
-      "Jet kerosene": 14317.0,
       "Motor gasoline": 86561.0
     },
     "2023": {
       "Gas/Diesel": 166571.0,
-      "Jet kerosene": 16749.0,
       "Motor gasoline": 90097.0
     }
   },
   "iceland": {
     "2000": {
       "Gas/Diesel": 14318.0,
-      "Jet kerosene": 334.0,
       "Motor gasoline": 6028.0
     },
     "2001": {
       "Gas/Diesel": 12979.0,
-      "Jet kerosene": 293.0,
       "Motor gasoline": 6070.0
     },
     "2002": {
       "Gas/Diesel": 14109.0,
-      "Jet kerosene": 251.0,
       "Motor gasoline": 6112.0
     },
     "2003": {
       "Gas/Diesel": 14695.0,
-      "Jet kerosene": 251.0,
       "Motor gasoline": 6112.0
     },
     "2004": {
       "Gas/Diesel": 15909.0,
-      "Jet kerosene": 251.0,
       "Motor gasoline": 6280.0
     },
     "2005": {
       "Gas/Diesel": 15323.0,
-      "Jet kerosene": 251.0,
       "Motor gasoline": 6280.0
     },
     "2006": {
       "Gas/Diesel": 15072.0,
-      "Jet kerosene": 334.0,
       "Motor gasoline": 6782.0
     },
     "2007": {
       "Gas/Diesel": 14193.0,
-      "Jet kerosene": 251.0,
       "Motor gasoline": 6740.0
     },
     "2008": {
       "Gas/Diesel": 13565.0,
-      "Jet kerosene": 334.0,
       "Motor gasoline": 6531.0
     },
     "2009": {
       "Gas/Diesel": 13355.0,
-      "Jet kerosene": 293.0,
       "Motor gasoline": 6531.0
     },
     "2010": {
       "Gas/Diesel": 11932.0,
-      "Jet kerosene": 293.0,
       "Motor gasoline": 6238.0
     },
     "2011": {
       "Gas/Diesel": 11136.0,
-      "Jet kerosene": 376.0,
       "Motor gasoline": 5987.0
     },
     "2012": {
       "Gas/Diesel": 11178.0,
-      "Jet kerosene": 251.0,
       "Motor gasoline": 5735.0
     },
     "2013": {
       "Gas/Diesel": 12141.0,
-      "Jet kerosene": 251.0,
       "Motor gasoline": 5652.0
     },
     "2014": {
       "Gas/Diesel": 12057.0,
-      "Jet kerosene": 502.0,
       "Motor gasoline": 5568.0
     },
     "2015": {
       "Gas/Diesel": 13355.0,
-      "Jet kerosene": 251.0,
       "Motor gasoline": 5568.0
     },
     "2016": {
       "Gas/Diesel": 14072.0,
-      "Jet kerosene": 280.0,
       "Motor gasoline": 5728.0
     },
     "2017": {
       "Gas/Diesel": 14673.0,
-      "Jet kerosene": 289.0,
       "Motor gasoline": 5615.0
     },
     "2018": {
       "Gas/Diesel": 15053.0,
-      "Jet kerosene": 312.0,
       "Motor gasoline": 5336.0
     },
     "2019": {
       "Gas/Diesel": 15053.0,
-      "Jet kerosene": 353.0,
       "Motor gasoline": 4987.0
     },
     "2020": {
       "Gas/Diesel": 15110.0,
-      "Jet kerosene": 166.0,
       "Motor gasoline": 3844.0
     },
     "2021": {
       "Gas/Diesel": 16609.0,
-      "Jet kerosene": 265.0,
       "Motor gasoline": 3559.0
     },
     "2022": {
       "Gas/Diesel": 16516.0,
-      "Jet kerosene": 310.0,
       "Motor gasoline": 3852.0
     },
     "2023": {
       "Gas/Diesel": 16034.0,
-      "Jet kerosene": 289.0,
       "Motor gasoline": 3939.0
     }
   },
   "ireland": {
     "2000": {
       "Gas/Diesel": 125302.0,
-      "Jet kerosene": 1256.0,
       "Motor gasoline": 62550.0
     },
     "2001": {
       "Gas/Diesel": 129805.0,
-      "Jet kerosene": 1507.0,
       "Motor gasoline": 64979.0
     },
     "2002": {
       "Gas/Diesel": 131215.0,
-      "Jet kerosene": 1590.0,
       "Motor gasoline": 66402.0
     },
     "2003": {
       "Gas/Diesel": 134014.0,
-      "Jet kerosene": 1507.0,
       "Motor gasoline": 66318.0
     },
     "2004": {
       "Gas/Diesel": 138839.0,
-      "Jet kerosene": 1465.0,
       "Motor gasoline": 68161.0
     },
     "2005": {
       "Gas/Diesel": 147860.0,
-      "Jet kerosene": 1716.0,
       "Motor gasoline": 71761.0
     },
     "2006": {
       "Gas/Diesel": 152965.0,
-      "Jet kerosene": 2177.0,
       "Motor gasoline": 78628.0
     },
     "2007": {
       "Gas/Diesel": 157871.0,
-      "Jet kerosene": 2051.0,
       "Motor gasoline": 76283.0
     },
     "2008": {
       "Gas/Diesel": 155969.0,
-      "Jet kerosene": 1632.0,
       "Motor gasoline": 71426.0
     },
     "2009": {
       "Gas/Diesel": 138438.0,
-      "Jet kerosene": 1214.0,
       "Motor gasoline": 64811.0
     },
     "2010": {
       "Gas/Diesel": 130231.0,
-      "Jet kerosene": 1046.0,
       "Motor gasoline": 60038.0
     },
     "2011": {
       "Gas/Diesel": 128225.0,
-      "Jet kerosene": 251.0,
       "Motor gasoline": 53423.0
     },
     "2012": {
       "Gas/Diesel": 126310.0,
-      "Jet kerosene": 251.0,
       "Motor gasoline": 50409.0
     },
     "2013": {
       "Gas/Diesel": 127022.0,
-      "Jet kerosene": 251.0,
       "Motor gasoline": 46640.0
     },
     "2014": {
       "Gas/Diesel": 128868.0,
-      "Jet kerosene": 251.0,
       "Motor gasoline": 46347.0
     },
     "2015": {
       "Gas/Diesel": 136432.0,
-      "Jet kerosene": 251.0,
       "Motor gasoline": 40109.0
     },
     "2016": {
       "Gas/Diesel": 146374.0,
-      "Jet kerosene": 125.0,
       "Motor gasoline": 39439.0
     },
     "2017": {
       "Gas/Diesel": 148034.0,
-      "Jet kerosene": 201.0,
       "Motor gasoline": 35550.0
     },
     "2018": {
       "Gas/Diesel": 154778.0,
-      "Jet kerosene": 196.0,
       "Motor gasoline": 32403.0
     },
     "2019": {
       "Gas/Diesel": 156429.0,
-      "Jet kerosene": 208.0,
       "Motor gasoline": 30700.0
     },
     "2020": {
       "Gas/Diesel": 139354.0,
-      "Jet kerosene": 154.0,
       "Motor gasoline": 22739.0
     },
     "2021": {
       "Gas/Diesel": 146631.0,
-      "Jet kerosene": 229.0,
       "Motor gasoline": 24088.0
     },
     "2022": {
       "Gas/Diesel": 153177.0,
-      "Jet kerosene": 259.0,
       "Motor gasoline": 27433.0
     },
     "2023": {
       "Gas/Diesel": 150320.0,
-      "Jet kerosene": 278.0,
       "Motor gasoline": 29228.0
     }
   },
   "italy": {
     "2000": {
       "Gas/Diesel": 1097946.0,
-      "Jet kerosene": 34582.0,
       "Motor gasoline": 706271.0
     },
     "2001": {
       "Gas/Diesel": 1148522.0,
-      "Jet kerosene": 28595.0,
       "Motor gasoline": 713933.0
     },
     "2002": {
       "Gas/Diesel": 1186832.0,
-      "Jet kerosene": 28679.0,
       "Motor gasoline": 689565.0
     },
     "2003": {
       "Gas/Diesel": 1186664.0,
-      "Jet kerosene": 33452.0,
       "Motor gasoline": 663775.0
     },
     "2004": {
       "Gas/Diesel": 1269102.0,
-      "Jet kerosene": 33913.0,
       "Motor gasoline": 626094.0
     },
     "2005": {
       "Gas/Diesel": 1292297.0,
-      "Jet kerosene": 36132.0,
       "Motor gasoline": 584058.0
     },
     "2006": {
       "Gas/Diesel": 1319637.0,
-      "Jet kerosene": 37136.0,
       "Motor gasoline": 548722.0
     },
     "2007": {
       "Gas/Diesel": 1325373.0,
-      "Jet kerosene": 38058.0,
       "Motor gasoline": 516483.0
     },
     "2008": {
       "Gas/Diesel": 1275173.0,
-      "Jet kerosene": 36132.0,
       "Motor gasoline": 472647.0
     },
     "2009": {
       "Gas/Diesel": 1196461.0,
-      "Jet kerosene": 32405.0,
       "Motor gasoline": 451337.0
     },
     "2010": {
       "Gas/Diesel": 1180677.0,
-      "Jet kerosene": 34499.0,
       "Motor gasoline": 423243.0
     },
     "2011": {
       "Gas/Diesel": 1170587.0,
-      "Jet kerosene": 34331.0,
       "Motor gasoline": 433375.0
     },
     "2012": {
       "Gas/Diesel": 1097527.0,
-      "Jet kerosene": 33326.0,
       "Motor gasoline": 384641.0
     },
     "2013": {
       "Gas/Diesel": 1062274.0,
-      "Jet kerosene": 32363.0,
       "Motor gasoline": 358515.0
     },
     "2014": {
       "Gas/Diesel": 1104268.0,
-      "Jet kerosene": 30814.0,
       "Motor gasoline": 367894.0
     },
     "2015": {
       "Gas/Diesel": 1077975.0,
-      "Jet kerosene": 33536.0,
       "Motor gasoline": 328328.0
     },
     "2016": {
       "Gas/Diesel": 1072700.0,
-      "Jet kerosene": 34959.0,
       "Motor gasoline": 311832.0
     },
     "2017": {
       "Gas/Diesel": 1013987.0,
-      "Jet kerosene": 35455.0,
       "Motor gasoline": 303312.0
     },
     "2018": {
       "Gas/Diesel": 1051575.0,
-      "Jet kerosene": 39611.0,
       "Motor gasoline": 311153.0
     },
     "2019": {
       "Gas/Diesel": 1035026.0,
-      "Jet kerosene": 39317.0,
       "Motor gasoline": 313756.0
     },
     "2020": {
       "Gas/Diesel": 865449.0,
-      "Jet kerosene": 15279.0,
       "Motor gasoline": 245735.0
     },
     "2021": {
       "Gas/Diesel": 1032929.0,
-      "Jet kerosene": 22926.0,
       "Motor gasoline": 295193.0
     },
     "2022": {
       "Gas/Diesel": 1049926.0,
-      "Jet kerosene": 39869.0,
       "Motor gasoline": 329222.0
     },
     "2023": {
       "Gas/Diesel": 1036547.0,
-      "Jet kerosene": 48063.0,
       "Motor gasoline": 341630.0
     }
   },
   "japan": {
     "2000": {
       "Gas/Diesel": 2451018.0,
-      "Jet kerosene": 151133.0,
       "Motor gasoline": 1801684.0
     },
     "2001": {
       "Gas/Diesel": 2446666.0,
-      "Jet kerosene": 164056.0,
       "Motor gasoline": 1840612.0
     },
     "2002": {
       "Gas/Diesel": 2388345.0,
-      "Jet kerosene": 151027.0,
       "Motor gasoline": 1844888.0
     },
     "2003": {
       "Gas/Diesel": 2330278.0,
-      "Jet kerosene": 147655.0,
       "Motor gasoline": 1866284.0
     },
     "2004": {
       "Gas/Diesel": 2318639.0,
-      "Jet kerosene": 160925.0,
       "Motor gasoline": 1894882.0
     },
     "2005": {
       "Gas/Diesel": 2242730.0,
-      "Jet kerosene": 168227.0,
       "Motor gasoline": 1892735.0
     },
     "2006": {
       "Gas/Diesel": 2098075.0,
-      "Jet kerosene": 176758.0,
       "Motor gasoline": 1865844.0
     },
     "2007": {
       "Gas/Diesel": 1978866.0,
-      "Jet kerosene": 194036.0,
       "Motor gasoline": 1820423.0
     },
     "2008": {
       "Gas/Diesel": 1792292.0,
-      "Jet kerosene": 186154.0,
       "Motor gasoline": 1772096.0
     },
     "2009": {
       "Gas/Diesel": 1673991.0,
-      "Jet kerosene": 172864.0,
       "Motor gasoline": 1774232.0
     },
     "2010": {
       "Gas/Diesel": 1672511.0,
-      "Jet kerosene": 169011.0,
       "Motor gasoline": 1779649.0
     },
     "2011": {
       "Gas/Diesel": 1647080.0,
-      "Jet kerosene": 137718.0,
       "Motor gasoline": 1751719.0
     },
     "2012": {
       "Gas/Diesel": 1621664.0,
-      "Jet kerosene": 130047.0,
       "Motor gasoline": 1727792.0
     },
     "2013": {
       "Gas/Diesel": 1644597.0,
-      "Jet kerosene": 165720.0,
       "Motor gasoline": 1695637.0
     },
     "2014": {
       "Gas/Diesel": 1592474.0,
-      "Jet kerosene": 174493.0,
       "Motor gasoline": 1615787.0
     },
     "2015": {
       "Gas/Diesel": 1580905.0,
-      "Jet kerosene": 179206.0,
       "Motor gasoline": 1616065.0
     },
     "2016": {
       "Gas/Diesel": 1563399.0,
-      "Jet kerosene": 173106.0,
       "Motor gasoline": 1592746.0
     },
     "2017": {
       "Gas/Diesel": 1570009.0,
-      "Jet kerosene": 169119.0,
       "Motor gasoline": 1568222.0
     },
     "2018": {
       "Gas/Diesel": 1557189.0,
-      "Jet kerosene": 163091.0,
       "Motor gasoline": 1531654.0
     },
     "2019": {
       "Gas/Diesel": 1519280.0,
-      "Jet kerosene": 168965.0,
       "Motor gasoline": 1492529.0
     },
     "2020": {
       "Gas/Diesel": 1467516.0,
-      "Jet kerosene": 89642.0,
       "Motor gasoline": 1374205.0
     },
     "2021": {
       "Gas/Diesel": 1446856.0,
-      "Jet kerosene": 108653.0,
       "Motor gasoline": 1342462.0
     },
     "2022": {
       "Gas/Diesel": 1464372.0,
-      "Jet kerosene": 132097.0,
       "Motor gasoline": 1351223.0
     },
     "2023": {
       "Gas/Diesel": 1422159.0,
-      "Jet kerosene": 143700.0,
       "Motor gasoline": 1343099.0
     }
   },
   "korea": {
     "2000": {
       "Gas/Diesel": 739933.0,
-      "Jet kerosene": 111494.0,
       "Motor gasoline": 306222.0
     },
     "2001": {
       "Gas/Diesel": 754880.0,
-      "Jet kerosene": 105884.0,
       "Motor gasoline": 307813.0
     },
     "2002": {
       "Gas/Diesel": 786657.0,
-      "Jet kerosene": 105926.0,
       "Motor gasoline": 314554.0
     },
     "2003": {
       "Gas/Diesel": 817221.0,
-      "Jet kerosene": 108647.0,
       "Motor gasoline": 296885.0
     },
     "2004": {
       "Gas/Diesel": 817723.0,
-      "Jet kerosene": 112038.0,
       "Motor gasoline": 285414.0
     },
     "2005": {
       "Gas/Diesel": 801227.0,
-      "Jet kerosene": 74441.0,
       "Motor gasoline": 291778.0
     },
     "2006": {
       "Gas/Diesel": 798045.0,
-      "Jet kerosene": 56396.0,
       "Motor gasoline": 293620.0
     },
     "2007": {
       "Gas/Diesel": 808806.0,
-      "Jet kerosene": 57945.0,
       "Motor gasoline": 306724.0
     },
     "2008": {
       "Gas/Diesel": 752702.0,
-      "Jet kerosene": 26753.0,
       "Motor gasoline": 308902.0
     },
     "2009": {
       "Gas/Diesel": 741984.0,
-      "Jet kerosene": 28763.0,
       "Motor gasoline": 322760.0
     },
     "2010": {
       "Gas/Diesel": 763504.0,
-      "Jet kerosene": 32657.0,
       "Motor gasoline": 338377.0
     },
     "2011": {
       "Gas/Diesel": 753037.0,
-      "Jet kerosene": 38309.0,
       "Motor gasoline": 341391.0
     },
     "2012": {
       "Gas/Diesel": 776609.0,
-      "Jet kerosene": 50744.0,
       "Motor gasoline": 338963.0
     },
     "2013": {
       "Gas/Diesel": 813244.0,
-      "Jet kerosene": 46054.0,
       "Motor gasoline": 360357.0
     },
     "2014": {
       "Gas/Diesel": 826934.0,
-      "Jet kerosene": 59829.0,
       "Motor gasoline": 360650.0
     },
     "2015": {
       "Gas/Diesel": 892374.0,
-      "Jet kerosene": 68747.0,
       "Motor gasoline": 375890.0
     },
     "2016": {
       "Gas/Diesel": 911047.0,
-      "Jet kerosene": 66695.0,
       "Motor gasoline": 387530.0
     },
     "2017": {
       "Gas/Diesel": 941485.0,
-      "Jet kerosene": 70380.0,
       "Motor gasoline": 390879.0
     },
     "2018": {
       "Gas/Diesel": 905814.0,
-      "Jet kerosene": 72389.0,
       "Motor gasoline": 391214.0
     },
     "2019": {
       "Gas/Diesel": 953066.0,
-      "Jet kerosene": 60666.0,
       "Motor gasoline": 406269.0
     },
     "2020": {
       "Gas/Diesel": 901010.0,
-      "Jet kerosene": 55570.0,
       "Motor gasoline": 397398.0
     },
     "2021": {
       "Gas/Diesel": 882259.0,
-      "Jet kerosene": 81901.0,
       "Motor gasoline": 416688.0
     },
     "2022": {
       "Gas/Diesel": 834805.0,
-      "Jet kerosene": 82336.0,
       "Motor gasoline": 433781.0
     },
     "2023": {
       "Gas/Diesel": 853458.0,
-      "Jet kerosene": 50134.0,
       "Motor gasoline": 443588.0
     }
   },
@@ -1726,7 +1390,6 @@
     },
     "2004": {
       "Gas/Diesel": 30479.0,
-      "Jet kerosene": 41.0,
       "Motor gasoline": 14611.0
     },
     "2005": {
@@ -1735,17 +1398,14 @@
     },
     "2006": {
       "Gas/Diesel": 35587.0,
-      "Jet kerosene": 83.0,
       "Motor gasoline": 15951.0
     },
     "2007": {
       "Gas/Diesel": 40528.0,
-      "Jet kerosene": 41.0,
       "Motor gasoline": 17417.0
     },
     "2008": {
       "Gas/Diesel": 38309.0,
-      "Jet kerosene": 41.0,
       "Motor gasoline": 15867.0
     },
     "2009": {
@@ -1762,17 +1422,14 @@
     },
     "2012": {
       "Gas/Diesel": 34373.0,
-      "Jet kerosene": 41.0,
       "Motor gasoline": 9671.0
     },
     "2013": {
       "Gas/Diesel": 35336.0,
-      "Jet kerosene": 41.0,
       "Motor gasoline": 8834.0
     },
     "2014": {
       "Gas/Diesel": 36885.0,
-      "Jet kerosene": 41.0,
       "Motor gasoline": 8582.0
     },
     "2015": {
@@ -1781,42 +1438,34 @@
     },
     "2016": {
       "Gas/Diesel": 39607.0,
-      "Jet kerosene": 41.0,
       "Motor gasoline": 8331.0
     },
     "2017": {
       "Gas/Diesel": 42729.0,
-      "Jet kerosene": 63.0,
       "Motor gasoline": 7962.0
     },
     "2018": {
       "Gas/Diesel": 43589.0,
-      "Jet kerosene": 43.0,
       "Motor gasoline": 7646.0
     },
     "2019": {
       "Gas/Diesel": 44004.0,
-      "Jet kerosene": 60.0,
       "Motor gasoline": 7272.0
     },
     "2020": {
       "Gas/Diesel": 42424.0,
-      "Jet kerosene": 21.0,
       "Motor gasoline": 6967.0
     },
     "2021": {
       "Gas/Diesel": 44269.0,
-      "Jet kerosene": 45.0,
       "Motor gasoline": 6886.0
     },
     "2022": {
       "Gas/Diesel": 44732.0,
-      "Jet kerosene": 146.0,
       "Motor gasoline": 5935.0
     },
     "2023": {
       "Gas/Diesel": 44549.0,
-      "Jet kerosene": 96.0,
       "Motor gasoline": 6178.0
     }
   },
@@ -1921,366 +1570,294 @@
   "new-zealand": {
     "2000": {
       "Gas/Diesel": 85578.0,
-      "Jet kerosene": 14695.0,
       "Motor gasoline": 91062.0
     },
     "2001": {
       "Gas/Diesel": 85159.0,
-      "Jet kerosene": 15114.0,
       "Motor gasoline": 91607.0
     },
     "2002": {
       "Gas/Diesel": 91188.0,
-      "Jet kerosene": 13983.0,
       "Motor gasoline": 94705.0
     },
     "2003": {
       "Gas/Diesel": 94621.0,
-      "Jet kerosene": 15658.0,
       "Motor gasoline": 97845.0
     },
     "2004": {
       "Gas/Diesel": 97636.0,
-      "Jet kerosene": 16119.0,
       "Motor gasoline": 101948.0
     },
     "2005": {
       "Gas/Diesel": 102492.0,
-      "Jet kerosene": 14988.0,
       "Motor gasoline": 99436.0
     },
     "2006": {
       "Gas/Diesel": 104293.0,
-      "Jet kerosene": 15365.0,
       "Motor gasoline": 100148.0
     },
     "2007": {
       "Gas/Diesel": 107600.0,
-      "Jet kerosene": 12476.0,
       "Motor gasoline": 101948.0
     },
     "2008": {
       "Gas/Diesel": 107307.0,
-      "Jet kerosene": 13607.0,
       "Motor gasoline": 100106.0
     },
     "2009": {
       "Gas/Diesel": 102074.0,
-      "Jet kerosene": 12351.0,
       "Motor gasoline": 98264.0
     },
     "2010": {
       "Gas/Diesel": 102367.0,
-      "Jet kerosene": 12518.0,
       "Motor gasoline": 97803.0
     },
     "2011": {
       "Gas/Diesel": 105130.0,
-      "Jet kerosene": 13314.0,
       "Motor gasoline": 95584.0
     },
     "2012": {
       "Gas/Diesel": 107558.0,
-      "Jet kerosene": 10927.0,
       "Motor gasoline": 95207.0
     },
     "2013": {
       "Gas/Diesel": 111661.0,
-      "Jet kerosene": 9671.0,
       "Motor gasoline": 95082.0
     },
     "2014": {
       "Gas/Diesel": 115513.0,
-      "Jet kerosene": 10257.0,
       "Motor gasoline": 95040.0
     },
     "2015": {
       "Gas/Diesel": 117732.0,
-      "Jet kerosene": 10760.0,
       "Motor gasoline": 97929.0
     },
     "2016": {
       "Gas/Diesel": 120956.0,
-      "Jet kerosene": 11723.0,
       "Motor gasoline": 100231.0
     },
     "2017": {
       "Gas/Diesel": 129162.0,
-      "Jet kerosene": 12644.0,
       "Motor gasoline": 102450.0
     },
     "2018": {
       "Gas/Diesel": 130371.0,
-      "Jet kerosene": 13838.0,
       "Motor gasoline": 101316.0
     },
     "2019": {
       "Gas/Diesel": 133324.0,
-      "Jet kerosene": 13140.0,
       "Motor gasoline": 101438.0
     },
     "2020": {
       "Gas/Diesel": 127477.0,
-      "Jet kerosene": 9040.0,
       "Motor gasoline": 90050.0
     },
     "2021": {
       "Gas/Diesel": 134611.0,
-      "Jet kerosene": 10571.0,
       "Motor gasoline": 91373.0
     },
     "2022": {
       "Gas/Diesel": 134612.0,
-      "Jet kerosene": 13244.0,
       "Motor gasoline": 90388.0
     },
     "2023": {
       "Gas/Diesel": 134153.0,
-      "Jet kerosene": 13978.0,
       "Motor gasoline": 89764.0
     }
   },
   "norway": {
     "2000": {
       "Gas/Diesel": 135987.0,
-      "Jet kerosene": 12141.0,
       "Motor gasoline": 67909.0
     },
     "2001": {
       "Gas/Diesel": 142183.0,
-      "Jet kerosene": 11095.0,
       "Motor gasoline": 70421.0
     },
     "2002": {
       "Gas/Diesel": 148505.0,
-      "Jet kerosene": 9838.0,
       "Motor gasoline": 69835.0
     },
     "2003": {
       "Gas/Diesel": 152566.0,
-      "Jet kerosene": 12811.0,
       "Motor gasoline": 69082.0
     },
     "2004": {
       "Gas/Diesel": 150682.0,
-      "Jet kerosene": 14905.0,
       "Motor gasoline": 68705.0
     },
     "2005": {
       "Gas/Diesel": 150892.0,
-      "Jet kerosene": 13230.0,
       "Motor gasoline": 66193.0
     },
     "2006": {
       "Gas/Diesel": 159475.0,
-      "Jet kerosene": 13732.0,
       "Motor gasoline": 63681.0
     },
     "2007": {
       "Gas/Diesel": 164624.0,
-      "Jet kerosene": 14946.0,
       "Motor gasoline": 60373.0
     },
     "2008": {
       "Gas/Diesel": 160689.0,
-      "Jet kerosene": 14737.0,
       "Motor gasoline": 56605.0
     },
     "2009": {
       "Gas/Diesel": 164541.0,
-      "Jet kerosene": 15491.0,
       "Motor gasoline": 53172.0
     },
     "2010": {
       "Gas/Diesel": 184937.0,
-      "Jet kerosene": 15569.0,
       "Motor gasoline": 51122.0
     },
     "2011": {
       "Gas/Diesel": 183351.0,
-      "Jet kerosene": 16162.0,
       "Motor gasoline": 46643.0
     },
     "2012": {
       "Gas/Diesel": 186144.0,
-      "Jet kerosene": 16619.0,
       "Motor gasoline": 43667.0
     },
     "2013": {
       "Gas/Diesel": 188652.0,
-      "Jet kerosene": 15930.0,
       "Motor gasoline": 40777.0
     },
     "2014": {
       "Gas/Diesel": 188919.0,
-      "Jet kerosene": 17240.0,
       "Motor gasoline": 38975.0
     },
     "2015": {
       "Gas/Diesel": 192700.0,
-      "Jet kerosene": 16217.0,
       "Motor gasoline": 35943.0
     },
     "2016": {
       "Gas/Diesel": 191491.0,
-      "Jet kerosene": 16144.0,
       "Motor gasoline": 33815.0
     },
     "2017": {
       "Gas/Diesel": 181451.0,
-      "Jet kerosene": 16532.0,
       "Motor gasoline": 32912.0
     },
     "2018": {
       "Gas/Diesel": 188752.0,
-      "Jet kerosene": 12356.0,
       "Motor gasoline": 31679.0
     },
     "2019": {
       "Gas/Diesel": 179509.0,
-      "Jet kerosene": 15591.0,
       "Motor gasoline": 29129.0
     },
     "2020": {
       "Gas/Diesel": 175816.0,
-      "Jet kerosene": 10627.0,
       "Motor gasoline": 27586.0
     },
     "2021": {
       "Gas/Diesel": 182510.0,
-      "Jet kerosene": 11976.0,
       "Motor gasoline": 25636.0
     },
     "2022": {
       "Gas/Diesel": 182960.0,
-      "Jet kerosene": 15130.0,
       "Motor gasoline": 25438.0
     },
     "2023": {
       "Gas/Diesel": 177036.0,
-      "Jet kerosene": 15335.0,
       "Motor gasoline": 21113.0
     }
   },
   "portugal": {
     "2000": {
       "Gas/Diesel": 198203.0,
-      "Jet kerosene": 5777.0,
       "Motor gasoline": 89011.0
     },
     "2001": {
       "Gas/Diesel": 215536.0,
-      "Jet kerosene": 5400.0,
       "Motor gasoline": 83652.0
     },
     "2002": {
       "Gas/Diesel": 220225.0,
-      "Jet kerosene": 5442.0,
       "Motor gasoline": 86624.0
     },
     "2003": {
       "Gas/Diesel": 222151.0,
-      "Jet kerosene": 5233.0,
       "Motor gasoline": 84029.0
     },
     "2004": {
       "Gas/Diesel": 230860.0,
-      "Jet kerosene": 5652.0,
       "Motor gasoline": 80763.0
     },
     "2005": {
       "Gas/Diesel": 228641.0,
-      "Jet kerosene": 6280.0,
       "Motor gasoline": 75822.0
     },
     "2006": {
       "Gas/Diesel": 218425.0,
-      "Jet kerosene": 6238.0,
       "Motor gasoline": 70087.0
     },
     "2007": {
       "Gas/Diesel": 221481.0,
-      "Jet kerosene": 6405.0,
       "Motor gasoline": 66528.0
     },
     "2008": {
       "Gas/Diesel": 217420.0,
-      "Jet kerosene": 6112.0,
       "Motor gasoline": 62383.0
     },
     "2009": {
       "Gas/Diesel": 217001.0,
-      "Jet kerosene": 5777.0,
       "Motor gasoline": 61294.0
     },
     "2010": {
       "Gas/Diesel": 214112.0,
-      "Jet kerosene": 6615.0,
       "Motor gasoline": 58238.0
     },
     "2011": {
       "Gas/Diesel": 198454.0,
-      "Jet kerosene": 5903.0,
       "Motor gasoline": 52335.0
     },
     "2012": {
       "Gas/Diesel": 180199.0,
-      "Jet kerosene": 5526.0,
       "Motor gasoline": 47143.0
     },
     "2013": {
       "Gas/Diesel": 176976.0,
-      "Jet kerosene": 5735.0,
       "Motor gasoline": 46012.0
     },
     "2014": {
       "Gas/Diesel": 180702.0,
-      "Jet kerosene": 5735.0,
       "Motor gasoline": 45636.0
     },
     "2015": {
       "Gas/Diesel": 184596.0,
-      "Jet kerosene": 6112.0,
       "Motor gasoline": 43877.0
     },
     "2016": {
       "Gas/Diesel": 189662.0,
-      "Jet kerosene": 6238.0,
       "Motor gasoline": 43165.0
     },
     "2017": {
       "Gas/Diesel": 193550.0,
-      "Jet kerosene": 7412.0,
       "Motor gasoline": 43078.0
     },
     "2018": {
       "Gas/Diesel": 195340.0,
-      "Jet kerosene": 8059.0,
       "Motor gasoline": 42685.0
     },
     "2019": {
       "Gas/Diesel": 199789.0,
-      "Jet kerosene": 7562.0,
       "Motor gasoline": 44207.0
     },
     "2020": {
       "Gas/Diesel": 173576.0,
-      "Jet kerosene": 4403.0,
       "Motor gasoline": 36607.0
     },
     "2021": {
       "Gas/Diesel": 184581.0,
-      "Jet kerosene": 5609.0,
       "Motor gasoline": 39796.0
     },
     "2022": {
       "Gas/Diesel": 191318.0,
-      "Jet kerosene": 6860.0,
       "Motor gasoline": 43330.0
     },
     "2023": {
       "Gas/Diesel": 199091.0,
-      "Jet kerosene": 7173.0,
       "Motor gasoline": 48355.0
     }
   },
@@ -2385,732 +1962,588 @@
   "spain": {
     "2000": {
       "Gas/Diesel": 1029450.0,
-      "Jet kerosene": 68202.0,
       "Motor gasoline": 361488.0
     },
     "2001": {
       "Gas/Diesel": 1090619.0,
-      "Jet kerosene": 69500.0,
       "Motor gasoline": 358013.0
     },
     "2002": {
       "Gas/Diesel": 1127630.0,
-      "Jet kerosene": 66821.0,
       "Motor gasoline": 339423.0
     },
     "2003": {
       "Gas/Diesel": 1226188.0,
-      "Jet kerosene": 70128.0,
       "Motor gasoline": 330631.0
     },
     "2004": {
       "Gas/Diesel": 1337222.0,
-      "Jet kerosene": 77748.0,
       "Motor gasoline": 315852.0
     },
     "2005": {
       "Gas/Diesel": 1396297.0,
-      "Jet kerosene": 90686.0,
       "Motor gasoline": 304380.0
     },
     "2006": {
       "Gas/Diesel": 1360081.0,
-      "Jet kerosene": 95333.0,
       "Motor gasoline": 290480.0
     },
     "2007": {
       "Gas/Diesel": 1420162.0,
-      "Jet kerosene": 100315.0,
       "Motor gasoline": 279678.0
     },
     "2008": {
       "Gas/Diesel": 1344214.0,
-      "Jet kerosene": 96756.0,
       "Motor gasoline": 257655.0
     },
     "2009": {
       "Gas/Diesel": 1247247.0,
-      "Jet kerosene": 85620.0,
       "Motor gasoline": 241787.0
     },
     "2010": {
       "Gas/Diesel": 1222713.0,
-      "Jet kerosene": 95584.0,
       "Motor gasoline": 222695.0
     },
     "2011": {
       "Gas/Diesel": 1130938.0,
-      "Jet kerosene": 85745.0,
       "Motor gasoline": 207120.0
     },
     "2012": {
       "Gas/Diesel": 1038619.0,
-      "Jet kerosene": 74231.0,
       "Motor gasoline": 193011.0
     },
     "2013": {
       "Gas/Diesel": 1056245.0,
-      "Jet kerosene": 68496.0,
       "Motor gasoline": 183884.0
     },
     "2014": {
       "Gas/Diesel": 1048207.0,
-      "Jet kerosene": 71594.0,
       "Motor gasoline": 181037.0
     },
     "2015": {
       "Gas/Diesel": 1105022.0,
-      "Jet kerosene": 74399.0,
       "Motor gasoline": 182251.0
     },
     "2016": {
       "Gas/Diesel": 1126081.0,
-      "Jet kerosene": 79967.0,
       "Motor gasoline": 190457.0
     },
     "2017": {
       "Gas/Diesel": 1146680.0,
-      "Jet kerosene": 86373.0,
       "Motor gasoline": 194728.0
     },
     "2018": {
       "Gas/Diesel": 1158445.0,
-      "Jet kerosene": 90309.0,
       "Motor gasoline": 203143.0
     },
     "2019": {
       "Gas/Diesel": 1144754.0,
-      "Jet kerosene": 95375.0,
       "Motor gasoline": 216792.0
     },
     "2020": {
       "Gas/Diesel": 994825.0,
-      "Jet kerosene": 38602.0,
       "Motor gasoline": 172203.0
     },
     "2021": {
       "Gas/Diesel": 1098593.0,
-      "Jet kerosene": 66460.0,
       "Motor gasoline": 212327.0
     },
     "2022": {
       "Gas/Diesel": 1106126.0,
-      "Jet kerosene": 100091.0,
       "Motor gasoline": 234278.0
     },
     "2023": {
       "Gas/Diesel": 1035629.0,
-      "Jet kerosene": 108087.0,
       "Motor gasoline": 243955.0
     }
   },
   "sweden": {
     "2000": {
       "Gas/Diesel": 216122.0,
-      "Jet kerosene": 9504.0,
       "Motor gasoline": 166718.0
     },
     "2001": {
       "Gas/Diesel": 209381.0,
-      "Jet kerosene": 9671.0,
       "Motor gasoline": 165211.0
     },
     "2002": {
       "Gas/Diesel": 206199.0,
-      "Jet kerosene": 7996.0,
       "Motor gasoline": 169397.0
     },
     "2003": {
       "Gas/Diesel": 216038.0,
-      "Jet kerosene": 7745.0,
       "Motor gasoline": 167932.0
     },
     "2004": {
       "Gas/Diesel": 203101.0,
-      "Jet kerosene": 8876.0,
       "Motor gasoline": 164541.0
     },
     "2005": {
       "Gas/Diesel": 191408.0,
-      "Jet kerosene": 9179.0,
       "Motor gasoline": 163089.0
     },
     "2006": {
       "Gas/Diesel": 185188.0,
-      "Jet kerosene": 8678.0,
       "Motor gasoline": 158948.0
     },
     "2007": {
       "Gas/Diesel": 186584.0,
-      "Jet kerosene": 8489.0,
       "Motor gasoline": 155936.0
     },
     "2008": {
       "Gas/Diesel": 185151.0,
-      "Jet kerosene": 7952.0,
       "Motor gasoline": 146907.0
     },
     "2009": {
       "Gas/Diesel": 177937.0,
-      "Jet kerosene": 6950.0,
       "Motor gasoline": 144083.0
     },
     "2010": {
       "Gas/Diesel": 191293.0,
-      "Jet kerosene": 6531.0,
       "Motor gasoline": 135530.0
     },
     "2011": {
       "Gas/Diesel": 190507.0,
-      "Jet kerosene": 7183.0,
       "Motor gasoline": 125848.0
     },
     "2012": {
       "Gas/Diesel": 185947.0,
-      "Jet kerosene": 7080.0,
       "Motor gasoline": 115607.0
     },
     "2013": {
       "Gas/Diesel": 182597.0,
-      "Jet kerosene": 7123.0,
       "Motor gasoline": 109663.0
     },
     "2014": {
       "Gas/Diesel": 177379.0,
-      "Jet kerosene": 7103.0,
       "Motor gasoline": 105452.0
     },
     "2015": {
       "Gas/Diesel": 181572.0,
-      "Jet kerosene": 7028.0,
       "Motor gasoline": 102965.0
     },
     "2016": {
       "Gas/Diesel": 172377.0,
-      "Jet kerosene": 7493.0,
       "Motor gasoline": 98861.0
     },
     "2017": {
       "Gas/Diesel": 172133.0,
-      "Jet kerosene": 7586.0,
       "Motor gasoline": 94546.0
     },
     "2018": {
       "Gas/Diesel": 166214.0,
-      "Jet kerosene": 7167.0,
       "Motor gasoline": 87875.0
     },
     "2019": {
       "Gas/Diesel": 171448.0,
-      "Jet kerosene": 6447.0,
       "Motor gasoline": 85940.0
     },
     "2020": {
       "Gas/Diesel": 161197.0,
-      "Jet kerosene": 2470.0,
       "Motor gasoline": 78817.0
     },
     "2021": {
       "Gas/Diesel": 162597.0,
-      "Jet kerosene": 2800.0,
       "Motor gasoline": 80697.0
     },
     "2022": {
       "Gas/Diesel": 140772.0,
-      "Jet kerosene": 4256.0,
       "Motor gasoline": 75007.0
     },
     "2023": {
       "Gas/Diesel": 142267.0,
-      "Jet kerosene": 3908.0,
       "Motor gasoline": 72949.0
     }
   },
   "switzerland": {
     "2000": {
       "Gas/Diesel": 247439.0,
-      "Jet kerosene": 3140.0,
       "Motor gasoline": 167011.0
     },
     "2001": {
       "Gas/Diesel": 264856.0,
-      "Jet kerosene": 2553.0,
       "Motor gasoline": 162364.0
     },
     "2002": {
       "Gas/Diesel": 250663.0,
-      "Jet kerosene": 3600.0,
       "Motor gasoline": 159098.0
     },
     "2003": {
       "Gas/Diesel": 264856.0,
-      "Jet kerosene": 2637.0,
       "Motor gasoline": 158302.0
     },
     "2004": {
       "Gas/Diesel": 265066.0,
-      "Jet kerosene": 1967.0,
       "Motor gasoline": 155455.0
     },
     "2005": {
       "Gas/Diesel": 272895.0,
-      "Jet kerosene": 1590.0,
       "Motor gasoline": 150682.0
     },
     "2006": {
       "Gas/Diesel": 269211.0,
-      "Jet kerosene": 1256.0,
       "Motor gasoline": 146035.0
     },
     "2007": {
       "Gas/Diesel": 250245.0,
-      "Jet kerosene": 2051.0,
       "Motor gasoline": 144653.0
     },
     "2008": {
       "Gas/Diesel": 266280.0,
-      "Jet kerosene": 2219.0,
       "Motor gasoline": 141430.0
     },
     "2009": {
       "Gas/Diesel": 262303.0,
-      "Jet kerosene": 2009.0,
       "Motor gasoline": 137620.0
     },
     "2010": {
       "Gas/Diesel": 274570.0,
-      "Jet kerosene": 2386.0,
       "Motor gasoline": 132637.0
     },
     "2011": {
       "Gas/Diesel": 239443.0,
-      "Jet kerosene": 2051.0,
       "Motor gasoline": 127529.0
     },
     "2012": {
       "Gas/Diesel": 255394.0,
-      "Jet kerosene": 2637.0,
       "Motor gasoline": 122944.0
     },
     "2013": {
       "Gas/Diesel": 268040.0,
-      "Jet kerosene": 3014.0,
       "Motor gasoline": 117335.0
     },
     "2014": {
       "Gas/Diesel": 231702.0,
-      "Jet kerosene": 2219.0,
       "Motor gasoline": 112648.0
     },
     "2015": {
       "Gas/Diesel": 236849.0,
-      "Jet kerosene": 2344.0,
       "Motor gasoline": 104360.0
     },
     "2016": {
       "Gas/Diesel": 241033.0,
-      "Jet kerosene": 2553.0,
       "Motor gasoline": 101089.0
     },
     "2017": {
       "Gas/Diesel": 232326.0,
-      "Jet kerosene": 1884.0,
       "Motor gasoline": 97985.0
     },
     "2018": {
       "Gas/Diesel": 221647.0,
-      "Jet kerosene": 2515.0,
       "Motor gasoline": 96500.0
     },
     "2019": {
       "Gas/Diesel": 219120.0,
-      "Jet kerosene": 2574.0,
       "Motor gasoline": 95652.0
     },
     "2020": {
       "Gas/Diesel": 202133.0,
-      "Jet kerosene": 1734.0,
       "Motor gasoline": 84749.0
     },
     "2021": {
       "Gas/Diesel": 213679.0,
-      "Jet kerosene": 1380.0,
       "Motor gasoline": 86569.0
     },
     "2022": {
       "Gas/Diesel": 192847.0,
-      "Jet kerosene": 1787.0,
       "Motor gasoline": 83990.0
     },
     "2023": {
       "Gas/Diesel": 188425.0,
-      "Jet kerosene": 1498.0,
       "Motor gasoline": 86919.0
     }
   },
   "turkiye": {
     "2000": {
       "Gas/Diesel": 348467.0,
-      "Jet kerosene": 30186.0,
       "Motor gasoline": 151520.0
     },
     "2001": {
       "Gas/Diesel": 351105.0,
-      "Jet kerosene": 29433.0,
       "Motor gasoline": 127781.0
     },
     "2002": {
       "Gas/Diesel": 386148.0,
-      "Jet kerosene": 32405.0,
       "Motor gasoline": 132093.0
     },
     "2003": {
       "Gas/Diesel": 395066.0,
-      "Jet kerosene": 34248.0,
       "Motor gasoline": 113671.0
     },
     "2004": {
       "Gas/Diesel": 423746.0,
-      "Jet kerosene": 36341.0,
       "Motor gasoline": 101111.0
     },
     "2005": {
       "Gas/Diesel": 419768.0,
-      "Jet kerosene": 37723.0,
       "Motor gasoline": 111913.0
     },
     "2006": {
       "Gas/Diesel": 485626.0,
-      "Jet kerosene": 32112.0,
       "Motor gasoline": 114006.0
     },
     "2007": {
       "Gas/Diesel": 564589.0,
-      "Jet kerosene": 41700.0,
       "Motor gasoline": 103120.0
     },
     "2008": {
       "Gas/Diesel": 605076.0,
-      "Jet kerosene": 32029.0,
       "Motor gasoline": 98138.0
     },
     "2009": {
       "Gas/Diesel": 566725.0,
-      "Jet kerosene": 29810.0,
       "Motor gasoline": 102534.0
     },
     "2010": {
       "Gas/Diesel": 604699.0,
-      "Jet kerosene": 16830.0,
       "Motor gasoline": 85452.0
     },
     "2011": {
       "Gas/Diesel": 632499.0,
-      "Jet kerosene": 13146.0,
       "Motor gasoline": 80847.0
     },
     "2012": {
       "Gas/Diesel": 659169.0,
-      "Jet kerosene": 15951.0,
       "Motor gasoline": 74776.0
     },
     "2013": {
       "Gas/Diesel": 688896.0,
-      "Jet kerosene": 32782.0,
       "Motor gasoline": 78418.0
     },
     "2014": {
       "Gas/Diesel": 730764.0,
-      "Jet kerosene": 40528.0,
       "Motor gasoline": 79130.0
     },
     "2015": {
       "Gas/Diesel": 832838.0,
-      "Jet kerosene": 49697.0,
       "Motor gasoline": 84908.0
     },
     "2016": {
       "Gas/Diesel": 895389.0,
-      "Jet kerosene": 56228.0,
       "Motor gasoline": 90267.0
     },
     "2017": {
       "Gas/Diesel": 964973.0,
-      "Jet kerosene": 49990.0,
       "Motor gasoline": 93114.0
     },
     "2018": {
       "Gas/Diesel": 955678.0,
-      "Jet kerosene": 51874.0,
       "Motor gasoline": 91565.0
     },
     "2019": {
       "Gas/Diesel": 963508.0,
-      "Jet kerosene": 49111.0,
       "Motor gasoline": 94537.0
     },
     "2020": {
       "Gas/Diesel": 945291.0,
-      "Jet kerosene": 28398.0,
       "Motor gasoline": 94788.0
     },
     "2021": {
       "Gas/Diesel": 1047359.0,
-      "Jet kerosene": 37488.0,
       "Motor gasoline": 119602.0
     },
     "2022": {
       "Gas/Diesel": 1037964.0,
-      "Jet kerosene": 44760.0,
       "Motor gasoline": 129998.0
     },
     "2023": {
       "Gas/Diesel": 1074753.0,
-      "Jet kerosene": 52164.0,
       "Motor gasoline": 164623.0
     }
   },
   "united-kingdom": {
     "2000": {
       "Gas/Diesel": 987205.0,
-      "Jet kerosene": 28344.0,
       "Motor gasoline": 906609.0
     },
     "2001": {
       "Gas/Diesel": 980046.0,
-      "Jet kerosene": 27925.0,
       "Motor gasoline": 878851.0
     },
     "2002": {
       "Gas/Diesel": 979208.0,
-      "Jet kerosene": 27800.0,
       "Motor gasoline": 873240.0
     },
     "2003": {
       "Gas/Diesel": 1012075.0,
-      "Jet kerosene": 28428.0,
       "Motor gasoline": 835727.0
     },
     "2004": {
       "Gas/Diesel": 1024133.0,
-      "Jet kerosene": 30605.0,
       "Motor gasoline": 817765.0
     },
     "2005": {
       "Gas/Diesel": 1070690.0,
-      "Jet kerosene": 32824.0,
       "Motor gasoline": 785611.0
     },
     "2006": {
       "Gas/Diesel": 1091080.0,
-      "Jet kerosene": 33243.0,
       "Motor gasoline": 760448.0
     },
     "2007": {
       "Gas/Diesel": 1126835.0,
-      "Jet kerosene": 31568.0,
       "Motor gasoline": 738886.0
     },
     "2008": {
       "Gas/Diesel": 1071527.0,
-      "Jet kerosene": 30689.0,
       "Motor gasoline": 693794.0
     },
     "2009": {
       "Gas/Diesel": 1030078.0,
-      "Jet kerosene": 28972.0,
       "Motor gasoline": 654606.0
     },
     "2010": {
       "Gas/Diesel": 1056957.0,
-      "Jet kerosene": 27925.0,
       "Motor gasoline": 612068.0
     },
     "2011": {
       "Gas/Diesel": 1050970.0,
-      "Jet kerosene": 29098.0,
       "Motor gasoline": 582635.0
     },
     "2012": {
       "Gas/Diesel": 1088777.0,
-      "Jet kerosene": 28177.0,
       "Motor gasoline": 554667.0
     },
     "2013": {
       "Gas/Diesel": 1086181.0,
-      "Jet kerosene": 32950.0,
       "Motor gasoline": 527118.0
     },
     "2014": {
       "Gas/Diesel": 1116828.0,
-      "Jet kerosene": 32866.0,
       "Motor gasoline": 516106.0
     },
     "2015": {
       "Gas/Diesel": 1180556.0,
-      "Jet kerosene": 33201.0,
       "Motor gasoline": 505891.0
     },
     "2016": {
       "Gas/Diesel": 1223464.0,
-      "Jet kerosene": 33233.0,
       "Motor gasoline": 500406.0
     },
     "2017": {
       "Gas/Diesel": 1238144.0,
-      "Jet kerosene": 35705.0,
       "Motor gasoline": 493805.0
     },
     "2018": {
       "Gas/Diesel": 1229863.0,
-      "Jet kerosene": 35966.0,
       "Motor gasoline": 485033.0
     },
     "2019": {
       "Gas/Diesel": 1190265.0,
-      "Jet kerosene": 36090.0,
       "Motor gasoline": 492995.0
     },
     "2020": {
       "Gas/Diesel": 993569.0,
-      "Jet kerosene": 14946.0,
       "Motor gasoline": 382799.0
     },
     "2021": {
       "Gas/Diesel": 1088484.0,
-      "Jet kerosene": 14151.0,
       "Motor gasoline": 425378.0
     },
     "2022": {
       "Gas/Diesel": 1064410.0,
-      "Jet kerosene": 27967.0,
       "Motor gasoline": 459208.0
     },
     "2023": {
       "Gas/Diesel": 1028780.0,
-      "Jet kerosene": 32447.0,
       "Motor gasoline": 479430.0
     }
   },
   "united-states": {
     "2000": {
       "Gas/Diesel": 7241991.0,
-      "Jet kerosene": 2639065.0,
       "Motor gasoline": 15198795.0
     },
     "2001": {
       "Gas/Diesel": 7467241.0,
-      "Jet kerosene": 2535274.0,
       "Motor gasoline": 15399971.0
     },
     "2002": {
       "Gas/Diesel": 7416790.0,
-      "Jet kerosene": 2300060.0,
       "Motor gasoline": 15783775.0
     },
     "2003": {
       "Gas/Diesel": 7704884.0,
-      "Jet kerosene": 2269371.0,
       "Motor gasoline": 15826438.0
     },
     "2004": {
       "Gas/Diesel": 7963419.0,
-      "Jet kerosene": 2346575.0,
       "Motor gasoline": 16089453.0
     },
     "2005": {
       "Gas/Diesel": 8122098.0,
-      "Jet kerosene": 2384089.0,
       "Motor gasoline": 16077395.0
     },
     "2006": {
       "Gas/Diesel": 8179039.0,
-      "Jet kerosene": 2266859.0,
       "Motor gasoline": 16045241.0
     },
     "2007": {
       "Gas/Diesel": 8273702.0,
-      "Jet kerosene": 2236253.0,
       "Motor gasoline": 15895269.0
     },
     "2008": {
       "Gas/Diesel": 7873570.0,
-      "Jet kerosene": 2046507.0,
       "Motor gasoline": 15075327.0
     },
     "2009": {
       "Gas/Diesel": 7179022.0,
-      "Jet kerosene": 1864382.0,
       "Motor gasoline": 14771365.0
     },
     "2010": {
       "Gas/Diesel": 7525731.0,
-      "Jet kerosene": 1908552.0,
       "Motor gasoline": 15169655.0
     },
     "2011": {
       "Gas/Diesel": 7426294.0,
-      "Jet kerosene": 1911064.0,
       "Motor gasoline": 14250611.0
     },
     "2012": {
       "Gas/Diesel": 7270085.0,
-      "Jet kerosene": 1892056.0,
       "Motor gasoline": 14095992.0
     },
     "2013": {
       "Gas/Diesel": 7279212.0,
-      "Jet kerosene": 1932919.0,
       "Motor gasoline": 14293651.0
     },
     "2014": {
       "Gas/Diesel": 7557006.0,
-      "Jet kerosene": 1982407.0,
       "Motor gasoline": 14395809.0
     },
     "2015": {
       "Gas/Diesel": 7386226.0,
-      "Jet kerosene": 2073428.0,
       "Motor gasoline": 14804817.0
     },
     "2016": {
       "Gas/Diesel": 7261250.0,
-      "Jet kerosene": 2154066.0,
       "Motor gasoline": 15016669.0
     },
     "2017": {
       "Gas/Diesel": 7363910.0,
-      "Jet kerosene": 2274133.0,
       "Motor gasoline": 14920934.0
     },
     "2018": {
       "Gas/Diesel": 7633404.0,
-      "Jet kerosene": 2309897.0,
       "Motor gasoline": 14956003.0
     },
     "2019": {
       "Gas/Diesel": 7461535.0,
-      "Jet kerosene": 2348611.0,
       "Motor gasoline": 14892078.0
     },
     "2020": {
       "Gas/Diesel": 6917852.0,
-      "Jet kerosene": 1453197.0,
       "Motor gasoline": 12880761.0
     },
     "2021": {
       "Gas/Diesel": 7393457.0,
-      "Jet kerosene": 1846369.0,
       "Motor gasoline": 14082747.0
     },
     "2022": {
       "Gas/Diesel": 7491182.0,
-      "Jet kerosene": 2101711.0,
       "Motor gasoline": 14184035.0
     },
     "2023": {
       "Gas/Diesel": 6739123.0,
-      "Jet kerosene": 2243729.0,
       "Motor gasoline": 14261072.0
     }
   }
