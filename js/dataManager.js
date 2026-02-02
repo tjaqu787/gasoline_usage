@@ -429,10 +429,13 @@ export class DataManager {
         const years = Object.keys(countryData).map(Number).sort((a, b) => a - b);
         if (years.length === 0) return null;
 
-        // Use first year as base if not specified
+        // Use 2010 as base year, or first year if not specified
         if (!baseYear || !countryData[baseYear]) {
-            baseYear = years[0];
+            baseYear = countryData[2010] ? 2010 : years[0];
         }
+
+        // Filter years to start from 2010
+        const filteredYears = years.filter(year => year >= 2010);
 
         const baseData = countryData[baseYear];
         if (!baseData.fuel_total_tj || !baseData.population || !baseData.vehicles || !baseData.passenger_km) {
@@ -448,9 +451,8 @@ export class DataManager {
         const fuelSavedEfficiency = [];
         const fuelSavedElectrification = [];
         const fuelSavedOwnership = [];
-        const populationEffect = [];
 
-        years.forEach(year => {
+        filteredYears.forEach(year => {
             const data = countryData[year];
             if (!data.fuel_total_tj || !data.population || !data.vehicles || !data.passenger_km ||
                 data.fuel_total_tj === 0 || data.population === 0 || data.vehicles === 0 || data.passenger_km === 0) {
@@ -458,7 +460,6 @@ export class DataManager {
                 fuelSavedEfficiency.push(null);
                 fuelSavedElectrification.push(null);
                 fuelSavedOwnership.push(null);
-                populationEffect.push(null);
                 return;
             }
 
@@ -492,15 +493,10 @@ export class DataManager {
             } else {
                 fuelSavedOwnership.push(0);
             }
-
-            // Population effect (extensive margin - not "saved", just growth)
-            const popGrowth = (data.population / baseData.population) - 1;
-            const popEffect = popGrowth * baseData.fuel_total_tj;
-            populationEffect.push(popEffect);
         });
 
         return {
-            labels: years,
+            labels: filteredYears,
             datasets: [
                 {
                     label: 'Fuel Saved: Efficiency Improvements',
@@ -519,12 +515,6 @@ export class DataManager {
                     data: fuelSavedOwnership,
                     backgroundColor: '#FFD54F',
                     borderWidth: 0
-                },
-                {
-                    label: 'Population Growth Effect',
-                    data: populationEffect,
-                    backgroundColor: '#FF6B6B',
-                    borderWidth: 0
                 }
             ],
             baseYear: baseYear
@@ -536,7 +526,11 @@ export class DataManager {
         const countryData = this.kayaData[countryCode];
         if (!countryData) return null;
 
-        const years = Object.keys(countryData).map(Number).sort((a, b) => a - b);
+        const allYears = Object.keys(countryData).map(Number).sort((a, b) => a - b);
+        if (allYears.length === 0) return null;
+
+        // Filter years to start from 2010
+        const years = allYears.filter(year => year >= 2010);
         if (years.length === 0) return null;
 
         // Get the country's historical benchmark data

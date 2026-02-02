@@ -10,7 +10,7 @@ class App {
         this.currentIndicator = 'total';
         this.currentYear = 2023;
         this.valueType = 'absolute';
-        this.baseYear = 2000;
+        this.baseYear = 2010;
         this.selectedCountry = null;
         this.currentSort = 'value-desc';
         this.kayaMode = 'indexed';
