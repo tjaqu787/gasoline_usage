@@ -17,6 +17,9 @@ def calculate_enhanced_kaya_components(conn):
     """
     cursor = conn.cursor()
 
+    # Countries to exclude (small countries with patchy data)
+    excluded_countries = {'austria', 'belgium', 'greece', 'latvia', 'luxembourg', 'portugal'}
+
     # Get country code mapping
     cursor.execute("SELECT iea_code, oecd_code, wb_code FROM country_code_mapping")
     mapping = {row[0]: {'oecd': row[1], 'wb': row[2]} for row in cursor.fetchall()}
@@ -24,6 +27,9 @@ def calculate_enhanced_kaya_components(conn):
     kaya_data = defaultdict(dict)
 
     for iea_code, codes in mapping.items():
+        # Skip excluded countries
+        if iea_code in excluded_countries:
+            continue
         oecd_code = codes['oecd']
         wb_code = codes['wb']
 
@@ -147,6 +153,9 @@ def export_vehicle_category_data(conn):
     """
     cursor = conn.cursor()
 
+    # Countries to exclude (small countries with patchy data)
+    excluded_countries = {'austria', 'belgium', 'greece', 'latvia', 'luxembourg', 'portugal'}
+
     # Get country code mapping
     cursor.execute("SELECT oecd_code, iea_code FROM country_code_mapping")
     oecd_to_iea = {row[0]: row[1] for row in cursor.fetchall()}
@@ -163,6 +172,11 @@ def export_vehicle_category_data(conn):
     for row in cursor.fetchall():
         oecd_code, year, vehicle_type, km_millions, unit = row
         iea_code = oecd_to_iea.get(oecd_code, oecd_code)
+
+        # Skip excluded countries
+        if iea_code in excluded_countries:
+            continue
+
         category_data[iea_code][year][vehicle_type] = {
             'km_millions': km_millions,
             'unit': unit
@@ -186,16 +200,19 @@ def export_to_json():
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
 
-    # Export countries (same as before)
+    # Export countries (excluding those with patchy data)
     print("Exporting countries...")
+    excluded_countries = {'austria', 'belgium', 'greece', 'latvia', 'luxembourg', 'portugal'}
     cursor.execute("SELECT country_code, country_name FROM countries ORDER BY country_code")
     countries = {}
     for row in cursor.fetchall():
-        countries[row[0]] = row[1]
+        country_code = row[0]
+        if country_code not in excluded_countries:
+            countries[country_code] = row[1]
 
     with open(output_dir / 'countries.json', 'w') as f:
         json.dump(countries, f, indent=2)
-    print(f"  ✓ Exported {len(countries)} countries")
+    print(f"  ✓ Exported {len(countries)} countries (excluded 6 countries with patchy data)")
 
     # Export oil consumption data (all products)
     print("Exporting oil consumption data...")
@@ -210,6 +227,9 @@ def export_to_json():
     oil_consumption = defaultdict(lambda: defaultdict(dict))
     for row in cursor.fetchall():
         country_code, product, year, value = row
+        # Skip excluded countries
+        if country_code in excluded_countries:
+            continue
         oil_consumption[country_code][year][product] = value
 
     oil_consumption_dict = {
@@ -261,6 +281,9 @@ def export_to_json():
         oecd_code, year, measure, value = row
         # Convert OECD code to IEA code
         iea_code = oecd_to_iea.get(oecd_code, oecd_code)
+        # Skip excluded countries
+        if iea_code in excluded_countries:
+            continue
         # Use shorter measure names and normalize EV to electric
         measure_name = measure.replace('VEH_STOCK_', '').lower()
         # Map 'ev' to 'electric' for consistency

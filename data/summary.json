@@ -37,14 +37,14 @@
     "Other kerosene",
     "Other oil products"
   ],
-  "total_countries": 26,
-  "total_records": 29952,
-  "kaya_countries": 25,
-  "kaya_records": 618,
-  "ev_countries": 40,
-  "ev_records": 41710,
-  "category_countries": 54,
-  "category_records": 74108,
+  "total_countries": 20,
+  "total_records": 23040,
+  "kaya_countries": 20,
+  "kaya_records": 493,
+  "ev_countries": 35,
+  "ev_records": 36170,
+  "category_countries": 49,
+  "category_records": 66923,
   "fuel_benchmarks_countries": 39,
   "fuel_benchmarks_historical_records": 546
 }

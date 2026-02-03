@@ -13,6 +13,9 @@ def export_forecast_data(conn):
     """Export forecast data to JSON."""
     cursor = conn.cursor()
 
+    # Countries to exclude (small countries with patchy data)
+    excluded_countries = {'austria', 'belgium', 'greece', 'latvia', 'luxembourg', 'portugal'}
+
     # Get country code mapping
     cursor.execute("SELECT oecd_code, iea_code FROM country_code_mapping")
     oecd_to_iea = {row[0]: row[1] for row in cursor.fetchall()}
@@ -39,6 +42,11 @@ def export_forecast_data(conn):
 
     for row in cursor.fetchall():
         iea_code = oecd_to_iea.get(row[0], row[0].lower())
+
+        # Skip excluded countries
+        if iea_code in excluded_countries:
+            continue
+
         country_name = row[1]
         year = row[2]
         scenario = row[3]

@@ -431,6 +431,9 @@ def main():
         cursor = conn.cursor()
         usa_log_diff_rate, usa_current_efficiency = get_usa_efficiency_trend(cursor)
 
+        # Countries to exclude (small countries with patchy data)
+        excluded_countries = {'austria', 'belgium', 'greece', 'latvia', 'luxembourg', 'portugal'}
+
         # Get list of countries
         cursor.execute("""
             SELECT DISTINCT iea_code, oecd_code, wb_code, country_name
@@ -438,9 +441,13 @@ def main():
             WHERE oecd_code IS NOT NULL
             ORDER BY country_name
         """)
-        countries = cursor.fetchall()
+        all_countries = cursor.fetchall()
+
+        # Filter out excluded countries
+        countries = [c for c in all_countries if c[0] not in excluded_countries]
 
         print(f"\nGenerating forecasts for {len(countries)} countries...")
+        print(f"Excluded {len(all_countries) - len(countries)} countries with patchy data")
         print("Forecast period: 2024-2040")
         print("Efficiency scenarios: age_out, improvement\n")
 
