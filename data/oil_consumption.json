@@ -489,6 +489,104 @@
       "Motor gasoline": 46264.0
     }
   },
+  "france": {
+    "2000": {
+      "Gas/Diesel": 1851821.0,
+      "Motor gasoline": 574722.0
+    },
+    "2001": {
+      "Gas/Diesel": 1965200.0,
+      "Motor gasoline": 558644.0
+    },
+    "2002": {
+      "Gas/Diesel": 1931831.0,
+      "Motor gasoline": 538883.0
+    },
+    "2003": {
+      "Gas/Diesel": 1979644.0,
+      "Motor gasoline": 505095.0
+    },
+    "2004": {
+      "Gas/Diesel": 2005114.0,
+      "Motor gasoline": 480225.0
+    },
+    "2005": {
+      "Gas/Diesel": 1998169.0,
+      "Motor gasoline": 448364.0
+    },
+    "2006": {
+      "Gas/Diesel": 1983702.0,
+      "Motor gasoline": 419098.0
+    },
+    "2007": {
+      "Gas/Diesel": 1932198.0,
+      "Motor gasoline": 389665.0
+    },
+    "2008": {
+      "Gas/Diesel": 1928187.0,
+      "Motor gasoline": 347755.0
+    },
+    "2009": {
+      "Gas/Diesel": 1903565.0,
+      "Motor gasoline": 335278.0
+    },
+    "2010": {
+      "Gas/Diesel": 1896427.0,
+      "Motor gasoline": 309488.0
+    },
+    "2011": {
+      "Gas/Diesel": 1918334.0,
+      "Motor gasoline": 316097.0
+    },
+    "2012": {
+      "Gas/Diesel": 1924368.0,
+      "Motor gasoline": 293935.0
+    },
+    "2013": {
+      "Gas/Diesel": 1935687.0,
+      "Motor gasoline": 284381.0
+    },
+    "2014": {
+      "Gas/Diesel": 1862645.0,
+      "Motor gasoline": 282946.0
+    },
+    "2015": {
+      "Gas/Diesel": 1893152.0,
+      "Motor gasoline": 286975.0
+    },
+    "2016": {
+      "Gas/Diesel": 1866090.0,
+      "Motor gasoline": 293993.0
+    },
+    "2017": {
+      "Gas/Diesel": 1864112.0,
+      "Motor gasoline": 301811.0
+    },
+    "2018": {
+      "Gas/Diesel": 1789719.0,
+      "Motor gasoline": 311738.0
+    },
+    "2019": {
+      "Gas/Diesel": 1733221.0,
+      "Motor gasoline": 331942.0
+    },
+    "2020": {
+      "Gas/Diesel": 1529245.0,
+      "Motor gasoline": 286189.0
+    },
+    "2021": {
+      "Gas/Diesel": 1649200.0,
+      "Motor gasoline": 343720.0
+    },
+    "2022": {
+      "Gas/Diesel": 1606663.0,
+      "Motor gasoline": 376362.0
+    },
+    "2023": {
+      "Gas/Diesel": 1504836.0,
+      "Motor gasoline": 400229.0
+    }
+  },
   "germany": {
     "2000": {
       "Gas/Diesel": 2336443.0,
