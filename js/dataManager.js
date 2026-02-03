@@ -9,10 +9,11 @@ export class DataManager {
         this.vehicleCategories = {};
         this.fuelBenchmarks = {};
         this.fuelBenchmarksHistorical = {};
+        this.forecastData = {};
     }
 
     async loadAll() {
-        const [countries, oilConsumption, summary, kayaData, evStock, vehicleCategories, fuelBenchmarks, fuelBenchmarksHistorical] = await Promise.all([
+        const [countries, oilConsumption, summary, kayaData, evStock, vehicleCategories, fuelBenchmarks, fuelBenchmarksHistorical, forecastData] = await Promise.all([
             fetch('data/countries.json').then(r => r.json()),
             fetch('data/oil_consumption.json').then(r => r.json()),
             fetch('data/summary.json').then(r => r.json()),
@@ -20,7 +21,8 @@ export class DataManager {
             fetch('data/ev_stock.json').then(r => r.json()),
             fetch('data/vehicle_categories.json').then(r => r.json()),
             fetch('data/fuel_benchmarks.json').then(r => r.json()),
-            fetch('data/fuel_benchmarks_historical.json').then(r => r.json())
+            fetch('data/fuel_benchmarks_historical.json').then(r => r.json()),
+            fetch('data/forecast_data.json').then(r => r.json())
         ]);
 
         this.countries = countries;
@@ -31,6 +33,7 @@ export class DataManager {
         this.vehicleCategories = vehicleCategories;
         this.fuelBenchmarks = fuelBenchmarks;
         this.fuelBenchmarksHistorical = fuelBenchmarksHistorical;
+        this.forecastData = forecastData;
     }
 
     getYears() {
@@ -420,7 +423,7 @@ export class DataManager {
         };
     }
 
-    getFuelSavedData(countryCode, baseYear = null) {
+    getFuelSavedData(countryCode, baseYear = null, ownershipMetric = 'per_capita') {
         // Calculate "fuel not used" due to efficiency gains
         // Compares actual fuel consumption to counterfactual scenarios
         const countryData = this.kayaData[countryCode];
@@ -446,11 +449,13 @@ export class DataManager {
         const baseFuelPerKm = baseData.fuel_total_tj / baseData.passenger_km;
         const baseCarsPerCapita = baseData.vehicles / baseData.population;
         const baseKmPerVeh = baseData.passenger_km / baseData.vehicles;
+        const baseTotalVehicles = baseData.vehicles;
 
         const actualFuel = [];
         const fuelSavedEfficiency = [];
         const fuelSavedElectrification = [];
         const fuelSavedOwnership = [];
+        const fuelSavedVMT = [];
 
         filteredYears.forEach(year => {
             const data = countryData[year];
@@ -460,6 +465,7 @@ export class DataManager {
                 fuelSavedEfficiency.push(null);
                 fuelSavedElectrification.push(null);
                 fuelSavedOwnership.push(null);
+                fuelSavedVMT.push(null);
                 return;
             }
 
@@ -483,35 +489,53 @@ export class DataManager {
             const savedFromEV = evShare * data.passenger_km * baseFuelPerKm;
             fuelSavedElectrification.push(savedFromEV);
 
-            // Counterfactual 3: Car ownership changes
-            const actualCarsPerCapita = data.vehicles / data.population;
-            const ownershipChange = baseCarsPerCapita - actualCarsPerCapita;
-            if (ownershipChange > 0) {
-                // Fewer cars per capita = fuel saved
-                const savedFromOwnership = ownershipChange * data.population * baseKmPerVeh * baseFuelPerKm;
-                fuelSavedOwnership.push(Math.max(0, savedFromOwnership));
+            // Counterfactual 3: Car ownership changes (per capita or total)
+            let savedFromOwnership;
+            if (ownershipMetric === 'per_capita') {
+                // Per capita: (base cars/capita - actual cars/capita) * population * km/veh * fuel/km
+                const actualCarsPerCapita = data.vehicles / data.population;
+                const ownershipChange = baseCarsPerCapita - actualCarsPerCapita;
+                savedFromOwnership = ownershipChange * data.population * baseKmPerVeh * baseFuelPerKm;
             } else {
-                fuelSavedOwnership.push(0);
+                // Total vehicles: (base total vehicles - actual total vehicles) * km/veh * fuel/km
+                const vehicleChange = baseTotalVehicles - data.vehicles;
+                savedFromOwnership = vehicleChange * baseKmPerVeh * baseFuelPerKm;
             }
+            fuelSavedOwnership.push(savedFromOwnership);
+
+            // Counterfactual 4: VMT (km per vehicle) changes
+            const actualKmPerVeh = data.passenger_km / data.vehicles;
+            const vmtChange = baseKmPerVeh - actualKmPerVeh;
+            // Positive = lower VMT = fuel saved, Negative = higher VMT = fuel added
+            const savedFromVMT = vmtChange * data.vehicles * baseFuelPerKm;
+            fuelSavedVMT.push(savedFromVMT);
         });
+
+        const ownershipLabel = ownershipMetric === 'per_capita' ? 'Car Ownership (Per Capita)' : 'Car Ownership (Total Vehicles)';
 
         return {
             labels: filteredYears,
             datasets: [
                 {
-                    label: 'Fuel Saved: Efficiency Improvements',
+                    label: 'Efficiency Improvements',
                     data: fuelSavedEfficiency,
                     backgroundColor: '#81C784',
                     borderWidth: 0
                 },
                 {
-                    label: 'Fuel Saved: Electrification',
+                    label: 'Electrification',
                     data: fuelSavedElectrification,
                     backgroundColor: '#4FC3F7',
                     borderWidth: 0
                 },
                 {
-                    label: 'Fuel Saved: Lower Car Ownership',
+                    label: 'VMT per Vehicle',
+                    data: fuelSavedVMT,
+                    backgroundColor: '#AB47BC',
+                    borderWidth: 0
+                },
+                {
+                    label: ownershipLabel,
                     data: fuelSavedOwnership,
                     backgroundColor: '#FFD54F',
                     borderWidth: 0
@@ -713,5 +737,167 @@ export class DataManager {
                 mode: 'absolute'
             };
         }
+    }
+
+    getForecastDemandData(countryCode, scenario = 'improvement') {
+        /**
+         * Get forecast demand decomposition data (similar to fuel saved chart)
+         * Shows how different factors contribute to changes in fuel demand
+         */
+        const forecastCountry = this.forecastData[countryCode];
+        if (!forecastCountry || !forecastCountry.scenarios || !forecastCountry.scenarios[scenario]) {
+            return null;
+        }
+
+        const scenarioData = forecastCountry.scenarios[scenario];
+        const years = scenarioData.map(d => d.year);
+        const baseYear = years[0];
+        const baseData = scenarioData[0];
+
+        // Calculate baseline (if nothing changed from base year)
+        const basePopulation = baseData.population;
+        const baseCarsPerCapita = baseData.cars_per_capita;
+        const baseKmPerVeh = baseData.km_per_vehicle;
+        const baseFuelEfficiency = baseData.fuel_efficiency_L100km;
+
+        // Fuel saved/added from each factor
+        const fuelFromPopulation = [];
+        const fuelFromOwnership = [];
+        const fuelFromEfficiency = [];
+        const fuelFromEV = [];
+        const actualFuel = [];
+
+        scenarioData.forEach(data => {
+            // Baseline fuel if nothing changed
+            const baselineFuel = (basePopulation * baseCarsPerCapita * baseKmPerVeh * baseFuelEfficiency / 100) * 0.0000347 / 0.7;
+
+            // Fuel if only population changed
+            const fuelWithPop = (data.population * baseCarsPerCapita * baseKmPerVeh * baseFuelEfficiency / 100) * 0.0000347 / 0.7;
+            const popEffect = fuelWithPop - baselineFuel;
+
+            // Fuel if population + ownership changed
+            const fuelWithOwnership = (data.population * data.cars_per_capita * baseKmPerVeh * baseFuelEfficiency / 100) * 0.0000347 / 0.7;
+            const ownershipEffect = fuelWithOwnership - fuelWithPop;
+
+            // Fuel if pop + ownership + efficiency changed (but no EVs)
+            const fuelWithEfficiency = (data.population * data.cars_per_capita * baseKmPerVeh * data.fuel_efficiency_L100km / 100) * 0.0000347 / 0.7;
+            const efficiencyEffect = fuelWithEfficiency - fuelWithOwnership;
+
+            // Fuel with EVs (actual forecast)
+            const actualEffect = data.total_fuel_demand_tj;
+            const evEffect = actualEffect - fuelWithEfficiency;
+
+            fuelFromPopulation.push(popEffect);
+            fuelFromOwnership.push(ownershipEffect);
+            fuelFromEfficiency.push(efficiencyEffect);
+            fuelFromEV.push(evEffect);
+            actualFuel.push(actualEffect);
+        });
+
+        return {
+            labels: years,
+            baseYear: baseYear,
+            datasets: [
+                {
+                    label: 'Population Growth',
+                    data: fuelFromPopulation,
+                    backgroundColor: '#EF5350',
+                    stack: 'stack1'
+                },
+                {
+                    label: 'Car Ownership Changes',
+                    data: fuelFromOwnership,
+                    backgroundColor: '#FFA726',
+                    stack: 'stack1'
+                },
+                {
+                    label: 'Fleet Efficiency Improvements',
+                    data: fuelFromEfficiency,
+                    backgroundColor: '#66BB6A',
+                    stack: 'stack1'
+                },
+                {
+                    label: 'EV Adoption',
+                    data: fuelFromEV,
+                    backgroundColor: '#42A5F5',
+                    stack: 'stack1'
+                }
+            ],
+            actualFuel: actualFuel
+        };
+    }
+
+    getForecastEfficiencyData(countryCode, scenario = 'improvement') {
+        /**
+         * Get forecast efficiency data with benchmarks
+         * Shows forecasted fleet efficiency vs regional benchmarks
+         */
+        const forecastCountry = this.forecastData[countryCode];
+        if (!forecastCountry || !forecastCountry.scenarios || !forecastCountry.scenarios[scenario]) {
+            return null;
+        }
+
+        const scenarioData = forecastCountry.scenarios[scenario];
+        const years = scenarioData.map(d => d.year);
+        const fleetEfficiency = scenarioData.map(d => d.fuel_efficiency_L100km);
+        const evShare = scenarioData.map(d => d.ev_share * 100); // Convert to percentage
+
+        // Get regional benchmarks for this country
+        const benchmarkData = this.fuelBenchmarks[countryCode];
+        const region = benchmarkData?.region || 'Europe';
+
+        // Benchmark values (static for forecast - could be improved)
+        const suvBenchmark = benchmarkData?.suv_L100 || 10.0;
+        const carBenchmark = benchmarkData?.car_L100 || 7.0;
+
+        // Assume 80% EVs as passenger vehicles, 20% as freight
+        const evPassengerShare = scenarioData.map(d => d.ev_share * 0.8 * 100);
+
+        return {
+            labels: years,
+            datasets: [
+                {
+                    label: 'Forecasted Fleet Average',
+                    data: fleetEfficiency,
+                    borderColor: '#AB47BC',
+                    backgroundColor: 'transparent',
+                    borderWidth: 3,
+                    fill: false,
+                    spanGaps: false,
+                    yAxisID: 'y'
+                },
+                {
+                    label: `${region} SUV Benchmark`,
+                    data: years.map(() => suvBenchmark),
+                    borderColor: '#EF5350',
+                    backgroundColor: 'transparent',
+                    borderWidth: 2,
+                    borderDash: [5, 5],
+                    fill: false,
+                    yAxisID: 'y'
+                },
+                {
+                    label: `${region} Car Benchmark`,
+                    data: years.map(() => carBenchmark),
+                    borderColor: '#66BB6A',
+                    backgroundColor: 'transparent',
+                    borderWidth: 2,
+                    borderDash: [5, 5],
+                    fill: false,
+                    yAxisID: 'y'
+                },
+                {
+                    label: 'EV Share (%)',
+                    data: evShare,
+                    borderColor: '#4FC3F7',
+                    backgroundColor: 'rgba(79, 195, 247, 0.1)',
+                    borderWidth: 2,
+                    fill: true,
+                    yAxisID: 'y1',
+                    spanGaps: false
+                }
+            ],
+            region: region
+        };
     }
 }

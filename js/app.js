@@ -17,7 +17,9 @@ class App {
         this.oilMode = 'absolute';
         this.evMode = 'absolute';
         this.rawDataMode = 'absolute';
+        this.ownershipMetric = 'per_capita'; // 'per_capita' or 'total'
         this.currentView = 'raw'; // 'raw', 'efficiency', or 'forecast'
+        this.efficiencyScenario = 'improvement'; // 'improvement' or 'age_out'
 
         this.init();
     }
@@ -175,6 +177,28 @@ class App {
                 this.evMode = e.target.value;
                 if (this.selectedCountry && this.currentView === 'raw') {
                     this.updateRawDataView();
+                }
+            });
+        }
+
+        // Ownership metric select (for efficiency view)
+        const ownershipMetricSelect = document.getElementById('ownership-metric-select');
+        if (ownershipMetricSelect) {
+            ownershipMetricSelect.addEventListener('change', (e) => {
+                this.ownershipMetric = e.target.value;
+                if (this.selectedCountry && this.currentView === 'efficiency') {
+                    this.updateEfficiencyView();
+                }
+            });
+        }
+
+        // Efficiency scenario select (for forecast view)
+        const efficiencyScenarioSelect = document.getElementById('efficiency-scenario-select');
+        if (efficiencyScenarioSelect) {
+            efficiencyScenarioSelect.addEventListener('change', (e) => {
+                this.efficiencyScenario = e.target.value;
+                if (this.selectedCountry && this.currentView === 'forecast') {
+                    this.updateForecastView();
                 }
             });
         }
@@ -390,7 +414,8 @@ class App {
         // Get fuel saved data
         const fuelSavedData = this.dataManager.getFuelSavedData(
             this.selectedCountry,
-            this.baseYear
+            this.baseYear,
+            this.ownershipMetric
         );
 
         // Get efficiency trends data
@@ -407,10 +432,18 @@ class App {
     }
 
     updateForecastView() {
-        // TODO: Implement forecast view with:
-        // - Forecast visualizations
-        // - Per capita metrics
-        console.log('Forecast view - to be implemented');
+        // Get forecast demand decomposition data
+        const forecastDemandData = this.dataManager.getForecastDemandData(this.selectedCountry, this.efficiencyScenario);
+
+        // Get forecast efficiency data
+        const forecastEfficiencyData = this.dataManager.getForecastEfficiencyData(this.selectedCountry, this.efficiencyScenario);
+
+        console.log('Forecast demand data:', forecastDemandData);
+        console.log('Forecast efficiency data:', forecastEfficiencyData);
+
+        // Update charts
+        this.chartsManager.updateForecastDemandChart(forecastDemandData);
+        this.chartsManager.updateForecastEfficiencyChart(forecastEfficiencyData);
     }
 
     closeDetail() {

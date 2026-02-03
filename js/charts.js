@@ -9,6 +9,8 @@ export class ChartsManager {
         this.categoryMixChart = null;
         this.fuelSavedChart = null;
         this.efficiencyTrendsChart = null;
+        this.forecastDemandChart = null;
+        this.forecastEfficiencyChart = null;
     }
 
     updateOilProductsChart(data, indexed = false) {
@@ -606,7 +608,7 @@ export class ChartsManager {
                         ticks: { color: '#e0e0e0' },
                         title: {
                             display: true,
-                            text: 'Fuel Saved/Added (TJ)',
+                            text: 'Fuel Impact (TJ) - Saved (+) / Added (-)',
                             color: '#e0e0e0'
                         }
                     }
@@ -647,7 +649,7 @@ export class ChartsManager {
                     },
                     title: {
                         display: true,
-                        text: `Fuel Savings from Efficiency Gains (baseline: ${data.baseYear})`,
+                        text: `Fuel Impact vs ${data.baseYear} Baseline (positive = saved, negative = added)`,
                         color: '#e0e0e0',
                         font: { size: 12 }
                     }
@@ -746,6 +748,191 @@ export class ChartsManager {
                     title: {
                         display: true,
                         text: `Fleet Efficiency Trends - Region: ${data.region}`,
+                        color: '#e0e0e0',
+                        font: { size: 12 }
+                    }
+                },
+                elements: {
+                    line: { tension: 0.3, borderWidth: 2 },
+                    point: { radius: 2, hoverRadius: 4 }
+                }
+            }
+        });
+    }
+
+    updateForecastDemandChart(data) {
+        const canvas = document.getElementById('forecast-demand-chart');
+        const ctx = canvas.getContext('2d');
+
+        if (this.forecastDemandChart) {
+            this.forecastDemandChart.destroy();
+        }
+
+        if (!data) {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = '#888';
+            ctx.font = '14px sans-serif';
+            ctx.textAlign = 'center';
+            ctx.fillText('No forecast data available', canvas.width / 2, canvas.height / 2);
+            return;
+        }
+
+        this.forecastDemandChart = new Chart(ctx, {
+            type: 'bar',
+            data: data,
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                scales: {
+                    x: {
+                        stacked: true,
+                        grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                        ticks: { color: '#e0e0e0' }
+                    },
+                    y: {
+                        stacked: true,
+                        grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                        ticks: { color: '#e0e0e0' },
+                        title: {
+                            display: true,
+                            text: 'Fuel Demand Change (TJ)',
+                            color: '#e0e0e0'
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: { color: '#e0e0e0', boxWidth: 15, font: { size: 10 } }
+                    },
+                    tooltip: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.9)',
+                        titleColor: '#4fc3f7',
+                        bodyColor: '#e0e0e0',
+                        borderColor: '#4fc3f7',
+                        borderWidth: 1,
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.dataset.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed.y !== null) {
+                                    const value = context.parsed.y;
+                                    if (value >= 0) {
+                                        label += '+' + (value / 1000).toFixed(1) + ' K TJ (added)';
+                                    } else {
+                                        label += (value / 1000).toFixed(1) + ' K TJ (saved)';
+                                    }
+                                }
+                                return label;
+                            }
+                        }
+                    },
+                    title: {
+                        display: true,
+                        text: `Forecasted Fuel Demand Factors (vs ${data.baseYear} baseline)`,
+                        color: '#e0e0e0',
+                        font: { size: 12 }
+                    }
+                },
+                elements: {
+                    bar: { borderWidth: 0 }
+                }
+            }
+        });
+    }
+
+    updateForecastEfficiencyChart(data) {
+        const canvas = document.getElementById('forecast-efficiency-chart');
+        const ctx = canvas.getContext('2d');
+
+        if (this.forecastEfficiencyChart) {
+            this.forecastEfficiencyChart.destroy();
+        }
+
+        if (!data) {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = '#888';
+            ctx.font = '14px sans-serif';
+            ctx.textAlign = 'center';
+            ctx.fillText('No forecast data available', canvas.width / 2, canvas.height / 2);
+            return;
+        }
+
+        this.forecastEfficiencyChart = new Chart(ctx, {
+            type: 'line',
+            data: data,
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                interaction: {
+                    mode: 'index',
+                    intersect: false,
+                },
+                scales: {
+                    x: {
+                        grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                        ticks: { color: '#e0e0e0' }
+                    },
+                    y: {
+                        type: 'linear',
+                        display: true,
+                        position: 'left',
+                        grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                        ticks: { color: '#e0e0e0' },
+                        title: {
+                            display: true,
+                            text: 'Fuel Consumption (L/100km)',
+                            color: '#e0e0e0'
+                        }
+                    },
+                    y1: {
+                        type: 'linear',
+                        display: true,
+                        position: 'right',
+                        grid: { drawOnChartArea: false },
+                        ticks: { color: '#e0e0e0' },
+                        title: {
+                            display: true,
+                            text: 'EV Share (%)',
+                            color: '#e0e0e0'
+                        },
+                        min: 0,
+                        max: 100
+                    }
+                },
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: { color: '#e0e0e0', boxWidth: 15, font: { size: 10 } }
+                    },
+                    tooltip: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.9)',
+                        titleColor: '#4fc3f7',
+                        bodyColor: '#e0e0e0',
+                        borderColor: '#4fc3f7',
+                        borderWidth: 1,
+                        callbacks: {
+                            label: function(context) {
+                                let label = context.dataset.label || '';
+                                if (label) {
+                                    label += ': ';
+                                }
+                                if (context.parsed.y !== null) {
+                                    if (label.includes('EV')) {
+                                        label += context.parsed.y.toFixed(1) + '%';
+                                    } else {
+                                        label += context.parsed.y.toFixed(2) + ' L/100km';
+                                    }
+                                }
+                                return label;
+                            }
+                        }
+                    },
+                    title: {
+                        display: true,
+                        text: `Forecasted Fleet Efficiency - Region: ${data.region}`,
                         color: '#e0e0e0',
                         font: { size: 12 }
                     }

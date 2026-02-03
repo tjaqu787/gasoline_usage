@@ -127,7 +127,11 @@
                     <div id="charts-efficiency" class="charts-view hidden">
                         <div class="chart-container">
                             <div class="chart-header">
-                                <h3>Total Fuel Not Used (Efficiency Gains)</h3>
+                                <h3>Fuel Consumption Factors (vs 2010 Baseline)</h3>
+                                <select id="ownership-metric-select" class="chart-mode-select">
+                                    <option value="per_capita">Car Ownership: Per Capita</option>
+                                    <option value="total">Car Ownership: Total Vehicles</option>
+                                </select>
                             </div>
                             <canvas id="fuel-saved-chart"></canvas>
                         </div>
@@ -144,6 +148,10 @@
                         <div class="chart-container">
                             <div class="chart-header">
                                 <h3>Forecasted Gasoline Demand</h3>
+                                <select id="efficiency-scenario-select" class="chart-mode-select">
+                                    <option value="improvement">Efficiency Improvement</option>
+                                    <option value="age_out">Fleet Age Out (Constant)</option>
+                                </select>
                             </div>
                             <canvas id="forecast-demand-chart"></canvas>
                         </div>
