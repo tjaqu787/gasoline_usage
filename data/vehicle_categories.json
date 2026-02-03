@@ -6426,6 +6426,10 @@
       "freight": {
         "km_millions": 12348.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 25000.0,
+        "unit": "million passenger-km"
       }
     },
     "2001": {
@@ -6436,6 +6440,10 @@
       "freight": {
         "km_millions": 12405.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 25665.7625684993,
+        "unit": "million passenger-km"
       }
     },
     "2002": {
@@ -6446,6 +6454,10 @@
       "freight": {
         "km_millions": 14448.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 27218.4830433085,
+        "unit": "million passenger-km"
       }
     },
     "2003": {
@@ -6456,6 +6468,10 @@
       "freight": {
         "km_millions": 15898.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 27338.0807899691,
+        "unit": "million passenger-km"
       }
     },
     "2004": {
@@ -6466,6 +6482,10 @@
       "freight": {
         "km_millions": 17289.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 27701.0731951604,
+        "unit": "million passenger-km"
       }
     },
     "2005": {
@@ -6476,6 +6496,10 @@
       "freight": {
         "km_millions": 18152.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 28796.7841623198,
+        "unit": "million passenger-km"
       }
     },
     "2006": {
@@ -6486,6 +6510,10 @@
       "freight": {
         "km_millions": 17686.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 31193.8754806242,
+        "unit": "million passenger-km"
       }
     },
     "2007": {
@@ -6496,6 +6524,10 @@
       "freight": {
         "km_millions": 19146.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 34088.4935106571,
+        "unit": "million passenger-km"
       }
     },
     "2008": {
@@ -6506,6 +6538,10 @@
       "freight": {
         "km_millions": 17290.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 34601.3387733382,
+        "unit": "million passenger-km"
       }
     },
     "2009": {
@@ -6516,6 +6552,10 @@
       "freight": {
         "km_millions": 12068.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 34762.9103989188,
+        "unit": "million passenger-km"
       }
     },
     "2010": {
@@ -6526,6 +6566,10 @@
       "freight": {
         "km_millions": 10924.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 33012.28,
+        "unit": "million passenger-km"
       }
     },
     "2011": {
@@ -6550,6 +6594,10 @@
       "freight": {
         "km_millions": 9895.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 34359.72,
+        "unit": "million passenger-km"
       }
     },
     "2013": {
@@ -6560,6 +6608,10 @@
       "freight": {
         "km_millions": 9138.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 34673.7657073962,
+        "unit": "million passenger-km"
       }
     },
     "2014": {
@@ -6570,6 +6622,10 @@
       "freight": {
         "km_millions": 9772.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 35410.8861158694,
+        "unit": "million passenger-km"
       }
     },
     "2015": {
@@ -6580,6 +6636,10 @@
       "freight": {
         "km_millions": 9844.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 36383.0391074136,
+        "unit": "million passenger-km"
       }
     },
     "2016": {
@@ -6590,6 +6650,10 @@
       "freight": {
         "km_millions": 11564.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 38135.1466748539,
+        "unit": "million passenger-km"
       }
     },
     "2017": {
@@ -6600,6 +6664,10 @@
       "freight": {
         "km_millions": 11758.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 37910.7787634893,
+        "unit": "million passenger-km"
       }
     },
     "2018": {
@@ -6610,6 +6678,10 @@
       "freight": {
         "km_millions": 11538.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 39251.8395536481,
+        "unit": "million passenger-km"
       }
     },
     "2019": {
@@ -6620,6 +6692,10 @@
       "freight": {
         "km_millions": 12403.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 39255.8541643618,
+        "unit": "million passenger-km"
       }
     },
     "2020": {
@@ -6630,6 +6706,10 @@
       "freight": {
         "km_millions": 11382.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 34955.9350924591,
+        "unit": "million passenger-km"
       }
     },
     "2021": {
@@ -6640,6 +6720,10 @@
       "freight": {
         "km_millions": 12485.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 37898.9861497886,
+        "unit": "million passenger-km"
       }
     },
     "2022": {
@@ -6650,6 +6734,10 @@
       "freight": {
         "km_millions": 12384.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 42028.2014242397,
+        "unit": "million passenger-km"
       }
     },
     "2023": {
@@ -6660,6 +6748,10 @@
       "freight": {
         "km_millions": 12596.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 42618.7151016753,
+        "unit": "million passenger-km"
       }
     },
     "2024": {
@@ -11874,6 +11966,10 @@
       "freight": {
         "km_millions": 2176.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 25721.833333333332,
+        "unit": "MILLON_KM"
       }
     },
     "2012": {
@@ -11884,6 +11980,10 @@
       "freight": {
         "km_millions": 1849.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 25807.666666666668,
+        "unit": "MILLON_KM"
       }
     },
     "2013": {
@@ -11894,6 +11994,10 @@
       "freight": {
         "km_millions": 1889.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 25893.5,
+        "unit": "MILLON_KM"
       }
     },
     "2014": {
@@ -11904,6 +12008,10 @@
       "freight": {
         "km_millions": 2062.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 25979.333333333332,
+        "unit": "MILLON_KM"
       }
     },
     "2015": {
@@ -11914,6 +12022,10 @@
       "freight": {
         "km_millions": 2069.0,
         "unit": "million tonne-km"
+      },
+      "passenger": {
+        "km_millions": 26065.166666666668,
+        "unit": "MILLON_KM"
       }
     },
     "2016": {

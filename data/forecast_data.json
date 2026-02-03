@@ -3891,11 +3891,11 @@
           "ice_vehicles": 2420808.1374897016,
           "ev_share": 0.008789554104474545,
           "cars_per_capita": 0.4526259625743052,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 4.9,
-          "gasoline_demand_tj": 49393.20091408489,
-          "diesel_demand_tj": 21168.514677464955,
-          "total_fuel_demand_tj": 70561.71559154984
+          "gasoline_demand_tj": 72967.00544745008,
+          "diesel_demand_tj": 31271.573763192897,
+          "total_fuel_demand_tj": 104238.57921064297
         },
         {
           "year": 2025,
@@ -3905,11 +3905,11 @@
           "ice_vehicles": 2491320.4532782645,
           "ev_share": 0.011819225354618445,
           "cars_per_capita": 0.46072554352833095,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 4.9,
-          "gasoline_demand_tj": 50831.9060005084,
-          "diesel_demand_tj": 21785.102571646465,
-          "total_fuel_demand_tj": 72617.00857215487
+          "gasoline_demand_tj": 75092.35873364304,
+          "diesel_demand_tj": 32182.439457275595,
+          "total_fuel_demand_tj": 107274.79819091863
         },
         {
           "year": 2026,
@@ -3919,11 +3919,11 @@
           "ice_vehicles": 2552844.887115872,
           "ev_share": 0.015872244587262007,
           "cars_per_capita": 0.4674403319842777,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 4.9,
-          "gasoline_demand_tj": 52087.225938757416,
-          "diesel_demand_tj": 22323.09683089604,
-          "total_fuel_demand_tj": 74410.32276965346
+          "gasoline_demand_tj": 76946.80297044867,
+          "diesel_demand_tj": 32977.20127304943,
+          "total_fuel_demand_tj": 109924.0042434981
         },
         {
           "year": 2027,
@@ -3933,11 +3933,11 @@
           "ice_vehicles": 2605372.392474425,
           "ev_share": 0.021277594861492694,
           "cars_per_capita": 0.47300708713667916,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 4.9,
-          "gasoline_demand_tj": 53158.97614709119,
-          "diesel_demand_tj": 22782.418348753374,
-          "total_fuel_demand_tj": 75941.39449584456
+          "gasoline_demand_tj": 78530.0654811295,
+          "diesel_demand_tj": 33655.74234905551,
+          "total_fuel_demand_tj": 112185.807830185
         },
         {
           "year": 2028,
@@ -3947,11 +3947,11 @@
           "ice_vehicles": 2648408.3261203584,
           "ev_share": 0.028456951418108944,
           "cars_per_capita": 0.4776220892518007,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 4.9,
-          "gasoline_demand_tj": 54037.064122829346,
-          "diesel_demand_tj": 23158.74176692687,
-          "total_fuel_demand_tj": 77195.80588975622
+          "gasoline_demand_tj": 79827.23693232729,
+          "diesel_demand_tj": 34211.67297099742,
+          "total_fuel_demand_tj": 114038.9099033247
         },
         {
           "year": 2029,
@@ -3961,11 +3961,11 @@
           "ice_vehicles": 2680931.0168192103,
           "ev_share": 0.037940698542053425,
           "cars_per_capita": 0.48144806038570065,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 4.9,
-          "gasoline_demand_tj": 54700.64409477244,
-          "diesel_demand_tj": 23443.133183473907,
-          "total_fuel_demand_tj": 78143.77727824634
+          "gasoline_demand_tj": 80807.52252895852,
+          "diesel_demand_tj": 34631.795369553656,
+          "total_fuel_demand_tj": 115439.31789851218
         },
         {
           "year": 2030,
@@ -3975,11 +3975,11 @@
           "ice_vehicles": 2701356.5974192536,
           "ev_share": 0.05037868484559721,
           "cars_per_capita": 0.4846199018610214,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 4.9,
-          "gasoline_demand_tj": 55117.39947110349,
-          "diesel_demand_tj": 23621.74263047293,
-          "total_fuel_demand_tj": 78739.14210157642
+          "gasoline_demand_tj": 81423.18199731119,
+          "diesel_demand_tj": 34895.64942741909,
+          "total_fuel_demand_tj": 116318.83142473028
         },
         {
           "year": 2031,
@@ -3989,11 +3989,11 @@
           "ice_vehicles": 2707534.5655849287,
           "ev_share": 0.0665381571951379,
           "cars_per_capita": 0.4872494508023145,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 4.9,
-          "gasoline_demand_tj": 55243.45226236867,
-          "diesel_demand_tj": 23675.765255300863,
-          "total_fuel_demand_tj": 78919.21751766953
+          "gasoline_demand_tj": 81609.39577849355,
+          "diesel_demand_tj": 34975.4553336401,
+          "total_fuel_demand_tj": 116584.85111213365
         },
         {
           "year": 2032,
@@ -4003,11 +4003,11 @@
           "ice_vehicles": 2696812.773296571,
           "ev_share": 0.08727745695649036,
           "cars_per_capita": 0.48942942344232704,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 4.9,
-          "gasoline_demand_tj": 55024.689101233926,
-          "diesel_demand_tj": 23582.009614814546,
-          "total_fuel_demand_tj": 78606.69871604847
+          "gasoline_demand_tj": 81286.22391526515,
+          "diesel_demand_tj": 34836.95310654221,
+          "total_fuel_demand_tj": 116123.17702180737
         },
         {
           "year": 2033,
@@ -4017,11 +4017,11 @@
           "ice_vehicles": 2666224.5296067274,
           "ev_share": 0.11348085192039026,
           "cars_per_capita": 0.491236684237734,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 4.9,
-          "gasoline_demand_tj": 54400.57881228383,
-          "diesel_demand_tj": 23314.533776693075,
-          "total_fuel_demand_tj": 77715.1125889769
+          "gasoline_demand_tj": 80364.24562653583,
+          "diesel_demand_tj": 34441.81955422965,
+          "total_fuel_demand_tj": 114806.06518076548
         },
         {
           "year": 2034,
@@ -4031,11 +4031,11 @@
           "ice_vehicles": 2612854.4247769387,
           "ev_share": 0.1459404190450851,
           "cars_per_capita": 0.49273495606127216,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 4.9,
-          "gasoline_demand_tj": 53311.63654137876,
-          "diesel_demand_tj": 22847.844232019474,
-          "total_fuel_demand_tj": 76159.48077339823
+          "gasoline_demand_tj": 78755.58582837255,
+          "diesel_demand_tj": 33752.39392644539,
+          "total_fuel_demand_tj": 112507.97975481793
         },
         {
           "year": 2035,
@@ -4045,11 +4045,11 @@
           "ice_vehicles": 2534416.046433782,
           "ev_share": 0.18518017320078592,
           "cars_per_capita": 0.4939770670299346,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 4.9,
-          "gasoline_demand_tj": 51711.21124501632,
-          "diesel_demand_tj": 22161.94767643557,
-          "total_fuel_demand_tj": 73873.15892145189
+          "gasoline_demand_tj": 76391.3284172961,
+          "diesel_demand_tj": 32739.140750269766,
+          "total_fuel_demand_tj": 109130.46916756587
         },
         {
           "year": 2036,
@@ -4059,11 +4059,11 @@
           "ice_vehicles": 2430004.777627176,
           "ev_share": 0.23124039789999687,
           "cars_per_capita": 0.495006813190967,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 4.9,
-          "gasoline_demand_tj": 49580.84548079385,
-          "diesel_demand_tj": 21248.933777483082,
-          "total_fuel_demand_tj": 70829.77925827693
+          "gasoline_demand_tj": 73244.20680042685,
+          "diesel_demand_tj": 31390.374343040083,
+          "total_fuel_demand_tj": 104634.58114346693
         },
         {
           "year": 2037,
@@ -4073,11 +4073,11 @@
           "ice_vehicles": 2300870.374703441,
           "ev_share": 0.28347495501936365,
           "cars_per_capita": 0.4958605027427974,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 4.9,
-          "gasoline_demand_tj": 46946.03877729913,
-          "diesel_demand_tj": 20119.730904556774,
-          "total_fuel_demand_tj": 67065.7696818559
+          "gasoline_demand_tj": 69351.89062069017,
+          "diesel_demand_tj": 29722.23883743865,
+          "total_fuel_demand_tj": 99074.12945812882
         },
         {
           "year": 2038,
@@ -4087,11 +4087,11 @@
           "ice_vehicles": 2150930.7445948804,
           "ev_share": 0.3404459865506728,
           "cars_per_capita": 0.49656823623915114,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 4.9,
-          "gasoline_demand_tj": 43886.73054041611,
-          "diesel_demand_tj": 18808.59880303548,
-          "total_fuel_demand_tj": 62695.32934345159
+          "gasoline_demand_tj": 64832.47182103879,
+          "diesel_demand_tj": 27785.345066159487,
+          "total_fuel_demand_tj": 92617.81688719828
         },
         {
           "year": 2039,
@@ -4101,11 +4101,11 @@
           "ice_vehicles": 1986717.0605309848,
           "ev_share": 0.4,
           "cars_per_capita": 0.49715496791554004,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 4.9,
-          "gasoline_demand_tj": 40536.18021625002,
-          "diesel_demand_tj": 17372.648664107153,
-          "total_fuel_demand_tj": 57908.82888035717
+          "gasoline_demand_tj": 59882.81034474302,
+          "diesel_demand_tj": 25664.061576318443,
+          "total_fuel_demand_tj": 85546.87192106147
         },
         {
           "year": 2040,
@@ -4115,11 +4115,11 @@
           "ice_vehicles": 1825202.9031544214,
           "ev_share": 0.4595540134493272,
           "cars_per_capita": 0.5,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 4.9,
-          "gasoline_demand_tj": 37240.70995480156,
-          "diesel_demand_tj": 15960.304266343528,
-          "total_fuel_demand_tj": 53201.01422114509
+          "gasoline_demand_tj": 55014.51689404564,
+          "diesel_demand_tj": 23577.65009744814,
+          "total_fuel_demand_tj": 78592.16699149378
         }
       ],
       "improvement": [
@@ -4131,11 +4131,11 @@
           "ice_vehicles": 2420808.1374897016,
           "ev_share": 0.008789554104474545,
           "cars_per_capita": 0.4526259625743052,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 8.3,
-          "gasoline_demand_tj": 83666.03420140909,
-          "diesel_demand_tj": 35856.8718006039,
-          "total_fuel_demand_tj": 119522.90600201298
+          "gasoline_demand_tj": 123597.17249261953,
+          "diesel_demand_tj": 52970.21678255124,
+          "total_fuel_demand_tj": 176567.38927517078
         },
         {
           "year": 2025,
@@ -4145,11 +4145,11 @@
           "ice_vehicles": 2491320.4532782645,
           "ev_share": 0.011819225354618445,
           "cars_per_capita": 0.46072554352833095,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 8.3,
-          "gasoline_demand_tj": 86103.02444984076,
-          "diesel_demand_tj": 36901.296192788905,
-          "total_fuel_demand_tj": 123004.32064262965
+          "gasoline_demand_tj": 127197.26071208924,
+          "diesel_demand_tj": 54513.11173375254,
+          "total_fuel_demand_tj": 181710.3724458418
         },
         {
           "year": 2026,
@@ -4159,11 +4159,11 @@
           "ice_vehicles": 2552844.887115872,
           "ev_share": 0.015872244587262007,
           "cars_per_capita": 0.4674403319842777,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 8.3,
-          "gasoline_demand_tj": 88229.38271258908,
-          "diesel_demand_tj": 37812.59259110961,
-          "total_fuel_demand_tj": 126041.9753036987
+          "gasoline_demand_tj": 130338.46217443349,
+          "diesel_demand_tj": 55859.34093190008,
+          "total_fuel_demand_tj": 186197.80310633357
         },
         {
           "year": 2027,
@@ -4173,11 +4173,11 @@
           "ice_vehicles": 2605372.392474425,
           "ev_share": 0.021277594861492694,
           "cars_per_capita": 0.47300708713667916,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 8.3,
-          "gasoline_demand_tj": 90044.79633078713,
-          "diesel_demand_tj": 38590.626998908774,
-          "total_fuel_demand_tj": 128635.4233296959
+          "gasoline_demand_tj": 133020.31499864793,
+          "diesel_demand_tj": 57008.70642799198,
+          "total_fuel_demand_tj": 190029.0214266399
         },
         {
           "year": 2028,
@@ -4187,11 +4187,11 @@
           "ice_vehicles": 2648408.3261203584,
           "ev_share": 0.028456951418108944,
           "cars_per_capita": 0.4776220892518007,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 8.3,
-          "gasoline_demand_tj": 91532.16984071095,
-          "diesel_demand_tj": 39228.07278887613,
-          "total_fuel_demand_tj": 130760.24262958708
+          "gasoline_demand_tj": 135217.56459965644,
+          "diesel_demand_tj": 57950.3848284242,
+          "total_fuel_demand_tj": 193167.94942808064
         },
         {
           "year": 2029,
@@ -4201,11 +4201,11 @@
           "ice_vehicles": 2680931.0168192103,
           "ev_share": 0.037940698542053425,
           "cars_per_capita": 0.48144806038570065,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 8.3,
-          "gasoline_demand_tj": 92656.19305849212,
-          "diesel_demand_tj": 39709.79702506806,
-          "total_fuel_demand_tj": 132365.99008356017
+          "gasoline_demand_tj": 136878.04836537875,
+          "diesel_demand_tj": 58662.02072801947,
+          "total_fuel_demand_tj": 195540.06909339823
         },
         {
           "year": 2030,
@@ -4215,11 +4215,11 @@
           "ice_vehicles": 2701356.5974192536,
           "ev_share": 0.05037868484559721,
           "cars_per_capita": 0.4846199018610214,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 8.3,
-          "gasoline_demand_tj": 93362.12563472634,
-          "diesel_demand_tj": 40012.33955773987,
-          "total_fuel_demand_tj": 133374.46519246622
+          "gasoline_demand_tj": 137920.90011789446,
+          "diesel_demand_tj": 59108.95719338336,
+          "total_fuel_demand_tj": 197029.85731127782
         },
         {
           "year": 2031,
@@ -4229,11 +4229,11 @@
           "ice_vehicles": 2707534.5655849287,
           "ev_share": 0.0665381571951379,
           "cars_per_capita": 0.4872494508023145,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 8.3,
-          "gasoline_demand_tj": 93575.64362809387,
-          "diesel_demand_tj": 40103.8472691831,
-          "total_fuel_demand_tj": 133679.49089727696
+          "gasoline_demand_tj": 138236.3234615299,
+          "diesel_demand_tj": 59244.13862636997,
+          "total_fuel_demand_tj": 197480.46208789985
         },
         {
           "year": 2032,
@@ -4243,11 +4243,11 @@
           "ice_vehicles": 2696812.773296571,
           "ev_share": 0.08727745695649036,
           "cars_per_capita": 0.48942942344232704,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 8.3,
-          "gasoline_demand_tj": 93205.08562045747,
-          "diesel_demand_tj": 39945.03669448178,
-          "total_fuel_demand_tj": 133150.12231493925
+          "gasoline_demand_tj": 137688.90989728583,
+          "diesel_demand_tj": 59009.53281312252,
+          "total_fuel_demand_tj": 196698.44271040836
         },
         {
           "year": 2033,
@@ -4257,11 +4257,11 @@
           "ice_vehicles": 2666224.5296067274,
           "ev_share": 0.11348085192039026,
           "cars_per_capita": 0.491236684237734,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 8.3,
-          "gasoline_demand_tj": 92147.91921264402,
-          "diesel_demand_tj": 39491.965376847445,
-          "total_fuel_demand_tj": 131639.88458949147
+          "gasoline_demand_tj": 136127.19157147905,
+          "diesel_demand_tj": 58340.22495920532,
+          "total_fuel_demand_tj": 194467.41653068436
         },
         {
           "year": 2034,
@@ -4271,11 +4271,11 @@
           "ice_vehicles": 2612854.4247769387,
           "ev_share": 0.1459404190450851,
           "cars_per_capita": 0.49273495606127216,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 8.3,
-          "gasoline_demand_tj": 90303.38434560076,
-          "diesel_demand_tj": 38701.450433828904,
-          "total_fuel_demand_tj": 129004.83477942967
+          "gasoline_demand_tj": 133402.3188521413,
+          "diesel_demand_tj": 57172.42236520342,
+          "total_fuel_demand_tj": 190574.7412173447
         },
         {
           "year": 2035,
@@ -4285,11 +4285,11 @@
           "ice_vehicles": 2534416.046433782,
           "ev_share": 0.18518017320078592,
           "cars_per_capita": 0.4939770670299346,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 8.3,
-          "gasoline_demand_tj": 87592.45986400725,
-          "diesel_demand_tj": 37539.62565600312,
-          "total_fuel_demand_tj": 125132.08552001037
+          "gasoline_demand_tj": 129397.55629868525,
+          "diesel_demand_tj": 55456.0955565794,
+          "total_fuel_demand_tj": 184853.65185526464
         },
         {
           "year": 2036,
@@ -4299,11 +4299,11 @@
           "ice_vehicles": 2430004.777627176,
           "ev_share": 0.23124039789999687,
           "cars_per_capita": 0.495006813190967,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 8.3,
-          "gasoline_demand_tj": 83983.88112052839,
-          "diesel_demand_tj": 35993.091908797884,
-          "total_fuel_demand_tj": 119976.97302932627
+          "gasoline_demand_tj": 124066.71764153938,
+          "diesel_demand_tj": 53171.4504178026,
+          "total_fuel_demand_tj": 177238.168059342
         },
         {
           "year": 2037,
@@ -4313,11 +4313,11 @@
           "ice_vehicles": 2300870.374703441,
           "ev_share": 0.28347495501936365,
           "cars_per_capita": 0.4958605027427974,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 8.3,
-          "gasoline_demand_tj": 79520.84119420056,
-          "diesel_demand_tj": 34080.360511800245,
-          "total_fuel_demand_tj": 113601.20170600081
+          "gasoline_demand_tj": 117473.61064320989,
+          "diesel_demand_tj": 50345.83313280425,
+          "total_fuel_demand_tj": 167819.44377601414
         },
         {
           "year": 2038,
@@ -4327,11 +4327,11 @@
           "ice_vehicles": 2150930.7445948804,
           "ev_share": 0.3404459865506728,
           "cars_per_capita": 0.49656823623915114,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 8.3,
-          "gasoline_demand_tj": 74338.7476500926,
-          "diesel_demand_tj": 31859.463278611118,
-          "total_fuel_demand_tj": 106198.21092870372
+          "gasoline_demand_tj": 109818.26859482082,
+          "diesel_demand_tj": 47064.97225492322,
+          "total_fuel_demand_tj": 156883.24084974403
         },
         {
           "year": 2039,
@@ -4341,11 +4341,11 @@
           "ice_vehicles": 1986717.0605309848,
           "ev_share": 0.4,
           "cars_per_capita": 0.49715496791554004,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 8.3,
-          "gasoline_demand_tj": 68663.32567242348,
-          "diesel_demand_tj": 29427.139573895784,
-          "total_fuel_demand_tj": 98090.46524631926
+          "gasoline_demand_tj": 101434.14813497287,
+          "diesel_demand_tj": 43471.77777213124,
+          "total_fuel_demand_tj": 144905.9259071041
         },
         {
           "year": 2040,
@@ -4355,11 +4355,11 @@
           "ice_vehicles": 1825202.9031544214,
           "ev_share": 0.4595540134493272,
           "cars_per_capita": 0.5,
-          "km_per_vehicle": 12000.0,
+          "km_per_vehicle": 17727.218507106616,
           "fuel_efficiency_L100km": 8.3,
-          "gasoline_demand_tj": 63081.2025765006,
-          "diesel_demand_tj": 27034.801104214548,
-          "total_fuel_demand_tj": 90116.00368071515
+          "gasoline_demand_tj": 93187.85514705692,
+          "diesel_demand_tj": 39937.652205881546,
+          "total_fuel_demand_tj": 133125.50735293847
         }
       ]
     }

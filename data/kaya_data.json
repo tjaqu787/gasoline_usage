@@ -2598,8 +2598,16 @@
       "fuel_total_tj": 187852.0,
       "population": 3805174.0,
       "vehicles": 1319200.0,
+      "passenger_km": 25000000000.0,
       "freight_tonne_km": 12348000000.0,
-      "cars_per_capita": 0.3466858545759011
+      "cars_per_capita": 0.3466858545759011,
+      "km_per_vehicle": 18950.879320800486,
+      "fuel_efficiency_L_per_100km": 19.912312,
+      "pop": 3805174.0,
+      "cars_per_pop": 0.3466858545759011,
+      "km_per_veh": 18950.879320800486,
+      "gasoline_per_km": 7.51408e-06,
+      "gasoline_total": 187852.0
     },
     "2001": {
       "gasoline_tj": 64979.0,
@@ -2607,8 +2615,16 @@
       "fuel_total_tj": 194784.0,
       "population": 3866243.0,
       "vehicles": 1384700.0,
+      "passenger_km": 25665762568.4993,
       "freight_tonne_km": 12405000000.0,
-      "cars_per_capita": 0.3581513112341878
+      "cars_per_capita": 0.3581513112341878,
+      "km_per_vehicle": 18535.251367443703,
+      "fuel_efficiency_L_per_100km": 20.111524004882956,
+      "pop": 3866243.0,
+      "cars_per_pop": 0.3581513112341878,
+      "km_per_veh": 18535.251367443703,
+      "gasoline_per_km": 7.589254341465266e-06,
+      "gasoline_total": 194784.0
     },
     "2002": {
       "gasoline_tj": 66402.0,
@@ -2616,8 +2632,16 @@
       "fuel_total_tj": 197617.0,
       "population": 3931947.0,
       "vehicles": 1447900.0,
+      "passenger_km": 27218483043.308502,
       "freight_tonne_km": 14448000000.0,
-      "cars_per_capita": 0.3682399584734993
+      "cars_per_capita": 0.3682399584734993,
+      "km_per_vehicle": 18798.593164796257,
+      "fuel_efficiency_L_per_100km": 19.240052767332482,
+      "pop": 3931947.0,
+      "cars_per_pop": 0.3682399584734993,
+      "km_per_veh": 18798.593164796257,
+      "gasoline_per_km": 7.260397270691503e-06,
+      "gasoline_total": 197617.0
     },
     "2003": {
       "gasoline_tj": 66318.0,
@@ -2625,8 +2649,16 @@
       "fuel_total_tj": 200332.0,
       "population": 3996521.0,
       "vehicles": 1507100.0,
+      "passenger_km": 27338080789.969097,
       "freight_tonne_km": 15898000000.0,
-      "cars_per_capita": 0.37710298532148334
+      "cars_per_capita": 0.37710298532148334,
+      "km_per_vehicle": 18139.526766617408,
+      "fuel_efficiency_L_per_100km": 19.41905886073724,
+      "pop": 3996521.0,
+      "cars_per_pop": 0.37710298532148334,
+      "km_per_veh": 18139.526766617408,
+      "gasoline_per_km": 7.327946739900847e-06,
+      "gasoline_total": 200332.0
     },
     "2004": {
       "gasoline_tj": 68161.0,
@@ -2634,8 +2666,16 @@
       "fuel_total_tj": 207000.0,
       "population": 4070262.0,
       "vehicles": 1582800.0,
+      "passenger_km": 27701073195.1604,
       "freight_tonne_km": 17289000000.0,
-      "cars_per_capita": 0.38886931602928754
+      "cars_per_capita": 0.38886931602928754,
+      "km_per_vehicle": 17501.30982762219,
+      "fuel_efficiency_L_per_100km": 19.802481879865798,
+      "pop": 4070262.0,
+      "cars_per_pop": 0.38886931602928754,
+      "km_per_veh": 17501.30982762219,
+      "gasoline_per_km": 7.472634671647471e-06,
+      "gasoline_total": 207000.0
     },
     "2005": {
       "gasoline_tj": 71761.0,
@@ -2643,8 +2683,16 @@
       "fuel_total_tj": 219621.0,
       "population": 4159914.0,
       "vehicles": 1662200.0,
+      "passenger_km": 28796784162.3198,
       "freight_tonne_km": 18152000000.0,
-      "cars_per_capita": 0.3995755681487646
+      "cars_per_capita": 0.3995755681487646,
+      "km_per_vehicle": 17324.500157814826,
+      "fuel_efficiency_L_per_100km": 20.210439010114655,
+      "pop": 4159914.0,
+      "cars_per_pop": 0.3995755681487646,
+      "km_per_veh": 17324.500157814826,
+      "gasoline_per_km": 7.626580758533832e-06,
+      "gasoline_total": 219621.0
     },
     "2006": {
       "gasoline_tj": 78628.0,
@@ -2652,8 +2700,16 @@
       "fuel_total_tj": 231593.0,
       "population": 4273591.0,
       "vehicles": 1778900.0,
+      "passenger_km": 31193875480.6242,
       "freight_tonne_km": 17686000000.0,
-      "cars_per_capita": 0.4162541525382284
+      "cars_per_capita": 0.4162541525382284,
+      "km_per_vehicle": 17535.485682514023,
+      "fuel_efficiency_L_per_100km": 19.674421358167173,
+      "pop": 4273591.0,
+      "cars_per_pop": 0.4162541525382284,
+      "km_per_veh": 17535.485682514023,
+      "gasoline_per_km": 7.4243099464781786e-06,
+      "gasoline_total": 231593.0
     },
     "2007": {
       "gasoline_tj": 76283.0,
@@ -2661,8 +2717,16 @@
       "fuel_total_tj": 234154.0,
       "population": 4398942.0,
       "vehicles": 1882900.0,
+      "passenger_km": 34088493510.6571,
       "freight_tonne_km": 19146000000.0,
-      "cars_per_capita": 0.42803474108092354
+      "cars_per_capita": 0.42803474108092354,
+      "km_per_vehicle": 18104.25062969733,
+      "fuel_efficiency_L_per_100km": 18.202860733813605,
+      "pop": 4398942.0,
+      "cars_per_pop": 0.42803474108092354,
+      "km_per_veh": 18104.25062969733,
+      "gasoline_per_km": 6.8690040504957e-06,
+      "gasoline_total": 234154.0
     },
     "2008": {
       "gasoline_tj": 71426.0,
@@ -2670,8 +2734,16 @@
       "fuel_total_tj": 227395.0,
       "population": 4489544.0,
       "vehicles": 1924300.0,
+      "passenger_km": 34601338773.338196,
       "freight_tonne_km": 17290000000.0,
-      "cars_per_capita": 0.4286181402832894
+      "cars_per_capita": 0.4286181402832894,
+      "km_per_vehicle": 17981.26008072452,
+      "fuel_efficiency_L_per_100km": 17.41541718797096,
+      "pop": 4489544.0,
+      "cars_per_pop": 0.4286181402832894,
+      "km_per_veh": 17981.26008072452,
+      "gasoline_per_km": 6.57185554263055e-06,
+      "gasoline_total": 227395.0
     },
     "2009": {
       "gasoline_tj": 64811.0,
@@ -2679,8 +2751,16 @@
       "fuel_total_tj": 203249.0,
       "population": 4535375.0,
       "vehicles": 1902400.0,
+      "passenger_km": 34762910398.9188,
       "freight_tonne_km": 12068000000.0,
-      "cars_per_capita": 0.41945814844417495
+      "cars_per_capita": 0.41945814844417495,
+      "km_per_vehicle": 18273.186710953953,
+      "fuel_efficiency_L_per_100km": 15.49380773414046,
+      "pop": 4535375.0,
+      "cars_per_pop": 0.41945814844417495,
+      "km_per_veh": 18273.186710953953,
+      "gasoline_per_km": 5.846719899675646e-06,
+      "gasoline_total": 203249.0
     },
     "2010": {
       "gasoline_tj": 60038.0,
@@ -2688,8 +2768,16 @@
       "fuel_total_tj": 190269.0,
       "population": 4560155.0,
       "vehicles": 1873000.0,
+      "passenger_km": 33012280000.0,
       "freight_tonne_km": 10924000000.0,
-      "cars_per_capita": 0.41073165276180307
+      "cars_per_capita": 0.41073165276180307,
+      "km_per_vehicle": 17625.349706353445,
+      "fuel_efficiency_L_per_100km": 15.273493681745096,
+      "pop": 4560155.0,
+      "cars_per_pop": 0.41073165276180307,
+      "km_per_veh": 17625.349706353445,
+      "gasoline_per_km": 5.7635825214132434e-06,
+      "gasoline_total": 190269.0
     },
     "2011": {
       "gasoline_tj": 53423.0,
@@ -2714,8 +2802,16 @@
       "fuel_total_tj": 176719.0,
       "population": 4599533.0,
       "vehicles": 1930430.0,
+      "passenger_km": 34359720000.0,
       "freight_tonne_km": 9895000000.0,
-      "cars_per_capita": 0.41970130445851783
+      "cars_per_capita": 0.41970130445851783,
+      "km_per_vehicle": 17798.998150671094,
+      "fuel_efficiency_L_per_100km": 13.62948679442091,
+      "pop": 4599533.0,
+      "cars_per_pop": 0.41970130445851783,
+      "km_per_veh": 17798.998150671094,
+      "gasoline_per_km": 5.143202563932418e-06,
+      "gasoline_total": 176719.0
     },
     "2013": {
       "gasoline_tj": 46640.0,
@@ -2723,8 +2819,16 @@
       "fuel_total_tj": 173662.0,
       "population": 4623816.0,
       "vehicles": 1981600.0,
+      "passenger_km": 34673765707.396194,
       "freight_tonne_km": 9138000000.0,
-      "cars_per_capita": 0.4285637663782469
+      "cars_per_capita": 0.4285637663782469,
+      "km_per_vehicle": 17497.863195092952,
+      "fuel_efficiency_L_per_100km": 13.27240611485803,
+      "pop": 4623816.0,
+      "cars_per_pop": 0.4285637663782469,
+      "km_per_veh": 17497.863195092952,
+      "gasoline_per_km": 5.008455137682276e-06,
+      "gasoline_total": 173662.0
     },
     "2014": {
       "gasoline_tj": 46347.0,
@@ -2732,8 +2836,16 @@
       "fuel_total_tj": 175215.0,
       "population": 4657740.0,
       "vehicles": 2018210.0,
+      "passenger_km": 35410886115.8694,
       "freight_tonne_km": 9772000000.0,
-      "cars_per_capita": 0.4333024170520467
+      "cars_per_capita": 0.4333024170520467,
+      "km_per_vehicle": 17545.689554540608,
+      "fuel_efficiency_L_per_100km": 13.112344844483147,
+      "pop": 4657740.0,
+      "cars_per_pop": 0.4333024170520467,
+      "km_per_veh": 17545.689554540608,
+      "gasoline_per_km": 4.948054658295527e-06,
+      "gasoline_total": 175215.0
     },
     "2015": {
       "gasoline_tj": 40109.0,
@@ -2741,8 +2853,16 @@
       "fuel_total_tj": 176541.0,
       "population": 4701957.0,
       "vehicles": 2059950.0,
+      "passenger_km": 36383039107.4136,
       "freight_tonne_km": 9844000000.0,
-      "cars_per_capita": 0.43810481465483414
+      "cars_per_capita": 0.43810481465483414,
+      "km_per_vehicle": 17662.098161321195,
+      "fuel_efficiency_L_per_100km": 12.858564360685081,
+      "pop": 4701957.0,
+      "cars_per_pop": 0.43810481465483414,
+      "km_per_veh": 17662.098161321195,
+      "gasoline_per_km": 4.85228843799437e-06,
+      "gasoline_total": 176541.0
     },
     "2016": {
       "gasoline_tj": 39439.0,
@@ -2750,8 +2870,16 @@
       "fuel_total_tj": 185813.0,
       "population": 4762722.0,
       "vehicles": 2092200.0,
+      "passenger_km": 38135146674.853905,
       "freight_tonne_km": 11564000000.0,
-      "cars_per_capita": 0.43928660963205496
+      "cars_per_capita": 0.43928660963205496,
+      "km_per_vehicle": 18227.29503625557,
+      "fuel_efficiency_L_per_100km": 12.91209010413191,
+      "pop": 4762722.0,
+      "cars_per_pop": 0.43928660963205496,
+      "km_per_veh": 18227.29503625557,
+      "gasoline_per_km": 4.87248683174789e-06,
+      "gasoline_total": 185813.0
     },
     "2017": {
       "gasoline_tj": 35550.0,
@@ -2759,8 +2887,16 @@
       "fuel_total_tj": 183584.0,
       "population": 4827445.0,
       "vehicles": 2142300.0,
+      "passenger_km": 37910778763.4893,
       "freight_tonne_km": 11758000000.0,
-      "cars_per_capita": 0.4437751232794988
+      "cars_per_capita": 0.4437751232794988,
+      "km_per_vehicle": 17696.297793721376,
+      "fuel_efficiency_L_per_100km": 12.832698664278844,
+      "pop": 4827445.0,
+      "cars_per_pop": 0.4437751232794988,
+      "km_per_veh": 17696.297793721376,
+      "gasoline_per_km": 4.842527797841074e-06,
+      "gasoline_total": 183584.0
     },
     "2018": {
       "gasoline_tj": 32403.0,
@@ -2768,8 +2904,16 @@
       "fuel_total_tj": 187181.0,
       "population": 4898022.0,
       "vehicles": 2177410.0,
+      "passenger_km": 39251839553.648094,
       "freight_tonne_km": 11538000000.0,
-      "cars_per_capita": 0.44454884032778946
+      "cars_per_capita": 0.44454884032778946,
+      "km_per_vehicle": 18026.848206652903,
+      "fuel_efficiency_L_per_100km": 12.637105818239252,
+      "pop": 4898022.0,
+      "cars_per_pop": 0.44454884032778946,
+      "km_per_veh": 18026.848206652903,
+      "gasoline_per_km": 4.768719176694058e-06,
+      "gasoline_total": 187181.0
     },
     "2019": {
       "gasoline_tj": 30700.0,
@@ -2777,8 +2921,16 @@
       "fuel_total_tj": 187129.0,
       "population": 4976456.0,
       "vehicles": 2248930.0,
+      "passenger_km": 39255854164.3618,
       "freight_tonne_km": 12403000000.0,
-      "cars_per_capita": 0.45191397251377285
+      "cars_per_capita": 0.45191397251377285,
+      "km_per_vehicle": 17455.347282646326,
+      "fuel_efficiency_L_per_100km": 12.632303144487238,
+      "pop": 4976456.0,
+      "cars_per_pop": 0.45191397251377285,
+      "km_per_veh": 17455.347282646326,
+      "gasoline_per_km": 4.766906846976316e-06,
+      "gasoline_total": 187129.0
     },
     "2020": {
       "gasoline_tj": 22739.0,
@@ -2786,8 +2938,16 @@
       "fuel_total_tj": 162093.0,
       "population": 5039747.0,
       "vehicles": 2291710.0,
+      "passenger_km": 34955935092.4591,
       "freight_tonne_km": 11382000000.0,
-      "cars_per_capita": 0.45472719166259734
+      "cars_per_capita": 0.45472719166259734,
+      "km_per_vehicle": 15253.210525092223,
+      "fuel_efficiency_L_per_100km": 12.288226559061906,
+      "pop": 5039747.0,
+      "cars_per_pop": 0.45472719166259734,
+      "km_per_veh": 15253.210525092223,
+      "gasoline_per_km": 4.637066626061096e-06,
+      "gasoline_total": 162093.0
     },
     "2021": {
       "gasoline_tj": 24088.0,
@@ -2795,8 +2955,16 @@
       "fuel_total_tj": 170719.0,
       "population": 5110585.0,
       "vehicles": 2309620.0,
+      "passenger_km": 37898986149.788605,
       "freight_tonne_km": 12485000000.0,
-      "cars_per_capita": 0.4519286930948218
+      "cars_per_capita": 0.4519286930948218,
+      "km_per_vehicle": 16409.186857486773,
+      "fuel_efficiency_L_per_100km": 11.93713594901861,
+      "pop": 5110585.0,
+      "cars_per_pop": 0.4519286930948218,
+      "km_per_veh": 16409.186857486773,
+      "gasoline_per_km": 4.504579603403249e-06,
+      "gasoline_total": 170719.0
     },
     "2022": {
       "gasoline_tj": 27433.0,
@@ -2804,8 +2972,16 @@
       "fuel_total_tj": 180610.0,
       "population": 5212836.0,
       "vehicles": 2335050.0,
+      "passenger_km": 42028201424.2397,
       "freight_tonne_km": 12384000000.0,
-      "cars_per_capita": 0.4479423484644443
+      "cars_per_capita": 0.4479423484644443,
+      "km_per_vehicle": 17998.844317783216,
+      "fuel_efficiency_L_per_100km": 11.387984348146734,
+      "pop": 5212836.0,
+      "cars_per_pop": 0.4479423484644443,
+      "km_per_veh": 17998.844317783216,
+      "gasoline_per_km": 4.297352584206315e-06,
+      "gasoline_total": 180610.0
     },
     "2023": {
       "gasoline_tj": 29228.0,
@@ -2813,8 +2989,16 @@
       "fuel_total_tj": 179548.0,
       "population": 5311538.0,
       "vehicles": 2404140.0,
+      "passenger_km": 42618715101.6753,
       "freight_tonne_km": 12596000000.0,
-      "cars_per_capita": 0.4526259625743052
+      "cars_per_capita": 0.4526259625743052,
+      "km_per_vehicle": 17727.218507106616,
+      "fuel_efficiency_L_per_100km": 11.164161070198398,
+      "pop": 5311538.0,
+      "cars_per_pop": 0.4526259625743052,
+      "km_per_veh": 17727.218507106616,
+      "gasoline_per_km": 4.212890969886188e-06,
+      "gasoline_total": 179548.0
     },
     "2024": {
       "population": 5395790.0,
@@ -4945,8 +5129,16 @@
       "fuel_total_tj": 94620.0,
       "population": 2052843.0,
       "vehicles": 1074109.0,
+      "passenger_km": 25721833333.333332,
       "freight_tonne_km": 2176000000.0,
-      "cars_per_capita": 0.5232299791070237
+      "cars_per_capita": 0.5232299791070237,
+      "km_per_vehicle": 23947.135098331113,
+      "fuel_efficiency_L_per_100km": 9.748255373191387,
+      "pop": 2052843.0,
+      "cars_per_pop": 0.5232299791070237,
+      "km_per_veh": 23947.135098331113,
+      "gasoline_per_km": 3.678586933279769e-06,
+      "gasoline_total": 94620.0
     },
     "2012": {
       "gasoline_tj": 21227.0,
@@ -4954,8 +5146,16 @@
       "fuel_total_tj": 91648.0,
       "population": 2057159.0,
       "vehicles": 1073967.0,
+      "passenger_km": 25807666666.666668,
       "freight_tonne_km": 1849000000.0,
-      "cars_per_capita": 0.522063194920762
+      "cars_per_capita": 0.522063194920762,
+      "km_per_vehicle": 24030.223150866525,
+      "fuel_efficiency_L_per_100km": 9.410660914715265,
+      "pop": 2057159.0,
+      "cars_per_pop": 0.522063194920762,
+      "km_per_veh": 24030.223150866525,
+      "gasoline_per_km": 3.5511927980057606e-06,
+      "gasoline_total": 91648.0
     },
     "2013": {
       "gasoline_tj": 19343.0,
@@ -4963,8 +5163,16 @@
       "fuel_total_tj": 85536.0,
       "population": 2059953.0,
       "vehicles": 1071922.0,
+      "passenger_km": 25893500000.0,
       "freight_tonne_km": 1889000000.0,
-      "cars_per_capita": 0.5203623577819494
+      "cars_per_capita": 0.5203623577819494,
+      "km_per_vehicle": 24156.141958090233,
+      "fuel_efficiency_L_per_100km": 8.753949832969663,
+      "pop": 2059953.0,
+      "cars_per_pop": 0.5203623577819494,
+      "km_per_veh": 24156.141958090233,
+      "gasoline_per_km": 3.3033772954602505e-06,
+      "gasoline_total": 85536.0
     },
     "2014": {
       "gasoline_tj": 18128.0,
@@ -4972,8 +5180,16 @@
       "fuel_total_tj": 83232.0,
       "population": 2061980.0,
       "vehicles": 1076962.0,
+      "passenger_km": 25979333333.333332,
       "freight_tonne_km": 2062000000.0,
-      "cars_per_capita": 0.5222950756069409
+      "cars_per_capita": 0.5222950756069409,
+      "km_per_vehicle": 24122.794799940326,
+      "fuel_efficiency_L_per_100km": 8.490010007955043,
+      "pop": 2061980.0,
+      "cars_per_pop": 0.5222950756069409,
+      "km_per_veh": 24122.794799940326,
+      "gasoline_per_km": 3.2037773614924684e-06,
+      "gasoline_total": 83232.0
     },
     "2015": {
       "gasoline_tj": 17710.0,
@@ -4981,8 +5197,16 @@
       "fuel_total_tj": 82814.0,
       "population": 2063531.0,
       "vehicles": 1087686.0,
+      "passenger_km": 26065166666.666668,
       "freight_tonne_km": 2069000000.0,
-      "cars_per_capita": 0.5270994232701132
+      "cars_per_capita": 0.5270994232701132,
+      "km_per_vehicle": 23963.870700428863,
+      "fuel_efficiency_L_per_100km": 8.419554833718053,
+      "pop": 2063531.0,
+      "cars_per_pop": 0.5270994232701132,
+      "km_per_veh": 23963.870700428863,
+      "gasoline_per_km": 3.177190503289831e-06,
+      "gasoline_total": 82814.0
     },
     "2016": {
       "gasoline_tj": 17542.0,
