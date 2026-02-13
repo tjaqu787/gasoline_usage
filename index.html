@@ -73,10 +73,12 @@
                         <h2 id="country-name"></h2>
                         <div class="view-toggle">
                             <button class="toggle-btn active" data-view="raw">Raw Data</button>
+                            <button class="toggle-btn" data-view="vehicle-market">Vehicle Market</button>
                             <button class="toggle-btn" data-view="efficiency">Efficiency</button>
                             <button class="toggle-btn" data-view="forecast">Forecast</button>
                         </div>
                     </div>
+
                     <!-- Raw Data View Charts -->
                     <div id="charts-raw" class="charts-view">
                         <div class="chart-container">
@@ -104,28 +106,6 @@
                                 </select>
                             </div>
                             <canvas id="oil-products-chart"></canvas>
-                        </div>
-                        <div class="chart-container">
-                            <div class="chart-header">
-                                <h3>Vehicle Fleet Electrification</h3>
-                                <select id="ev-mode-select" class="chart-mode-select">
-                                    <option value="absolute">Absolute</option>
-                                    <option value="share">Share (%)</option>
-                                </select>
-                            </div>
-                            <canvas id="ev-chart"></canvas>
-                        </div>
-                        <div class="chart-container" id="category-mix-container">
-                            <div class="chart-header">
-                                <h3>Vehicle Category Mix</h3>
-                            </div>
-                            <canvas id="category-mix-chart"></canvas>
-                        </div>
-                        <div class="chart-container" id="vehicle-type-mix-container">
-                            <div class="chart-header">
-                                <h3 id="vehicle-type-mix-title">Vehicle Type Mix</h3>
-                            </div>
-                            <canvas id="vehicle-type-mix-chart"></canvas>
                         </div>
                     </div>
 
@@ -166,6 +146,32 @@
                                 <h3>Forecasted Fleet Efficiency</h3>
                             </div>
                             <canvas id="forecast-efficiency-chart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Vehicle Market View Charts -->
+                    <div id="charts-vehicle-market" class="charts-view hidden">
+                        <div class="chart-container">
+                            <div class="chart-header">
+                                <h3>Vehicle Fleet Electrification</h3>
+                                <select id="ev-mode-select" class="chart-mode-select">
+                                    <option value="absolute">Absolute</option>
+                                    <option value="share">Share (%)</option>
+                                </select>
+                            </div>
+                            <canvas id="ev-chart"></canvas>
+                        </div>
+                        <div class="chart-container" id="category-mix-container">
+                            <div class="chart-header">
+                                <h3>Vehicle Category Mix</h3>
+                            </div>
+                            <canvas id="category-mix-chart"></canvas>
+                        </div>
+                        <div class="chart-container" id="vehicle-type-mix-container">
+                            <div class="chart-header">
+                                <h3 id="vehicle-type-mix-title">Vehicle Type Mix</h3>
+                            </div>
+                            <canvas id="vehicle-type-mix-chart"></canvas>
                         </div>
                     </div>
                 </div>

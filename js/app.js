@@ -175,8 +175,8 @@ class App {
         if (evModeSelect) {
             evModeSelect.addEventListener('change', (e) => {
                 this.evMode = e.target.value;
-                if (this.selectedCountry && this.currentView === 'raw') {
-                    this.updateRawDataView();
+                if (this.selectedCountry && this.currentView === 'vehicle-market') {
+                    this.updateVehicleMarketView();
                 }
             });
         }
@@ -372,44 +372,37 @@ class App {
             this.updateEfficiencyView();
         } else if (this.currentView === 'forecast') {
             this.updateForecastView();
+        } else if (this.currentView === 'vehicle-market') {
+            this.updateVehicleMarketView();
         }
     }
 
     updateRawDataView() {
-        // Get raw data metrics
         const rawDataMetrics = this.dataManager.getRawDataMetrics(this.selectedCountry);
-
-        // Get derived features
         const derivedFeatures = this.dataManager.getDerivedFeatures(this.selectedCountry);
-
-        // Get data for oil products chart
         const oilData = this.dataManager.getOilConsumptionTimeSeries(
             this.selectedCountry,
             this.oilMode === 'indexed',
             this.baseYear
         );
 
-        // Get data for EV chart
-        const evData = this.dataManager.getEVData(
-            this.selectedCountry,
-            this.evMode
-        );
-
-        // Get category mix data
-        const categoryData = this.dataManager.getVehicleCategoryData(this.selectedCountry);
-
-        // Get vehicle type mix data (stock or registrations breakdown)
-        const vehicleTypeMixData = this.dataManager.getVehicleTypeMixData(this.selectedCountry);
-
         console.log('Raw data metrics:', rawDataMetrics);
         console.log('Derived features:', derivedFeatures);
-        console.log('Category data:', categoryData);
-        console.log('Vehicle type mix data:', vehicleTypeMixData);
 
-        // Update charts
         this.chartsManager.updateRawDataChart(rawDataMetrics);
         this.chartsManager.updateDerivedFeaturesChart(derivedFeatures);
         this.chartsManager.updateOilProductsChart(oilData, this.oilMode === 'indexed');
+    }
+
+    updateVehicleMarketView() {
+        const evData = this.dataManager.getEVData(this.selectedCountry, this.evMode);
+        const categoryData = this.dataManager.getVehicleCategoryData(this.selectedCountry);
+        const vehicleTypeMixData = this.dataManager.getVehicleTypeMixData(this.selectedCountry);
+
+        console.log('EV data:', evData);
+        console.log('Category data:', categoryData);
+        console.log('Vehicle type mix data:', vehicleTypeMixData);
+
         this.chartsManager.updateEVChart(evData);
         this.chartsManager.updateCategoryMixChart(categoryData);
         this.chartsManager.updateVehicleTypeMixChart(vehicleTypeMixData);
