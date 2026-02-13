@@ -124,11 +124,14 @@ def calculate_enhanced_kaya_components(conn):
             if passenger_km and vehicles and vehicles > 0:
                 year_data['km_per_vehicle'] = passenger_km / vehicles
 
-            if fuel_total > 0 and passenger_km and passenger_km > 0:
-                # Fuel efficiency in L/100km (approximate conversion: 1 TJ gasoline ≈ 26,500 liters)
-                liters = fuel_total * 26_500  # TJ to liters (gasoline equivalent)
-                km_in_hundreds = passenger_km / 100
-                year_data['fuel_efficiency_L_per_100km'] = liters / km_in_hundreds if km_in_hundreds > 0 else None
+            # Get fuel efficiency from vehicle_efficiency table
+            cursor.execute("""
+                SELECT efficiency_L_per_100km FROM vehicle_efficiency
+                WHERE country_code = ? AND year = ?
+            """, (oecd_code, year))
+            efficiency_result = cursor.fetchone()
+            if efficiency_result and efficiency_result[0] is not None:
+                year_data['fuel_efficiency_L_per_100km'] = efficiency_result[0]
 
             # Kaya components (for compatibility with existing charts)
             if all(v is not None and v > 0 for v in [fuel_total, population, vehicles, passenger_km]):
