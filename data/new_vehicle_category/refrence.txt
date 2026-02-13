@@ -5,22 +5,22 @@ Finland(total stock): https://stat.fi/en/statistics/merek and https://tieto.traf
 United States: https://www.bts.gov (BTS) and https://www.fhwa.dot.gov/policyinformation/statistics.cfm (FHWA Highway Statistics)
 Germany: https://www.kba.de/EN/Statistik_en/Fahrzeuge_Vehicles/vehicles_node.html
 Japan: https://www.jama.or.jp
+Spain: DGT (https://www.dgt.es) and ANFAC (https://anfac.com)
 
 Todo
-Spain: DGT (https://www.dgt.es) and ANFAC (https://anfac.com)
-Netherlands: https://www.cbs.nl/en-gb/figures/detail/82044ENG and https://www.rdw.nl
-Slovenia: https://www.stat.si (SURS)
-Switzerland: https://www.bfs.admin.ch/bfs/en/home/statistics/mobility-transport/transport-infrastructure-vehicles/vehicles/road-new-registrations.html
-Sweden: https://www.scb.se/en/finding-statistics/statistics-by-subject-area/transport-and-communications/road-traffic/vehicles/ and https://www.trafa.se/en/road-traffic/vehicle-statistics/
-Norway: https://www.ssb.no/en/bilreg and OFV data
 
 Lower priority
+Slovenia: https://www.stat.si (SURS)
+Sweden: https://www.scb.se/en/finding-statistics/statistics-by-subject-area/transport-and-communications/road-traffic/vehicles/ and https://www.trafa.se/en/road-traffic/vehicle-statistics/
+Norway: https://www.ssb.no/en/bilreg and OFV data
 Portugal: ACAP (https://www.acap.pt) and https://www.ine.pt
 Latvia: https://www.csdd.lv/en/statistics/vehicles/ and https://stat.gov.lv/en/statistics-themes/business-sectors/transport/19529-passenger-cars
 Ireland: https://www.cso.ie/en/methods/transport/vehiclelicensing/ and https://www.simi.ie/en/motorstats/national-vehicle-statistics
 Iceland: https://statice.is/statistics/environment/transport/vehicles/
 
 Don't have
+Switzerland: https://www.bfs.admin.ch/bfs/en/home/statistics/mobility-transport/transport-infrastructure-vehicles/vehicles/road-new-registrations.html
+Netherlands: https://www.cbs.nl/en-gb/figures/detail/82044ENG and https://www.rdw.nl
 United Kingdom: https://www.gov.uk/government/collections/vehicles-statistics and https://www.smmt.co.uk/vehicle-data/car-registrations/
 Türkiye: https://data.tuik.gov.tr (TurkStat) and OSD (industry association)
 Italy: ACI (https://aci.it), UNRAE for segment data

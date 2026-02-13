@@ -7,6 +7,7 @@ export class ChartsManager {
         this.rawDataChart = null;
         this.derivedFeaturesChart = null;
         this.categoryMixChart = null;
+        this.vehicleTypeMixChart = null;
         this.fuelSavedChart = null;
         this.efficiencyTrendsChart = null;
         this.forecastDemandChart = null;
@@ -565,6 +566,86 @@ export class ChartsManager {
                                     label += context.parsed.y.toLocaleString() + ' M';
                                 }
                                 return label;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    }
+
+    updateVehicleTypeMixChart(data) {
+        const container = document.getElementById('vehicle-type-mix-container');
+        const canvas = document.getElementById('vehicle-type-mix-chart');
+        const title = document.getElementById('vehicle-type-mix-title');
+
+        if (this.vehicleTypeMixChart) {
+            this.vehicleTypeMixChart.destroy();
+            this.vehicleTypeMixChart = null;
+        }
+
+        if (!data) {
+            if (container) container.style.display = 'none';
+            return;
+        }
+
+        if (container) container.style.display = 'block';
+
+        const isRegistrations = data.type === 'registrations';
+        const yLabel = isRegistrations ? 'New Registrations' : 'Vehicles in Stock';
+        const chartTitle = isRegistrations ? 'Vehicle Type Mix (New Registrations)' : 'Vehicle Type Mix (Fleet Stock, excl. EV)';
+        if (title) title.textContent = chartTitle;
+
+        const ctx = canvas.getContext('2d');
+        this.vehicleTypeMixChart = new Chart(ctx, {
+            type: 'bar',
+            data: data,
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                scales: {
+                    x: {
+                        stacked: true,
+                        grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                        ticks: { color: '#e0e0e0' }
+                    },
+                    y: {
+                        stacked: true,
+                        grid: { color: 'rgba(255, 255, 255, 0.1)' },
+                        ticks: {
+                            color: '#e0e0e0',
+                            callback: v => v >= 1_000_000
+                                ? (v / 1_000_000).toFixed(1) + 'M'
+                                : v >= 1_000
+                                    ? (v / 1_000).toFixed(0) + 'K'
+                                    : v
+                        },
+                        title: { display: true, text: yLabel, color: '#e0e0e0' }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'bottom',
+                        labels: { color: '#e0e0e0', boxWidth: 15, font: { size: 11 } }
+                    },
+                    tooltip: {
+                        mode: 'index',
+                        intersect: false,
+                        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                        titleColor: '#4fc3f7',
+                        bodyColor: '#e0e0e0',
+                        borderColor: '#4fc3f7',
+                        borderWidth: 1,
+                        callbacks: {
+                            label: function(context) {
+                                const label = context.dataset.label || '';
+                                const val = context.parsed.y;
+                                if (val === null) return null;
+                                const formatted = val >= 1_000_000
+                                    ? (val / 1_000_000).toFixed(2) + 'M'
+                                    : val.toLocaleString();
+                                return `${label}: ${formatted}`;
                             }
                         }
                     }

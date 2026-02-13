@@ -7,19 +7,21 @@ export class DataManager {
         this.kayaData = {};
         this.evStock = {};
         this.vehicleCategories = {};
+        this.vehicleTypeMix = {};
         this.fuelBenchmarks = {};
         this.fuelBenchmarksHistorical = {};
         this.forecastData = {};
     }
 
     async loadAll() {
-        const [countries, oilConsumption, summary, kayaData, evStock, vehicleCategories, fuelBenchmarks, fuelBenchmarksHistorical, forecastData] = await Promise.all([
+        const [countries, oilConsumption, summary, kayaData, evStock, vehicleCategories, vehicleTypeMix, fuelBenchmarks, fuelBenchmarksHistorical, forecastData] = await Promise.all([
             fetch('data/countries.json').then(r => r.json()),
             fetch('data/oil_consumption.json').then(r => r.json()),
             fetch('data/summary.json').then(r => r.json()),
             fetch('data/kaya_data.json').then(r => r.json()),
             fetch('data/ev_stock.json').then(r => r.json()),
             fetch('data/vehicle_categories.json').then(r => r.json()),
+            fetch('data/vehicle_type_mix.json').then(r => r.json()),
             fetch('data/fuel_benchmarks.json').then(r => r.json()),
             fetch('data/fuel_benchmarks_historical.json').then(r => r.json()),
             fetch('data/forecast_data.json').then(r => r.json())
@@ -31,6 +33,7 @@ export class DataManager {
         this.kayaData = kayaData;
         this.evStock = evStock;
         this.vehicleCategories = vehicleCategories;
+        this.vehicleTypeMix = vehicleTypeMix;
         this.fuelBenchmarks = fuelBenchmarks;
         this.fuelBenchmarksHistorical = fuelBenchmarksHistorical;
         this.forecastData = forecastData;
@@ -825,6 +828,38 @@ export class DataManager {
             ],
             actualFuel: actualFuel
         };
+    }
+
+    getVehicleTypeMixData(countryCode) {
+        const countryData = this.vehicleTypeMix[countryCode];
+        if (!countryData) return null;
+
+        const { type, segments } = countryData;
+        // Require at least 2 segments — single-segment data has no meaningful type breakdown
+        if (!segments || Object.keys(segments).length < 2) return null;
+
+        // Collect all years across all segments
+        const yearSet = new Set();
+        Object.values(segments).forEach(yearMap => {
+            Object.keys(yearMap).forEach(y => yearSet.add(Number(y)));
+        });
+        const years = Array.from(yearSet).sort((a, b) => a - b);
+        if (years.length === 0) return null;
+
+        const COLORS = [
+            '#4FC3F7', '#81C784', '#FFD54F', '#FF6B6B', '#AB47BC',
+            '#FFA07A', '#4ECDC4', '#FF8A65', '#A5D6A7', '#CE93D8',
+            '#80DEEA', '#FFCC02', '#EF9A9A', '#B39DDB', '#80CBC4',
+        ];
+
+        const datasets = Object.entries(segments).map(([label, yearMap], i) => ({
+            label,
+            data: years.map(y => yearMap[y] ?? null),
+            backgroundColor: COLORS[i % COLORS.length],
+            borderWidth: 0,
+        }));
+
+        return { labels: years, datasets, type };
     }
 
     getForecastEfficiencyData(countryCode, scenario = 'improvement') {

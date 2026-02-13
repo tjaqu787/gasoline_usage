@@ -398,9 +398,13 @@ class App {
         // Get category mix data
         const categoryData = this.dataManager.getVehicleCategoryData(this.selectedCountry);
 
+        // Get vehicle type mix data (stock or registrations breakdown)
+        const vehicleTypeMixData = this.dataManager.getVehicleTypeMixData(this.selectedCountry);
+
         console.log('Raw data metrics:', rawDataMetrics);
         console.log('Derived features:', derivedFeatures);
         console.log('Category data:', categoryData);
+        console.log('Vehicle type mix data:', vehicleTypeMixData);
 
         // Update charts
         this.chartsManager.updateRawDataChart(rawDataMetrics);
@@ -408,6 +412,7 @@ class App {
         this.chartsManager.updateOilProductsChart(oilData, this.oilMode === 'indexed');
         this.chartsManager.updateEVChart(evData);
         this.chartsManager.updateCategoryMixChart(categoryData);
+        this.chartsManager.updateVehicleTypeMixChart(vehicleTypeMixData);
     }
 
     updateEfficiencyView() {

@@ -194,6 +194,111 @@ def export_vehicle_category_data(conn):
     }
 
 
+def export_vehicle_type_mix_data(conn):
+    """
+    Export vehicle type mix data from cars_data (stock, non-EV) and
+    vehicle_registrations (annual sales), keyed by IEA country code.
+    """
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT oecd_code, iea_code FROM country_code_mapping")
+    oecd_to_iea = {row[0]: row[1] for row in cursor.fetchall()}
+
+    # Measures to include (non-EV stock breakdowns)
+    STOCK_MEASURE_LABELS = {
+        'VEH_STOCK_CAR':           'Cars',
+        'VEH_STOCK_SUV':           'SUVs',
+        'VEH_STOCK_SUVS':          'SUVs',
+        'VEH_STOCK_LIGHT_TRUCK':   'Light Trucks',
+        'VEH_STOCK_PASS':          'Passenger Cars',
+        'VEH_STOCK_STANDARD_PASS': 'Standard Passenger',
+        'VEH_STOCK_SMALL_PASS':    'Small Passenger',
+        'VEH_STOCK_KEI_PASS':      'Kei Cars',
+        'VEH_STOCK_MINIS':         'Minis',
+        'VEH_STOCK_SMALL_CARS':    'Small Cars',
+        'VEH_STOCK_COMPACT':       'Compact',
+        'VEH_STOCK_MIDSIZE':       'Midsize',
+        'VEH_STOCK_UPPER_MIDSIZE': 'Upper Midsize',
+        'VEH_STOCK_UPPER_CLASS':   'Upper Class',
+        'VEH_STOCK_OFFROAD':       'Off-Road Vehicles',
+        'VEH_STOCK_SPORTS':        'Sports Cars',
+        'VEH_STOCK_MINIVANS':      'Mini-Vans',
+        'VEH_STOCK_LARGE_VANS':    'Large Vans',
+        'VEH_STOCK_VANS':          'Vans',
+        'VEH_STOCK_UTILITIES':     'Utilities',
+        'VEH_STOCK_MOTORHOMES':    'Motorhomes',
+        'VEH_STOCK_OTHER':         'Other',
+    }
+
+    result = {}
+
+    # --- Vehicle stock (non-EV) from cars_data ---
+    measures_placeholder = ','.join(['?' for _ in STOCK_MEASURE_LABELS])
+    cursor.execute(f"""
+        SELECT country_code, year, measure, vehicles
+        FROM cars_data
+        WHERE measure IN ({measures_placeholder})
+        AND vehicles IS NOT NULL
+        ORDER BY country_code, year, measure
+    """, list(STOCK_MEASURE_LABELS.keys()))
+
+    stock_raw = {}
+    for oecd_code, year, measure, vehicles in cursor.fetchall():
+        iea_code = oecd_to_iea.get(oecd_code)
+        if not iea_code:
+            continue
+        label = STOCK_MEASURE_LABELS[measure]
+        if iea_code not in stock_raw:
+            stock_raw[iea_code] = {}
+        if label not in stock_raw[iea_code]:
+            stock_raw[iea_code][label] = {}
+        stock_raw[iea_code][label][year] = int(vehicles)
+
+    for iea_code, segments in stock_raw.items():
+        result[iea_code] = {'type': 'stock', 'segments': segments}
+
+    # --- Vehicle registrations (annual, aggregated from monthly) ---
+    # Aggregate monthly Canada/USA data to annual; Spain is already annual
+    cursor.execute("""
+        SELECT country_code, country_name, year, month, passenger_cars, light_trucks, segment
+        FROM vehicle_registrations
+        ORDER BY country_code, year, month
+    """)
+
+    reg_raw = {}
+    for row in cursor.fetchall():
+        cc, cname, year, month, pass_cars, lt, segment = row
+        # Map country_code to IEA code via oecd_to_iea, else try direct lower
+        iea_code = oecd_to_iea.get(cc, cc.lower())
+
+        if iea_code not in reg_raw:
+            reg_raw[iea_code] = {}
+
+        if segment:
+            # Spain-style: segment-level annual registrations
+            label = segment
+            if label not in reg_raw[iea_code]:
+                reg_raw[iea_code][label] = {}
+            if year not in reg_raw[iea_code][label]:
+                reg_raw[iea_code][label][year] = 0
+            reg_raw[iea_code][label][year] += int(pass_cars or 0)
+        else:
+            # Canada/USA: passenger_cars + light_trucks as separate segments
+            for label, val in [('Passenger Cars', pass_cars), ('Light Trucks', lt)]:
+                if val is None:
+                    continue
+                if label not in reg_raw[iea_code]:
+                    reg_raw[iea_code][label] = {}
+                if year not in reg_raw[iea_code][label]:
+                    reg_raw[iea_code][label][year] = 0
+                reg_raw[iea_code][label][year] += int(val)
+
+    for iea_code, segments in reg_raw.items():
+        result[iea_code] = {'type': 'registrations', 'segments': segments}
+
+    return result
+
+
 def export_to_json():
     """Export all enhanced data to JSON files."""
     db_path = Path('iea_oil.db')
@@ -312,6 +417,16 @@ def export_to_json():
     )
     ev_countries = len(ev_stock_dict)
     print(f"  ✓ Exported EV stock data for {ev_countries} countries, {ev_count} records")
+
+    # Export vehicle type mix data (stock + registrations by type)
+    print("Exporting vehicle type mix data...")
+    type_mix_data = export_vehicle_type_mix_data(conn)
+
+    with open(output_dir / 'vehicle_type_mix.json', 'w') as f:
+        json.dump(type_mix_data, f, indent=2)
+
+    type_mix_countries = len(type_mix_data)
+    print(f"  ✓ Exported vehicle type mix for {type_mix_countries} countries")
 
     # Export vehicle category data
     print("Exporting vehicle category data...")
