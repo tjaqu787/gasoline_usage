@@ -356,7 +356,8 @@ export class DataManager {
                     borderColor: '#FF6B6B',
                     yAxisID: 'y2',
                     fill: false,
-                    spanGaps: false
+                    spanGaps: false,
+                    hidden: true
                 },
                 {
                     label: 'Diesel (thousand TJ)',
@@ -367,7 +368,8 @@ export class DataManager {
                     borderColor: '#FFA07A',
                     yAxisID: 'y2',
                     fill: false,
-                    spanGaps: false
+                    spanGaps: false,
+                    hidden: true
                 },
                 {
                     label: 'Passenger Km (billion km)',
@@ -564,10 +566,15 @@ export class DataManager {
         const historicalBenchmarks = this.fuelBenchmarksHistorical[countryCode];
         const region = historicalBenchmarks?.[years[0]]?.region || this.fuelBenchmarks[countryCode]?.region || 'Unknown';
 
-        // Calculate observed fleet efficiency
-        const observedEfficiency = years.map(year => {
-            const data = countryData[year];
-            return data.fuel_efficiency_L_per_100km || null;
+        // Split observed fleet efficiency into measured vs calculated
+        const observedMeasured = years.map(year => {
+            const d = countryData[year];
+            return d.fuel_efficiency_source === 'data' ? (d.fuel_efficiency_L_per_100km ?? null) : null;
+        });
+        const observedCalculated = years.map(year => {
+            const d = countryData[year];
+            return d.fuel_efficiency_source !== 'data' && d.fuel_efficiency_L_per_100km != null
+                ? d.fuel_efficiency_L_per_100km : null;
         });
 
         // Get time series benchmark values from historical data
@@ -597,11 +604,22 @@ export class DataManager {
             labels: years,
             datasets: [
                 {
-                    label: 'Observed Fleet Efficiency (L/100km)',
-                    data: observedEfficiency,
+                    label: 'Fleet Efficiency - Measured (L/100km)',
+                    data: observedMeasured,
                     borderColor: '#AB47BC',
                     backgroundColor: 'transparent',
                     borderWidth: 3,
+                    yAxisID: 'y',
+                    fill: false,
+                    spanGaps: false
+                },
+                {
+                    label: 'Fleet Efficiency - Calculated (L/100km)',
+                    data: observedCalculated,
+                    borderColor: '#AB47BC',
+                    backgroundColor: 'transparent',
+                    borderWidth: 3,
+                    borderDash: [6, 4],
                     yAxisID: 'y',
                     fill: false,
                     spanGaps: false
@@ -669,19 +687,19 @@ export class DataManager {
             const conventionalShare = [];
 
             years.forEach(year => {
-                const total = countryData[year].total || 0;
-                const electric = countryData[year].electric || 0;
-                const hybrid = countryData[year].hybrid || 0;
-                const conventional = total - electric - hybrid;
+                const total = countryData[year].total ?? null;
+                const electric = countryData[year].electric ?? null;
+                const hybrid = countryData[year].hybrid ?? null;
 
-                if (total > 0) {
-                    electricShare.push((electric / total) * 100);
-                    hybridShare.push((hybrid / total) * 100);
+                if (total != null && total > 0) {
+                    electricShare.push(electric != null ? (electric / total) * 100 : null);
+                    hybridShare.push(hybrid != null ? (hybrid / total) * 100 : null);
+                    const conventional = total - (electric || 0) - (hybrid || 0);
                     conventionalShare.push((conventional / total) * 100);
                 } else {
-                    electricShare.push(0);
-                    hybridShare.push(0);
-                    conventionalShare.push(0);
+                    electricShare.push(null);
+                    hybridShare.push(null);
+                    conventionalShare.push(null);
                 }
             });
 
@@ -716,25 +734,28 @@ export class DataManager {
                 datasets: [
                     {
                         label: 'Total Fleet',
-                        data: years.map(year => countryData[year].total || 0),
+                        data: years.map(year => countryData[year].total ?? null),
                         borderColor: '#AB47BC',
                         backgroundColor: 'transparent',
                         borderWidth: 3,
-                        fill: false
+                        fill: false,
+                        spanGaps: false
                     },
                     {
                         label: 'Electric',
-                        data: years.map(year => countryData[year].electric || 0),
+                        data: years.map(year => countryData[year].electric ?? null),
                         borderColor: '#4FC3F7',
                         backgroundColor: 'transparent',
-                        fill: false
+                        fill: false,
+                        spanGaps: false
                     },
                     {
                         label: 'Hybrid',
-                        data: years.map(year => countryData[year].hybrid || 0),
+                        data: years.map(year => countryData[year].hybrid ?? null),
                         borderColor: '#81C784',
                         backgroundColor: 'transparent',
-                        fill: false
+                        fill: false,
+                        spanGaps: false
                     }
                 ],
                 mode: 'absolute'

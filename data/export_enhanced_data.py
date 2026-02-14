@@ -126,12 +126,13 @@ def calculate_enhanced_kaya_components(conn):
 
             # Get fuel efficiency from vehicle_efficiency table
             cursor.execute("""
-                SELECT efficiency_L_per_100km FROM vehicle_efficiency
+                SELECT efficiency_L_per_100km, data_source FROM vehicle_efficiency
                 WHERE country_code = ? AND year = ?
             """, (oecd_code, year))
             efficiency_result = cursor.fetchone()
             if efficiency_result and efficiency_result[0] is not None:
                 year_data['fuel_efficiency_L_per_100km'] = efficiency_result[0]
+                year_data['fuel_efficiency_source'] = efficiency_result[1] or 'calculated'
 
             # Kaya components (for compatibility with existing charts)
             if all(v is not None and v > 0 for v in [fuel_total, population, vehicles, passenger_km]):
